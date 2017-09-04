@@ -1,0 +1,16 @@
+package cn.com.aiton.gbt20999.services;
+
+import cn.com.aiton.gbt20999.domain.Message;
+import cn.com.aiton.gbt20999.domain.TscNode;
+
+/**
+ * Created by Administrator on 14-2-14.
+ */
+public interface TimingService {
+    /**
+     * 校时功能
+     * @param node
+     * @return
+     */
+    public Message setTiming(TscNode node);
+}
