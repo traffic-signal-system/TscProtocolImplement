@@ -6,9 +6,7 @@ import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 
 public class ManalControlService implements cn.com.aiton.gbt20999.services.ManalControlService {
 
-/**
- * 
- */
+
     @Override
     public void switchMunual(TscNode node) {
         try {
