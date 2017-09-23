@@ -22,6 +22,7 @@ public class ByteUtils {
         }
         return bta;
     }
+    
     //long����ת��byte����
     public static byte[] longToByte(long number) {
         long temp = number;

@@ -17,7 +17,7 @@ import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 
 public class LogEventServiceImpl implements LogEventService{
     /**
-     * È¡µÃÒ»¸ö½ÚµãµÄËùÓÐÈÕÖ¾Êý¾Ý
+     * È¡ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½
      *
      * @param node
      * @return
@@ -27,18 +27,20 @@ public class LogEventServiceImpl implements LogEventService{
         List<GbtEventLog> gbtEventLogs = new ArrayList<GbtEventLog>();
         try{
             UdpClientSocket client = new UdpClientSocket();
+            client.setSoTimeout(5000);
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_EVENT_LOG);
+            Thread.sleep(1000);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-           // System.out.println("·þÎñ¶Ë»ØÓ¦Êý¾Ý£º" + info);
+           // System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½Ý£ï¿½" + info);
             if(!CheckGbt.check(bytes,"EventLog")){
                 return null;
             }
-            byte[] objectArray = new byte[bytes[6] * GbtDefine.EVENT_LOG_BYTE_SIZE];
+            byte[] objectArray = new byte[((bytes[6])&0x0FF) * GbtDefine.EVENT_LOG_BYTE_SIZE];
             System.arraycopy(bytes,7,objectArray,0,objectArray.length);
-            byte[][] eventLogResult = ByteUtils.oneArrayToTwoArray(objectArray,bytes[6],GbtDefine.EVENT_LOG_BYTE_SIZE);
+            byte[][] eventLogResult = ByteUtils.oneArrayToTwoArray(objectArray,((bytes[6])&0x0FF) ,GbtDefine.EVENT_LOG_BYTE_SIZE);
             GbtEventLog gbtEventLog = null;
-            for(int i=0; i<bytes[6]; i++){
+            for(int i=0; i<byteToInt(bytes[6]); i++){
                 gbtEventLog = new GbtEventLog();
                 //gbtEventLog.setDeviceId(node.getId());
                 gbtEventLog.setLogId(eventLogResult[i][0]);
@@ -54,9 +56,12 @@ public class LogEventServiceImpl implements LogEventService{
         }
         return gbtEventLogs;
     }
-
+    public static int byteToInt(byte b) {
+        //Java æ€»æ˜¯æŠŠ byte å½“åšæœ‰ç¬¦å¤„ç†ï¼›æˆ‘ä»¬å¯ä»¥é€šè¿‡å°†å…¶å’Œ 0xFF è¿›è¡ŒäºŒè¿›åˆ¶ä¸Žå¾—åˆ°å®ƒçš„æ— ç¬¦å€¼
+        return b & 0xFF;
+    }
     /**
-     * ¸ù¾ÝÊ±¼äÈ¡µÃÈÕÖ¾£¬Õâ¸öÊ±¼äÊÇÄÄÒ»Ìì¡£
+     * ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ì¡£
      *
      * @param node
      * @param date
@@ -68,7 +73,7 @@ public class LogEventServiceImpl implements LogEventService{
     }
 
     /**
-     * ¸ù¾ÝÈÕÖ¾ÀàÐÍ¶ÁÈ¡ÈÕÖ¾Êý¾Ý
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½Í¶ï¿½È¡ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½
      *
      * @param node
      * @param type
@@ -80,7 +85,7 @@ public class LogEventServiceImpl implements LogEventService{
     }
 
     /**
-     * ¸ù¾ÝÁ½¸öÊ±¼ä£¬½«¿ªÊ¼Ê±¼äºÍ½áÊøÊ±¼äÄÚµÄÈÕÖ¾Êý¾Ý¶ÁÈ¡³öÀ´
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ä£¬ï¿½ï¿½ï¿½ï¿½Ê¼Ê±ï¿½ï¿½Í½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½Ý¶ï¿½È¡ï¿½ï¿½ï¿½ï¿½
      *
      * @param node
      * @param startTime

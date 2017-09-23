@@ -34,56 +34,56 @@ public class LogEventServiceImplTest {
 		
 	}
 
-	@Test
-	public void testGetEventLogByTime() {
-		LogEventService els = new LogEventServiceImpl();
-		TscNode tn = new TscNode();
-		//注意32相位的信号机
-		tn.setIpAddress(Defines.IP);
-		tn.setPort(Defines.PORT);
-		tn.setDeviceId(Defines.ID);
-		tn.setDeviceName(Defines.IP);
-		tn.setProtocolType(Defines.GBT20999);
-		
-		List<GbtEventLog> lgel = els.getEventLogByTime(tn, new Date());
-		if(lgel.isEmpty() || lgel == null){
-			fail("Not yet implemented");
-		}
-	}
-
-	@Test
-	public void testGetEventLogByEventType() {
-		LogEventService els = new LogEventServiceImpl();
-		TscNode tn = new TscNode();
-		//注意32相位的信号机
-		tn.setIpAddress(Defines.IP);
-		tn.setPort(Defines.PORT);
-		tn.setDeviceId(Defines.ID);
-		tn.setDeviceName(Defines.IP);
-		tn.setProtocolType(Defines.GBT20999);
-		
-		List<GbtEventLog> lgel = els.getEventLogByEventType(tn, Byte.parseByte("1"));
-		if(lgel.isEmpty() || lgel == null){
-			fail("Not yet implemented");
-		}
-	}
-
-	@Test
-	public void testGetEventLogByStartTimeAndEndTime() {
-		LogEventService els = new LogEventServiceImpl();
-		TscNode tn = new TscNode();
-		//注意32相位的信号机
-		tn.setIpAddress(Defines.IP);
-		tn.setPort(Defines.PORT);
-		tn.setDeviceId(Defines.ID);
-		tn.setDeviceName(Defines.IP);
-		tn.setProtocolType(Defines.GBT20999);
-		Date sd = new Date();
-		sd.setHours(0);
-		List<GbtEventLog> lgel = els.getEventLogByStartTimeAndEndTime(tn,sd , new Date());
-		if(lgel.isEmpty() || lgel == null){
-			fail("Not yet implemented");
-		}
-	}
+//	@Test
+//	public void testGetEventLogByTime() {
+//		LogEventService els = new LogEventServiceImpl();
+//		TscNode tn = new TscNode();
+//		//注意32相位的信号机
+//		tn.setIpAddress(Defines.IP);
+//		tn.setPort(Defines.PORT);
+//		tn.setDeviceId(Defines.ID);
+//		tn.setDeviceName(Defines.IP);
+//		tn.setProtocolType(Defines.GBT20999);
+//		
+//		List<GbtEventLog> lgel = els.getEventLogByTime(tn, new Date());
+//		if(lgel.isEmpty() || lgel == null){
+//			fail("Not yet implemented");
+//		}
+//	}
+//
+//	@Test
+//	public void testGetEventLogByEventType() {
+//		LogEventService els = new LogEventServiceImpl();
+//		TscNode tn = new TscNode();
+//		//注意32相位的信号机
+//		tn.setIpAddress(Defines.IP);
+//		tn.setPort(Defines.PORT);
+//		tn.setDeviceId(Defines.ID);
+//		tn.setDeviceName(Defines.IP);
+//		tn.setProtocolType(Defines.GBT20999);
+//		
+//		List<GbtEventLog> lgel = els.getEventLogByEventType(tn, Byte.parseByte("1"));
+//		if(lgel.isEmpty() || lgel == null){
+//			fail("Not yet implemented");
+//		}
+//	}
+//
+//	@Test
+//	public void testGetEventLogByStartTimeAndEndTime() {
+//		LogEventService els = new LogEventServiceImpl();
+//		TscNode tn = new TscNode();
+//		//注意32相位的信号机
+//		tn.setIpAddress(Defines.IP);
+//		tn.setPort(Defines.PORT);
+//		tn.setDeviceId(Defines.ID);
+//		tn.setDeviceName(Defines.IP);
+//		tn.setProtocolType(Defines.GBT20999);
+//		Date sd = new Date();
+//		sd.setHours(0);
+//		List<GbtEventLog> lgel = els.getEventLogByStartTimeAndEndTime(tn,sd , new Date());
+//		if(lgel.isEmpty() || lgel == null){
+//			fail("Not yet implemented");
+//		}
+//	}
 
 }
