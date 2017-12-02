@@ -19,7 +19,7 @@ import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 public class ScheduleServiceImpl implements ScheduleService{
    
     /**
-     * µÃµ½Ä³¸öÐÅºÅ»úµÄÊ±¶Î±íÊý¾Ý
+     * ï¿½Ãµï¿½Ä³ï¿½ï¿½ï¿½ÅºÅ»ï¿½ï¿½ï¿½Ê±ï¿½Î±ï¿½ï¿½ï¿½ï¿½ï¿½
      *
      * @param node
      * @return
@@ -32,13 +32,13 @@ public class ScheduleServiceImpl implements ScheduleService{
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_SCHEDULE);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            //System.out.println("·þÎñ¶Ë»ØÓ¦Êý¾Ý£º" + info);
+            //System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½Ý£ï¿½" + info);
             if(!CheckGbt.check(bytes, "GbtSchedule")){
                 return null;
             }
             //
             byte[] objectArray = new byte[GbtDefine.SCHEDULE_EVENT_RESULT_LEN * GbtDefine.SCHEDULE_RESULT_LEN * GbtDefine.SCHEDULE_BYTE_SIZE];
-            System.arraycopy(bytes,5,objectArray,0,objectArray.length);
+            System.arraycopy(bytes,5,objectArray,0,bytes[4]*GbtDefine.SCHEDULE_BYTE_SIZE);
             byte[][] scheduleArrayResult = ByteUtils.oneArrayToTwoArray(objectArray, GbtDefine.SCHEDULE_RESULT_LEN * GbtDefine.SCHEDULE_EVENT_RESULT_LEN, GbtDefine.SCHEDULE_BYTE_SIZE);
             for(int i=0; i< GbtDefine.SCHEDULE_EVENT_RESULT_LEN * GbtDefine.SCHEDULE_RESULT_LEN ;i++){
                 GbtSchedule gbtSchedule = new GbtSchedule();
@@ -61,7 +61,7 @@ public class ScheduleServiceImpl implements ScheduleService{
     }
 
     /**
-     * ±£´æÄ³¸öÐÅºÅ»úµÄÊ±¶ÎÊý¾Ý
+     * ï¿½ï¿½ï¿½ï¿½Ä³ï¿½ï¿½ï¿½ÅºÅ»ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
      * @param node
      * @param gbtSchedules
@@ -89,8 +89,8 @@ public class ScheduleServiceImpl implements ScheduleService{
             client.send(node.getIpAddress(), node.getPort(), hex);
             String info = client.receive(node.getIpAddress(), node.getPort());
             byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("·þÎñ¶Ë»ØÓ¦Êý¾Ý£º" + info);
-//TODO   ËõÐ´ÊÇ·ñ³É¹¦²¿·Ö
+            System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½Ý£ï¿½" + info);
+//TODO   ï¿½ï¿½Ð´ï¿½Ç·ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½
         }catch (Exception ex){
             ex.printStackTrace();
         }
