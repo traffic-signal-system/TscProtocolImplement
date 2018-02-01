@@ -3,6 +3,11 @@ package cn.com.aiton.gbt20999.domain;
 import java.io.Serializable;
 import java.util.List;
 
+/**
+ * 交通信号机主动上报实体类，用于将实时数据上报
+ * @author Administrator
+ *
+ */
 public class ExtReportState implements Serializable{
 	/**
 	 * 动态数据

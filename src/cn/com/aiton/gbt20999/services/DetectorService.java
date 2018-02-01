@@ -8,83 +8,84 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 
 /**
  * Created by Administrator on 14-2-14.
+ * ä¿¡å·æœºæ£€æµ‹å™¨çš„æ“ä½œï¼ŒåŒ…æ‹¬è®¾ç½®æ£€æµ‹å™¨å’Œå–å¾—æ£€æµ‹å™¨çš„ç›¸å…³æ•°æ®
  */
 public interface DetectorService {
     /**
-     * µÃµ½¼ì²âÆ÷µÄ1°å1-8µÄÁéÃô¶È
+     * ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½1-8ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @param node
      * @return
      */
     public int getDetectorSensitivityOneBorad1_8(TscNode node);
     /**
-     * µÃµ½¼ì²âÆ÷µÄ1°å9-16µÄÁéÃô¶È
+     * ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½9-16ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @param node
      * @return
      */
     public int getDetectorSensitivityOneBorad9_16(TscNode node);
     /**
-     * µÃµ½¼ì²âÆ÷µÄ1°åÕğµ´ÆµÂÊ
+     * ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½
      * @param node
      * @return
      */
     public int getDetectorOscillatorFrequency1(TscNode node);
     /**
-     * µÃµ½¼ì²âÆ÷µÄ2°åÕğµ´ÆµÂÊ
+     * ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½
      * @param node
      * @return
      */
     public int getDetectorOscillatorFrequency2(TscNode node);
 
     /**
-     * µÃµ½¼ì²âÆ÷µÄ2°å1-8µÄÁéÃô¶È
+     * ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½1-8ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @param node
      * @return
      */
     public int getDetectorSensitivityTwoBorad1_8(TscNode node);
     /**
-     * µÃµ½¼ì²âÆ÷µÄ2°å9-16µÄÁéÃô¶È
+     * ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½9-16ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @param node
      * @return
      */
     public int getDetectorSensitivityTwoBorad9_16(TscNode node);
 
     /**
-     * ÉèÖÃ¼ì²âÆ÷Õğµ´ÆµÂÊ
+     * ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½
      * @param b
      * @param node
      * @return
      */
     public Message setOscillatorFrequency(byte[] b,TscNode node);
     /**
-     * ¼ì²âÆ÷ÁéÃô¶ÈÊıÖµµÚ1¿é°å1-7Í¨µÀ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½1ï¿½ï¿½ï¿½1-7Í¨ï¿½ï¿½
      * @param bytes
      * @param node
      * @return
      */
     public Message setSensityvityDig1(byte[] bytes,TscNode node);
     /**
-     * ¼ì²âÆ÷ÁéÃô¶ÈÊıÖµµÚ1¿é°å8-14Í¨µÀ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½1ï¿½ï¿½ï¿½8-14Í¨ï¿½ï¿½
      * @param bytes
      * @param node
      * @return
      */
     public Message setSensityvityDig2(byte[] bytes,TscNode node);
     /**
-     * ¼ì²âÆ÷ÁéÃô¶ÈÊıÖµµÚ1¿é°å15-16Í¨µÀ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½1ï¿½ï¿½ï¿½15-16Í¨ï¿½ï¿½
      * @param bytes
      * @param node
      * @return
      */
     public Message setSensityvityDig3(byte[] bytes,TscNode node);
     /**
-     * ¼ì²âÆ÷ÁéÃô¶ÈÊıÖµµÚ2¿é°å1-7Í¨µÀ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½2ï¿½ï¿½ï¿½1-7Í¨ï¿½ï¿½
      * @param bytes
      * @param node
      * @return
      */
     public Message setSensityvityDig4(byte[] bytes,TscNode node);
     /**
-     * ¼ì²âÆ÷ÁéÃô¶ÈÊıÖµµÚ2¿é°å8-14Í¨µÀ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½2ï¿½ï¿½ï¿½8-14Í¨ï¿½ï¿½
      * @param bytes
      * @param node
      * @return
@@ -92,7 +93,7 @@ public interface DetectorService {
     public Message setSensityvityDig5(byte[] bytes,TscNode node);
 
     /**
-     * ¼ì²âÆ÷ÁéÃô¶ÈÊıÖµµÚ2¿é°å15-16Í¨µÀ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½2ï¿½ï¿½ï¿½15-16Í¨ï¿½ï¿½
      * @param bytes
      * @param node
      * @return
@@ -100,7 +101,7 @@ public interface DetectorService {
     public Message setSensityvityDig6(byte[] bytes,TscNode node);
 
     /**
-     * ¸ù¾İ°å¿¨ÉèÖÃ¼ì²âÆ÷ÁéÃô ¶È
+     * ï¿½ï¿½ï¿½İ°å¿¨ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
      * @param boradNum
      * @param se
      * @param node
@@ -109,7 +110,7 @@ public interface DetectorService {
     public Message setSensitivity(int boradNum, byte se, TscNode node);
 
     /**
-     * ¼ì²âÆ÷µÚ1¿é°å 1- 8Í¨µÀÉèÖÃ·½·¨
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ 1- 8Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½
      * @param bytes
      * @param node
      * @return
@@ -117,7 +118,7 @@ public interface DetectorService {
     public Message setSensitivityAdv11(byte[] bytes,TscNode node);
 
     /**
-     * ¼ì²âÆ÷µÚ1¿é°å 9- 16Í¨µÀÉèÖÃ·½·¨
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ 9- 16Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½
      * @param bytes
      * @param node
      * @return
@@ -125,7 +126,7 @@ public interface DetectorService {
     public Message setSensitivityAdv12(byte[] bytes,TscNode node);
 
     /**
-     * ¼ì²âÆ÷µÚ¶ş¿é°å 1- 8Í¨µÀÉèÖÃ·½·¨
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ 1- 8Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½
      * @param bytes
      * @param node
      * @return
@@ -133,7 +134,7 @@ public interface DetectorService {
     public Message setSensitivityAdv21(byte[] bytes,TscNode node);
 
     /**
-     * ¼ì²âÆ÷µÚ¶ş¿é°å 9- 16Í¨µÀÉèÖÃ·½·¨
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ 9- 16Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½
      * @param bytes
      * @param node
      * @return
@@ -141,7 +142,7 @@ public interface DetectorService {
     public Message setSensitivityAdv22(byte[] bytes,TscNode node);
 
     /**
-     * ÉèÖÃ¼ì²âÆ÷ÁéÃô ¶ÈÕû¸öÏµÍ³Á½¿é¼ì²âÆ÷°å
+     * ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @param bytes
      * @param node
      * @return
@@ -149,39 +150,39 @@ public interface DetectorService {
     public Message setSensitivityAdv(byte[] bytes, TscNode node);
 
     /**
-     * ·µ»Ø¼ì²âÆ÷ÁéÃô¶ÈµÈ¼¶µÚ1 ¿é1-8Í¨µÀ
+     * ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½ï¿½ï¿½1 ï¿½ï¿½1-8Í¨ï¿½ï¿½
      * @param node
      * @return
      */
     public List<Byte> setSensitivityAdv11(TscNode node);
     /**
-     * ·µ»Ø¼ì²âÆ÷ÁéÃô¶ÈµÈ¼¶µÚ1 ¿é9-16Í¨µÀ
+     * ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½ï¿½ï¿½1 ï¿½ï¿½9-16Í¨ï¿½ï¿½
      * @param node
      * @return
      */
     public List<Byte> setSensitivityAdv12(TscNode node);
     /**
-     * ·µ»Ø¼ì²âÆ÷ÁéÃô¶ÈµÈ¼¶µÚ2 ¿é1-8Í¨µÀ
+     * ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½ï¿½ï¿½2 ï¿½ï¿½1-8Í¨ï¿½ï¿½
      * @param node
      * @return
      */
     public List<Byte> setSensitivityAdv21(TscNode node);
     /**
-     * ·µ»Ø¼ì²âÆ÷ÁéÃô¶ÈµÈ¼¶µÚ2 ¿é9-16Í¨µÀ
+     * ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½ï¿½ï¿½2 ï¿½ï¿½9-16Í¨ï¿½ï¿½
      * @param node
      * @return
      */
     public List<Byte> setSensitivityAdv22(TscNode node);
 
     /**
-     * È¡µÃËùÓĞ¼ì²âÆ÷µÄÅäÖÃÊı¾İ
+     * È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @param node
      * @return
      */
     public List<GbtDetector> getDetector(TscNode node);
 
     /**
-     * ÉèÖÃËùÓĞ¼ì²âÆ÷ÅäÖÃÊı¾İ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğ¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @param gbtDetectors
      * @return
      */

@@ -2,20 +2,14 @@ package cn.com.aiton.gbt20999.test;
 
 import static org.junit.Assert.fail;
 
-import java.util.ArrayList;
 import java.util.List;
 
 import org.junit.Test;
 
-import cn.com.aiton.gbt20999.domain.GbtOverlap;
 import cn.com.aiton.gbt20999.domain.GbtTimePattern;
-import cn.com.aiton.gbt20999.domain.Message;
 import cn.com.aiton.gbt20999.domain.TscNode;
-import cn.com.aiton.gbt20999.services.OverlapPhaseService;
 import cn.com.aiton.gbt20999.services.PatternService;
-import cn.com.aiton.gbt20999.services.impl.OverlapPhaseServiceImpl;
 import cn.com.aiton.gbt20999.services.impl.PatternServiceImpl;
-import cn.com.aiton.gbt20999.utils.GbtDefine;
 
 public class PatternServiceImplTest {
 

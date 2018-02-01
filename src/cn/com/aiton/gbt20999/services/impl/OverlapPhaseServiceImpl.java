@@ -19,7 +19,7 @@ import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 
 public class OverlapPhaseServiceImpl implements OverlapPhaseService {
     /**
-     * ´ÓÐÅºÅ»úÈ¡µÃ¸úËæÏàÎ»Êý¾Ý
+     * ï¿½ï¿½ï¿½ÅºÅ»ï¿½È¡ï¿½Ã¸ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
      *
      * @param node
      * @return
@@ -32,7 +32,7 @@ public class OverlapPhaseServiceImpl implements OverlapPhaseService {
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_OVERLAPPHASE);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            //System.out.println("·þÎñ¶Ë»ØÓ¦Êý¾Ý£º" + info);
+            //System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½Ý£ï¿½" + info);
             if(!CheckGbt.check(bytes, "Channel")){
                 return null;
             }
@@ -60,7 +60,7 @@ public class OverlapPhaseServiceImpl implements OverlapPhaseService {
     }
 
     /**
-     * ½«¸úËæÏàÎ»Êý¾ÝÉèÖÃµ½ÐÅºÅ»ú
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ÅºÅ»ï¿½
      *
      * @param node
      * @param gbtOverlaps
@@ -87,9 +87,9 @@ public class OverlapPhaseServiceImpl implements OverlapPhaseService {
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), hex);
             String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("·þÎñ¶Ë»ØÓ¦Êý¾Ý£º" + info);
-//TODO   ËõÐ´ÊÇ·ñ³É¹¦²¿·Ö
+//            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+            System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½Ý£ï¿½" + info);
+//TODO   ï¿½ï¿½Ð´ï¿½Ç·ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½
         }catch (Exception ex){
             ex.printStackTrace();
         }

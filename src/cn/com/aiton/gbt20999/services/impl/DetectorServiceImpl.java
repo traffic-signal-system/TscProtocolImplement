@@ -24,7 +24,7 @@ public class DetectorServiceImpl implements DetectorService {
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_DETECTOR_SENSITIVITY_1_1_8);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            //System.out.println("·þÎñ¶Ë»ØÓ¦Êý¾Ý£º" + info);
+            //System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½Ý£ï¿½" + info);
             level = bytes[3];
         }catch (Exception ex){
             ex.printStackTrace();
@@ -34,7 +34,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * µÃµ½¼ì²âÆ÷µÄ1°å9-16µÄÁéÃô¶È
+     * ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½9-16ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
      * @param node
      * @return
@@ -47,7 +47,7 @@ public class DetectorServiceImpl implements DetectorService {
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_DETECTOR_SENSITIVITY_1_9_16);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            //System.out.println("·þÎñ¶Ë»ØÓ¦Êý¾Ý£º" + info);
+            //System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½Ý£ï¿½" + info);
             level = bytes[3];
         }catch (Exception ex){
             ex.printStackTrace();
@@ -57,7 +57,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * µÃµ½¼ì²âÆ÷µÄ1°åÕðµ´ÆµÂÊ
+     * ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½
      *
      * @param node
      * @return
@@ -70,7 +70,7 @@ public class DetectorServiceImpl implements DetectorService {
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_DETECTOR_OSCILLATOR_FREQUENCY_2);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            //System.out.println("·þÎñ¶Ë»ØÓ¦Êý¾Ý£º" + info);
+            //System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½Ý£ï¿½" + info);
             level = bytes[3];
         }catch (Exception ex){
             ex.printStackTrace();
@@ -79,7 +79,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * µÃµ½¼ì²âÆ÷µÄ2°åÕðµ´ÆµÂÊ
+     * ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½
      *
      * @param node
      * @return
@@ -92,7 +92,7 @@ public class DetectorServiceImpl implements DetectorService {
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_DETECTOR_OSCILLATOR_FREQUENCY_1);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            //System.out.println("·þÎñ¶Ë»ØÓ¦Êý¾Ý£º" + info);
+            //System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½Ý£ï¿½" + info);
             level = bytes[3];
         }catch (Exception ex){
             ex.printStackTrace();
@@ -101,7 +101,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * µÃµ½¼ì²âÆ÷µÄ2°å1-8µÄÁéÃô¶È
+     * ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½1-8ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
      * @param node
      * @return
@@ -114,7 +114,7 @@ public class DetectorServiceImpl implements DetectorService {
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_DETECTOR_SENSITIVITY_2_1_8);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
            // byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-          //  System.out.println("·þÎñ¶Ë»ØÓ¦Êý¾Ý£º" + info);
+          //  System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½Ý£ï¿½" + info);
             level = bytes[3];
         }catch (Exception ex){
             ex.printStackTrace();
@@ -124,7 +124,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * µÃµ½¼ì²âÆ÷µÄ2°å9-16µÄÁéÃô¶È
+     * ï¿½Ãµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½2ï¿½ï¿½9-16ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
      * @param node
      * @return
@@ -137,7 +137,7 @@ public class DetectorServiceImpl implements DetectorService {
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_DETECTOR_SENSITIVITY_2_9_16);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
            // byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-           // System.out.println("·þÎñ¶Ë»ØÓ¦Êý¾Ý£º" + info);
+           // System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½Ý£ï¿½" + info);
             level = bytes[3];
         }catch (Exception ex){
             ex.printStackTrace();
@@ -147,7 +147,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ÉèÖÃ¼ì²âÆ÷Õðµ´ÆµÂÊ
+     * ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Æµï¿½ï¿½
      *
      * @param b
      * @param node
@@ -171,7 +171,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ¼ì²âÆ÷ÁéÃô¶ÈÊýÖµµÚ1¿é°å1-7Í¨µÀ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½1ï¿½ï¿½ï¿½1-7Í¨ï¿½ï¿½
      *
      * @param bytes
      * @param node
@@ -193,7 +193,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ¼ì²âÆ÷ÁéÃô¶ÈÊýÖµµÚ1¿é°å8-14Í¨µÀ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½1ï¿½ï¿½ï¿½8-14Í¨ï¿½ï¿½
      *
      * @param bytes
      * @param node
@@ -215,7 +215,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ¼ì²âÆ÷ÁéÃô¶ÈÊýÖµµÚ1¿é°å13-16Í¨µÀ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½1ï¿½ï¿½ï¿½13-16Í¨ï¿½ï¿½
      *
      * @param bytes
      * @param node
@@ -237,7 +237,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ¼ì²âÆ÷ÁéÃô¶ÈÊýÖµµÚ2¿é°å1-7Í¨µÀ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½2ï¿½ï¿½ï¿½1-7Í¨ï¿½ï¿½
      *
      * @param bytes
      * @param node
@@ -259,7 +259,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ¼ì²âÆ÷ÁéÃô¶ÈÊýÖµµÚ2¿é°å8-14Í¨µÀ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½2ï¿½ï¿½ï¿½8-14Í¨ï¿½ï¿½
      *
      * @param bytes
      * @param node
@@ -281,7 +281,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ¼ì²âÆ÷ÁéÃô¶ÈÊýÖµµÚ2¿é°å15-16Í¨µÀ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Öµï¿½ï¿½2ï¿½ï¿½ï¿½15-16Í¨ï¿½ï¿½
      *
      * @param bytes
      * @param node
@@ -303,7 +303,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ¸ù¾Ý°å¿¨ÉèÖÃ¼ì²âÆ÷ÁéÃô ¶È
+     * ï¿½ï¿½ï¿½Ý°å¿¨ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½
      *
      * @param boradNum
      * @param se
@@ -320,7 +320,7 @@ public class DetectorServiceImpl implements DetectorService {
             
             
             client.send(node.getIpAddress(), node.getPort(), byt);
-            byte[] ba = client.receiveByte(node.getIpAddress(), node.getPort());
+//            byte[] ba = client.receiveByte(node.getIpAddress(), node.getPort());
             
         }catch (Exception ex){
             ex.printStackTrace();
@@ -329,7 +329,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ¼ì²âÆ÷µÚ1¿é°å 1- 8Í¨µÀÉèÖÃ·½·¨
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ 1- 8Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½
      *
      * @param bytes
      * @param node
@@ -343,7 +343,7 @@ public class DetectorServiceImpl implements DetectorService {
             
             byte[] byt = ArrayUtils.addAll(GbtDefine.DETECTOR_SENSITIVITY_1_1_8, bytes);
             client.send(node.getIpAddress(), node.getPort(), byt);
-            byte[] ba = client.receiveByte(node.getIpAddress(), node.getPort());
+//            byte[] ba = client.receiveByte(node.getIpAddress(), node.getPort());
             
         }catch (Exception ex){
             ex.printStackTrace();
@@ -352,7 +352,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ¼ì²âÆ÷µÚ1¿é°å 9- 16Í¨µÀÉèÖÃ·½·¨
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ 9- 16Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½
      *
      * @param bytes
      * @param node
@@ -366,7 +366,7 @@ public class DetectorServiceImpl implements DetectorService {
             
             byte[] byt = ArrayUtils.addAll(GbtDefine.DETECTOR_SENSITIVITY_1_9_16, bytes);
             client.send(node.getIpAddress(), node.getPort(), byt);
-            byte[] ba = client.receiveByte(node.getIpAddress(), node.getPort());
+//            byte[] ba = client.receiveByte(node.getIpAddress(), node.getPort());
             
         }catch (Exception ex){
             ex.printStackTrace();
@@ -375,7 +375,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ¼ì²âÆ÷µÚ¶þ¿é°å 1- 8Í¨µÀÉèÖÃ·½·¨
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ 1- 8Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½
      *
      * @param bytes
      * @param node
@@ -389,7 +389,7 @@ public class DetectorServiceImpl implements DetectorService {
             
             byte[] byt = ArrayUtils.addAll(GbtDefine.DETECTOR_SENSITIVITY_2_1_8, bytes);
             client.send(node.getIpAddress(), node.getPort(), byt);
-            byte[] ba = client.receiveByte(node.getIpAddress(), node.getPort());
+//            byte[] ba = client.receiveByte(node.getIpAddress(), node.getPort());
             
         }catch (Exception ex){
             ex.printStackTrace();
@@ -398,7 +398,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ¼ì²âÆ÷µÚ¶þ¿é°å 9- 16Í¨µÀÉèÖÃ·½·¨
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¶ï¿½ï¿½ï¿½ï¿½ 9- 16Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½
      *
      * @param bytes
      * @param node
@@ -421,7 +421,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ÉèÖÃ¼ì²âÆ÷ÁéÃô ¶ÈÕû¸öÏµÍ³Á½¿é¼ì²âÆ÷°å
+     * ï¿½ï¿½ï¿½Ã¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÏµÍ³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
      * @param bytes
      * @param node
@@ -433,7 +433,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ·µ»Ø¼ì²âÆ÷ÁéÃô¶ÈµÈ¼¶µÚ1 ¿é1-8Í¨µÀ
+     * ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½ï¿½ï¿½1 ï¿½ï¿½1-8Í¨ï¿½ï¿½
      *
      * @param node
      * @return
@@ -444,7 +444,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ·µ»Ø¼ì²âÆ÷ÁéÃô¶ÈµÈ¼¶µÚ1 ¿é9-16Í¨µÀ
+     * ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½ï¿½ï¿½1 ï¿½ï¿½9-16Í¨ï¿½ï¿½
      *
      * @param node
      * @return
@@ -455,7 +455,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ·µ»Ø¼ì²âÆ÷ÁéÃô¶ÈµÈ¼¶µÚ2 ¿é1-8Í¨µÀ
+     * ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½ï¿½ï¿½2 ï¿½ï¿½1-8Í¨ï¿½ï¿½
      *
      * @param node
      * @return
@@ -466,7 +466,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ·µ»Ø¼ì²âÆ÷ÁéÃô¶ÈµÈ¼¶µÚ2 ¿é9-16Í¨µÀ
+     * ï¿½ï¿½ï¿½Ø¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ÈµÈ¼ï¿½ï¿½ï¿½2 ï¿½ï¿½9-16Í¨ï¿½ï¿½
      *
      * @param node
      * @return
@@ -477,7 +477,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * È¡µÃËùÓÐ¼ì²âÆ÷µÄÅäÖÃÊý¾Ý
+     * È¡ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
      * @param node
      * @return
@@ -490,7 +490,7 @@ public class DetectorServiceImpl implements DetectorService {
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_DETECTOR);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            //System.out.println("·þÎñ¶Ë»ØÓ¦Êý¾Ý£º" + info);
+            //System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½Ý£ï¿½" + info);
             if(!CheckGbt.check(bytes, "GbtDetector")){
                 return null;
             }
@@ -517,7 +517,7 @@ public class DetectorServiceImpl implements DetectorService {
     }
 
     /**
-     * ÉèÖÃËùÓÐ¼ì²âÆ÷ÅäÖÃÊý¾Ý
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
      * @param gbtDetectors
      * @return
@@ -536,10 +536,10 @@ public class DetectorServiceImpl implements DetectorService {
             }
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), hex);
-            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
+//            byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            //System.out.println("·þÎñ¶Ë»ØÓ¦Êý¾Ý£º" + info);
-//TODO   ËõÐ´ÊÇ·ñ³É¹¦²¿·Ö
+            //System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½Ý£ï¿½" + info);
+//TODO   ï¿½ï¿½Ð´ï¿½Ç·ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½
         }catch (Exception ex){
             ex.printStackTrace();
         }

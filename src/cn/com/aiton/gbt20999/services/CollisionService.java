@@ -8,24 +8,25 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 
 /**
  * Created by Administrator on 14-2-14.
+ * ä¿¡å·æœºç»¿å†²çªç›¸å…³æ“ä½œç±»ï¼Œå¯ä»¥è®¾ç½®å’Œå–å¾—æŸå°ä¿¡å·æœºçš„å†²çªæ•°æ®
  */
 public interface CollisionService {
     /**
-     * È¡µÃ16Î»ĞÅºÅ»úµÄÂÌ³åÍ»Êı¾İ
+     * È¡ï¿½ï¿½16Î»ï¿½ÅºÅ»ï¿½ï¿½ï¿½ï¿½Ì³ï¿½Í»ï¿½ï¿½ï¿½ï¿½
      * @param node
      * @return
      */
     public List<GbtCollision> getCollisionBy16Phase(TscNode node);
 
     /**
-     * È¡µÃ32ÏàÎ»ĞÅºÅ»úµÄÂÌ³åÍ»Êı¾İ
+     * È¡ï¿½ï¿½32ï¿½ï¿½Î»ï¿½ÅºÅ»ï¿½ï¿½ï¿½ï¿½Ì³ï¿½Í»ï¿½ï¿½ï¿½ï¿½
      * @param node
      * @return
      */
     public List<GbtCollision> getCollisionBy32Phase(TscNode node);
 
     /**
-     * ½«ÅäÖÃµÄÊı¾İ·¢ËÍ¸øÄ³¸öĞÅºÅ»ú
+     * ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ï¿½ï¿½İ·ï¿½ï¿½Í¸ï¿½Ä³ï¿½ï¿½ï¿½ÅºÅ»ï¿½
      * @param gbtCollisions
      * @param node
      * @return
@@ -33,7 +34,7 @@ public interface CollisionService {
     public Message setCollision(List<GbtCollision> gbtCollisions,TscNode node);
 
     /**
-     * ÅúÁ¿±£´æÂÌ³åÍ»Êı¾İµ½Êı¾İ¿âÖĞ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ì³ï¿½Í»ï¿½ï¿½ï¿½İµï¿½ï¿½ï¿½ï¿½İ¿ï¿½ï¿½ï¿½
      * @param gbtCollisions
      * @return
      */

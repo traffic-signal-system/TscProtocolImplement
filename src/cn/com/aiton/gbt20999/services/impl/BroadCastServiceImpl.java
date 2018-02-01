@@ -6,15 +6,22 @@ import java.util.List;
 import cn.com.aiton.gbt20999.services.BroadCastService;
 import cn.com.aiton.gbt20999.utils.ByteUtils;
 import cn.com.aiton.gbt20999.utils.UdpClientSocket;
-
+/**
+ * 对在局域网内的信号机进行广播
+ * @author Administrator
+ *
+ */
 public class BroadCastServiceImpl implements BroadCastService {
 	  List<String> ips = new ArrayList<String>();
+		/**
+		 * 对在网的信号机进行广播，
+		 * 比如 192.168.1.136信号机在网，可以进行通信。
+		 * 那么它会返回数据给
+		 * @return
+		 */
 	@Override
 	public List<String> getNodeNetwork() {
 		 try{
-
-	          
-
 	            String ipAddress = "224.0.0.1";
 	            Integer port = 8808;
 	            String context = "123456";

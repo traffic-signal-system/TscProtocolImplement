@@ -3,6 +3,7 @@ package cn.com.aiton.gbt20999.domain;
 
 /**
  * Created by Administrator on 14-2-16.
+ * 交通信号机外设中的倒计时相关数据类
  */
 
 public class CountDown {

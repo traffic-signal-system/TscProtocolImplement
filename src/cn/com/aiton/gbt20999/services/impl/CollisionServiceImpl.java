@@ -27,7 +27,7 @@ public class CollisionServiceImpl implements CollisionService{
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_COLLISION);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            //System.out.println("·þÎñ¶Ë»ØÓ¦Êý¾Ý£º" + info);
+            //System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½Ý£ï¿½" + info);
             if(!CheckGbt.check(bytes,"Collision16")){
                 return null;
             }
@@ -56,7 +56,7 @@ public class CollisionServiceImpl implements CollisionService{
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_COLLISION);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByASCII(info);
-            //System.out.println("·þÎñ¶Ë»ØÓ¦Êý¾Ý£º" + info);
+            //System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½Ý£ï¿½" + info);
             if(!CheckGbt.check(bytes,"Collision32")){
                 return null;
             }
@@ -94,9 +94,9 @@ public class CollisionServiceImpl implements CollisionService{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), hex);
             String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("·þÎñ¶Ë»ØÓ¦Êý¾Ý£º" + info);
-//TODO   ËõÐ´ÊÇ·ñ³É¹¦²¿·Ö
+           // byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+            System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½Ý£ï¿½" + info);
+//TODO   ï¿½ï¿½Ð´ï¿½Ç·ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½
         }catch (Exception ex){
             ex.printStackTrace();
         }

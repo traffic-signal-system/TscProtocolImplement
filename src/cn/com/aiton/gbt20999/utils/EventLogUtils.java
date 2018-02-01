@@ -9,55 +9,55 @@ public class EventLogUtils {
         switch (type)
         {
             case 0:
-                result = "ÐÅºÅµÆ";
+                result = "ï¿½ÅºÅµï¿½";
                 break;
             case 1:
-                result = "ÂÌ³åÍ»";
+                result = "ï¿½Ì³ï¿½Í»";
                 break;
             case 2:
-                result = "¼ì²âÆ÷";
+                result = "ï¿½ï¿½ï¿½ï¿½ï¿½";
                 break;
             case 3:
-                result = "µçÑ¹";
+                result = "ï¿½ï¿½Ñ¹";
                 break;
             case 4:
-                result = "ÎÂ¶È";
+                result = "ï¿½Â¶ï¿½";
                 break;
             case 5:
-                result = "»ÆÉÁÆ÷";
+                result = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                 break;
             case 15:
-                result = "ÆäËûÀàÐÍÈÕÖ¾";
+                result = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾";
                 break;
             case 6:
-                result = "µÆ¿Ø°å";
+                result = "ï¿½Æ¿Ø°ï¿½";
                 break;
             case 7:
-                result = "¼ì²âÆ÷°å";
+                result = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                 break;
             case 8:
-                result = "»ÆÉÁÆ÷°å";
+                result = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                 break;
             case 9:
-                result = "³ÌÐòÖØÆô";
+                result = "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                 break;
             case 10:
-                result = "ÏµÍ³Ê±¼äÐÞ¸Ä";
+                result = "ÏµÍ³Ê±ï¿½ï¿½ï¿½Þ¸ï¿½";
                 break;
             case 11:
-                result = "ÃÅ±¨¾¯";
+                result = "ï¿½Å±ï¿½ï¿½ï¿½";
                 break;
             case 12:
-                result = "»úÆ÷ÊÖ¶¯";
+                result = "ï¿½ï¿½ï¿½ï¿½ï¿½Ö¶ï¿½";
                 break;
             case 13:
-                result = "µÆÉ«Êä³öÒì³£";
+                result = "ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½ì³£";
                 break;
             case 14:
-                result = "µÆÉ«Êä³öÒì³£2";
+                result = "ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½ì³£2";
                 break;
             case 16:
-                result = "can×ÜÏß";
+                result = "canï¿½ï¿½ï¿½ï¿½";
                 break;
             default:
                 break;
@@ -71,136 +71,136 @@ public class EventLogUtils {
         {
             byte[] bpara = ByteUtils.longToByte(i);
             byte b1 = bpara[0];
-            result = result + "ÐÅºÅµÆ£¬µÚ¡¾" + b1 + "¡¿ºÅµÆ£¬ÄÚÈÝ£º";
+            result = result + "ï¿½ÅºÅµÆ£ï¿½ï¿½Ú¡ï¿½" + b1 + "ï¿½ï¿½ï¿½ÅµÆ£ï¿½ï¿½ï¿½ï¿½Ý£ï¿½";
             switch (bpara[1])
             {
                 case 0x00:
-                    result = result + "¡¾Õý³£¡¿";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x01:
-                    result = result + "¡¾³¤ÁÁ¡¿";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x02:
-                    result = result + "¡¾³¤Ãð¡¿";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x03:
-                    result = result + "¡¾¿É¿Ø¹è»÷´©¡¿";
+                    result = result + "ï¿½ï¿½ï¿½É¿Ø¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                     break;
                 default:
-                    result = result + "¡¾Î´Öª¡¿";
+                    result = result + "ï¿½ï¿½Î´Öªï¿½ï¿½";
                     break;
             }
-            result = result + "£¬µÚ¡¾" + bpara[3] + "¡¿µÆ¿Ø°å¡£";
+            result = result + "ï¿½ï¿½ï¿½Ú¡ï¿½" + bpara[3] + "ï¿½ï¿½ï¿½Æ¿Ø°å¡£";
         }
         else if (type == 0x01)
         {
             byte[] bpara = ByteUtils.longToByte(i);
-            result = result + "ÂÌ³åÍ»£¬";
+            result = result + "ï¿½Ì³ï¿½Í»ï¿½ï¿½";
             switch (bpara[0])
             {
                 case 0x00:
-                    result = result + "Õý³£";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x01:
-                    result = result + "ºìÂÌÈí³åÍ»";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í»";
                     break;
                 case 0x02:
-                    result = result + "ºìÂÌÓ²³åÍ»";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½Ó²ï¿½ï¿½Í»";
                     break;
                 case 0x03:
-                    result = result + "ÏàÎ»ÂÌ³åÍ»";
+                    result = result + "ï¿½ï¿½Î»ï¿½Ì³ï¿½Í»";
                     break;
                 default:
                     break;
             }
-            result = result + ",³åÍ»µÆ¿Ø°åºÅ¡¾" + bpara[1] + "¡¿,³åÍ»µÆ×éºÅ¡¾" + bpara[2] + "¡¿";
+            result = result + ",ï¿½ï¿½Í»ï¿½Æ¿Ø°ï¿½Å¡ï¿½" + bpara[1] + "ï¿½ï¿½,ï¿½ï¿½Í»ï¿½ï¿½ï¿½ï¿½Å¡ï¿½" + bpara[2] + "ï¿½ï¿½";
         }
         else if (type == 0x02)
         {
             byte[] bpara = ByteUtils.longToByte(i);
-            result = result + "¼ì²âÆ÷£¬µÚ¡¾" + bpara[0] + "¡¿ºÅ";
+            result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ú¡ï¿½" + bpara[0] + "ï¿½ï¿½ï¿½ï¿½";
             switch (bpara[1])
             {
                 case 0x00:
-                    result = result + "Õý³£";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x01:
-                    result = result + "ÏßÈ¦¿ªÂ·";
+                    result = result + "ï¿½ï¿½È¦ï¿½ï¿½Â·";
                     break;
                 case 0x02:
-                    result = result + "ÏßÈ¦¶ÌÂ·";
+                    result = result + "ï¿½ï¿½È¦ï¿½ï¿½Â·";
                     break;
                 case 0x03:
-                    result = result + "Í¨µÀÍ£Õñ";
+                    result = result + "Í¨ï¿½ï¿½Í£ï¿½ï¿½";
                     break;
                 default:
                     break;
             }
-            //result = result + ",³åÍ»µÆ¿Ø°åºÅ¡¾" + bpara[1] + "¡¿,³åÍ»µÆ×éºÅ¡¾" + bpara[2] + "¡¿";
+            //result = result + ",ï¿½ï¿½Í»ï¿½Æ¿Ø°ï¿½Å¡ï¿½" + bpara[1] + "ï¿½ï¿½,ï¿½ï¿½Í»ï¿½ï¿½ï¿½ï¿½Å¡ï¿½" + bpara[2] + "ï¿½ï¿½";
         }
         else if (type == 0x03)
         {
             byte[] bpara = ByteUtils.longToByte(i);
-            result = result + "µçÑ¹£¬";
+            result = result + "ï¿½ï¿½Ñ¹ï¿½ï¿½";
             switch (bpara[0])
             {
                 case 0x00:
-                    result = result + "µçÑ¹Õý³£";
+                    result = result + "ï¿½ï¿½Ñ¹ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x01:
-                    result = result + "µçÑ¹Æ«µÍ";
+                    result = result + "ï¿½ï¿½Ñ¹Æ«ï¿½ï¿½";
                     break;
                 case 0x02:
-                    result = result + "µçÑ¹Æ«¸ß";
+                    result = result + "ï¿½ï¿½Ñ¹Æ«ï¿½ï¿½";
                     break;
 
                 default:
                     break;
             }
-            result = result + ",µçÑ¹Öµ¡¾" + bpara[1] + "¡¿";
+            result = result + ",ï¿½ï¿½Ñ¹Öµï¿½ï¿½" + bpara[1] + "ï¿½ï¿½";
         }
         else if (type == 0x04)
         {
             byte[] bpara = ByteUtils.longToByte(i);
-            result = result + "ÎÂ¶È£¬";
+            result = result + "ï¿½Â¶È£ï¿½";
             switch (bpara[0])
             {
                 case 0x00:
-                    result = result + "ÎÂ¶ÈÕý³£";
+                    result = result + "ï¿½Â¶ï¿½ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x01:
-                    result = result + "ÎÂ¶ÈÆ«µÍ,ÐèÒª·çÉÈ¼ÓÈÈ";
+                    result = result + "ï¿½Â¶ï¿½Æ«ï¿½ï¿½,ï¿½ï¿½Òªï¿½ï¿½ï¿½È¼ï¿½ï¿½ï¿½";
                     break;
                 case 0x02:
-                    result = result + "ÎÂ¶ÈÆ«¸ß,ÐèÒª·çÉÈÉ¢ÈÈ";
+                    result = result + "ï¿½Â¶ï¿½Æ«ï¿½ï¿½,ï¿½ï¿½Òªï¿½ï¿½ï¿½ï¿½É¢ï¿½ï¿½";
                     break;
 
                 default:
                     break;
             }
-            result = result + ",ÎÂ¶ÈÖµ¡¾" + bpara[1] + "¡¿";
+            result = result + ",ï¿½Â¶ï¿½Öµï¿½ï¿½" + bpara[1] + "ï¿½ï¿½";
         }
         else if (type == 0x05)
         {
             byte[] bpara = ByteUtils.longToByte(i);
-            result = result + "µçÔ´°å£¬";
+            result = result + "ï¿½ï¿½Ô´ï¿½å£¬";
             switch (bpara[0])
             {
                 case 0x00:
-                    result = result + "Õý³£";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x01:
-                    result = result + "ÓëÖ÷°åÍ¨ÐÅÒì³£";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ì³£";
                     switch (bpara[1])
                     {
                         case 0x00:
-                            result = result + "³¤Ê±¼äÃ»ÓÐÍ¨ÐÅÊý¾Ý£¡";
+                            result = result + "ï¿½ï¿½Ê±ï¿½ï¿½Ã»ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½";
                             break;
                         case 0x01:
-                            result = result + "³¤Ê±¼äÊý¾Ý´íÎó£¬µØÖ·´íÎó£¡";
+                            result = result + "ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ý´ï¿½ï¿½ó£¬µï¿½Ö·ï¿½ï¿½ï¿½ï¿½";
                             break;
                         case 0x02:
-                            result = result + "³¤Ê±¼äÊý¾Ý´íÎó£¬¼ìÑé´íÎó£¡";
+                            result = result + "ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ý´ï¿½ï¿½ó£¬¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                             break;
                         default:
                             break;
@@ -210,29 +210,29 @@ public class EventLogUtils {
                 default:
                     break;
             }
-            result = result + ",ÎÊÌâ°å¿¨¡¾" + bpara[2] + "¡¿";
+            result = result + ",ï¿½ï¿½ï¿½ï¿½å¿¨ï¿½ï¿½" + bpara[2] + "ï¿½ï¿½";
         }
         else if (type == 0x06)
         {
             byte[] bpara = ByteUtils.longToByte(i);
-            result = result + "µÆ¿Ø°å£¬";
+            result = result + "ï¿½Æ¿Ø°å£¬";
             switch (bpara[0])
             {
                 case 0x00:
-                    result = result + "Õý³£";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x01:
-                    result = result + "ÓëÖ÷°åÍ¨ÐÅÒì³£";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ì³£";
                     switch (bpara[1])
                     {
                         case 0x00:
-                            result = result + "³¤Ê±¼äÃ»ÓÐÍ¨ÐÅÊý¾Ý£¡";
+                            result = result + "ï¿½ï¿½Ê±ï¿½ï¿½Ã»ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½";
                             break;
                         case 0x01:
-                            result = result + "³¤Ê±¼äÊý¾Ý´íÎó£¬µØÖ·´íÎó£¡";
+                            result = result + "ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ý´ï¿½ï¿½ó£¬µï¿½Ö·ï¿½ï¿½ï¿½ï¿½";
                             break;
                         case 0x02:
-                            result = result + "³¤Ê±¼äÊý¾Ý´íÎó£¬¼ìÑé´íÎó£¡";
+                            result = result + "ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ý´ï¿½ï¿½ó£¬¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                             break;
                         default:
                             break;
@@ -242,29 +242,29 @@ public class EventLogUtils {
                 default:
                     break;
             }
-            result = result + ",ÎÊÌâ°å¿¨¡¾" + bpara[2] + "¡¿";
+            result = result + ",ï¿½ï¿½ï¿½ï¿½å¿¨ï¿½ï¿½" + bpara[2] + "ï¿½ï¿½";
         }
         else if (type == 0x07)
         {
             byte[] bpara = ByteUtils.longToByte(i);
-            result = result + "¼ì²âÆ÷£¬";
+            result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
             switch (bpara[0])
             {
                 case 0x00:
-                    result = result + "Õý³£";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x01:
-                    result = result + "ÓëÖ÷°åÍ¨ÐÅÒì³£";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ì³£";
                     switch (bpara[1])
                     {
                         case 0x00:
-                            result = result + "³¤Ê±¼äÃ»ÓÐÍ¨ÐÅÊý¾Ý£¡";
+                            result = result + "ï¿½ï¿½Ê±ï¿½ï¿½Ã»ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ï¿½ï¿½Ý£ï¿½";
                             break;
                         case 0x01:
-                            result = result + "³¤Ê±¼äÊý¾Ý´íÎó£¬µØÖ·´íÎó£¡";
+                            result = result + "ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ý´ï¿½ï¿½ó£¬µï¿½Ö·ï¿½ï¿½ï¿½ï¿½";
                             break;
                         case 0x02:
-                            result = result + "³¤Ê±¼äÊý¾Ý´íÎó£¬¼ìÑé´íÎó£¡";
+                            result = result + "ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½Ý´ï¿½ï¿½ó£¬¼ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                             break;
                         default:
                             break;
@@ -274,55 +274,55 @@ public class EventLogUtils {
                 default:
                     break;
             }
-            result = result + ",ÎÊÌâ°å¿¨¡¾" + bpara[2] + "¡¿";
+            result = result + ",ï¿½ï¿½ï¿½ï¿½å¿¨ï¿½ï¿½" + bpara[2] + "ï¿½ï¿½";
         }
         else if (type == 0x08)
         {
             byte[] bpara = ByteUtils.longToByte(i);
-            result = result + "»ÆÉÁÆ÷£¬";
+            result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
             switch (bpara[0])
             {
 
                 case 0x01:
-                    result = result + "µÆÅÝ¹ÊÕÏ";
+                    result = result + "ï¿½ï¿½ï¿½Ý¹ï¿½ï¿½ï¿½";
                     break;
                 case 0x02:
-                    result = result + "ÂÌ³åÍ»£¨ÏàÎ»£©(Ö÷¿Ø°åÅÐ¶Ï)";
+                    result = result + "ï¿½Ì³ï¿½Í»ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½(ï¿½ï¿½ï¿½Ø°ï¿½ï¿½Ð¶ï¿½)";
                     break;
                 case 0x03:
-                    result = result + "ºìÂÌ³åÍ»(µÆ¿Ø°åÅÐ¶Ï)";
+                    result = result + "ï¿½ï¿½ï¿½Ì³ï¿½Í»(ï¿½Æ¿Ø°ï¿½ï¿½Ð¶ï¿½)";
                     break;
                 case 0x04:
-                    result = result + "Ç¿ÖÆ»ÆÉÁ";
+                    result = result + "Ç¿ï¿½Æ»ï¿½ï¿½ï¿½";
                     break;
                 case 0x05:
-                    result = result + "½µ¼¶»ÆÉÁ";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x06:
-                    result = result + "Ö÷°åÒì³£»ÆÉÁ";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½";
                     break;
                 default:
                     break;
             }
-            //result = result + ",³åÍ»µÆ¿Ø°åºÅ¡¾" + bpara[1] + "¡¿,³åÍ»µÆ×éºÅ¡¾" + bpara[2] + "¡¿";
+            //result = result + ",ï¿½ï¿½Í»ï¿½Æ¿Ø°ï¿½Å¡ï¿½" + bpara[1] + "ï¿½ï¿½,ï¿½ï¿½Í»ï¿½ï¿½ï¿½ï¿½Å¡ï¿½" + bpara[2] + "ï¿½ï¿½";
         }
         else if (type == 0x09)
         {
             byte[] bpara = ByteUtils.longToByte(i);
-            result = result + "³ÌÐòÖØÆð£¬";
+            result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
             switch (bpara[0])
             {
                 case 0x00:
-                    result = result + "Õý³£";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x01:
-                    result = result + "´ÓÖ÷°åÒì³£»Ö¸´";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½Ö¸ï¿½";
                     break;
                 case 0x02:
-                    result = result + "´ÓºìÂÌ³åÍ»¹ÊÕÏ»Ö¸´";
+                    result = result + "ï¿½Óºï¿½ï¿½Ì³ï¿½Í»ï¿½ï¿½ï¿½Ï»Ö¸ï¿½";
                     break;
                 case 0x03:
-                    result = result + "´ÓµÆÅÝ¹ÊÕÏ»Ö¸´";
+                    result = result + "ï¿½Óµï¿½ï¿½Ý¹ï¿½ï¿½Ï»Ö¸ï¿½";
                     break;
 
                 default:
@@ -333,22 +333,22 @@ public class EventLogUtils {
         else if (type == 0x0a)
         {
 
-            result = result + "ÐÞ¸ÄÊ±¼ä£¬";
-            //Ôö¼ÓÊ±¼ä×ª»»
+            result = result + "ï¿½Þ¸ï¿½Ê±ï¿½ä£¬";
+            //ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½×ªï¿½ï¿½
             result = result + DateTimeUtils.utcToLocalTimeString(i);
 
         }
         else if (type == 0x0b)
         {
             byte[] bpara =ByteUtils.longToByte(i);
-            result = result + "ÃÅ¼ì²â£¬";
+            result = result + "ï¿½Å¼ï¿½â£¬";
             switch (bpara[0])
             {
                 case 0x00:
-                    result = result + "¹ØÃÅ";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x01:
-                    result = result + "¿ªÃÅ";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½";
                     break;
 
                 default:
@@ -359,29 +359,29 @@ public class EventLogUtils {
         else if (type == 0x0c)
         {
             byte[] bpara = ByteUtils.longToByte(i);
-            result = result + "ÊÖ¶¯¿ØÖÆ£¬";
+            result = result + "ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½Æ£ï¿½";
             switch (bpara[0])
             {
                 case 0x00:
-                    result = result + "ÊÖ¶¯";
+                    result = result + "ï¿½Ö¶ï¿½";
                     break;
                 case 0x01:
-                    result = result + "È¥µôÊÖ¶¯£¬»Ö¸´×ÔÖ÷¿ØÖÆ";
+                    result = result + "È¥ï¿½ï¿½ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x02:
-                    result = result + "»ÆÉÁ";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x03:
-                    result = result + "È¥µô»ÆÉÁ";
+                    result = result + "È¥ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x04:
-                    result = result + "È«ºì";
+                    result = result + "È«ï¿½ï¿½";
                     break;
                 case 0x05:
-                    result = result + "È¥µôÈ«ºì";
+                    result = result + "È¥ï¿½ï¿½È«ï¿½ï¿½";
                     break;
                 case 0x06:
-                    result = result + "²½½ø";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½";
                     break;
                 default:
                     break;
@@ -390,14 +390,14 @@ public class EventLogUtils {
         else if (type == 0x0d)
         {
             byte[] bpara = ByteUtils.longToByte(i);
-            result = result + "µÆ¿ØÊä³öÒì³££¬";
+            result = result + "ï¿½Æ¿ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½ï¿½";
             switch (bpara[0])
             {
                 case 0x00:
-                    result = result + "Õý³£µÆÉ«Òì³£";
+                    result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½É«ï¿½ì³£";
                     break;
                 case 0x01:
-                    result = result + "ÉÁË¸µÆÉ«Òì³£";
+                    result = result + "ï¿½ï¿½Ë¸ï¿½ï¿½É«ï¿½ì³£";
                     break;
                 default:
                     break;
@@ -406,20 +406,20 @@ public class EventLogUtils {
         else if (type == 0x0e)
         {
             byte[] bpara =ByteUtils.longToByte(i);
-            result = result + "¹ã²¥£¬";
+            result = result + "ï¿½ã²¥ï¿½ï¿½";
             switch (bpara[0])
             {
                 case 0x00:
-                    result = result + "¹ã²¥µØÖ·´íÎó";
+                    result = result + "ï¿½ã²¥ï¿½ï¿½Ö·ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x01:
-                    result = result + "Ä³×éµÆ¶àÁÁÒ»Õµ";
+                    result = result + "Ä³ï¿½ï¿½Æ¶ï¿½ï¿½ï¿½Ò»Õµ";
                     break;
                 case 0x02:
-                    result = result + "µÆÉ«»ÆÉÁ";
+                    result = result + "ï¿½ï¿½É«ï¿½ï¿½ï¿½ï¿½";
                     break;
                 case 0x03:
-                    result = result + "Ò»¿éµÆ°å¶àÓÚ8¸öÂÌµÆÁÁ";
+                    result = result + "Ò»ï¿½ï¿½Æ°ï¿½ï¿½ï¿½ï¿½8ï¿½ï¿½ï¿½Ìµï¿½ï¿½ï¿½";
                     break;
                 default:
                     break;
@@ -428,20 +428,20 @@ public class EventLogUtils {
         else if (type == 0x0f)
         {
             byte[] bpara =ByteUtils.longToByte(i);
-            result = result + "ÆäËûÀàÐÍÈÕÖ¾£¬";
+            result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½";
             switch (bpara[0])
             {
 
                 case 0x01:
-                    result = result + "¿ØÖÆ·½Ê½ÇÐ»»";
-                    result = result + ",¾ÉµÄ¿ØÖÆ·½Ê½¡¾" + ControlModelUtils.controlModelToString(bpara[1]) + "¡¿,ÐÂµÄ¿ØÖÆ·½Ê½¡¾" + ControlModelUtils.controlModelToString(bpara[2]) + "¡¿,";
+                    result = result + "ï¿½ï¿½ï¿½Æ·ï¿½Ê½ï¿½Ð»ï¿½";
+                    result = result + ",ï¿½ÉµÄ¿ï¿½ï¿½Æ·ï¿½Ê½ï¿½ï¿½" + ControlModelUtils.controlModelToString(bpara[1]) + "ï¿½ï¿½,ï¿½ÂµÄ¿ï¿½ï¿½Æ·ï¿½Ê½ï¿½ï¿½" + ControlModelUtils.controlModelToString(bpara[2]) + "ï¿½ï¿½,";
                     switch (bpara[3])
                     {
                         case 0x00:
-                            result = result + "Õý³£ÇÐ»»(ÉÏÎ»»úÃüÁî Ê±¶Î±í Ãæ°å)";
+                            result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½Ð»ï¿½(ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ Ê±ï¿½Î±ï¿½ ï¿½ï¿½ï¿½)";
                             break;
                         case 0x01:
-                            result = result + "Òì³£ÇÐ»»  ½µ¼¶";
+                            result = result + "ï¿½ì³£ï¿½Ð»ï¿½  ï¿½ï¿½ï¿½ï¿½";
                             break;
 
                         default:
@@ -450,20 +450,20 @@ public class EventLogUtils {
                     }
                     break;
                 case 0x02:
-                    result = result + "¹ÊÕÏ»Ö¸´£¬";
+                    result = result + "ï¿½ï¿½ï¿½Ï»Ö¸ï¿½ï¿½ï¿½";
                     switch (bpara[1])
                     {
                         case 0x00:
-                            result = result + "Õý³£";
+                            result = result + "ï¿½ï¿½ï¿½ï¿½";
                             break;
                         case 0x02:
-                            result = result + "´ÓÖ÷°åÒì³£»Ö¸´";
+                            result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ì³£ï¿½Ö¸ï¿½";
                             break;
                         case 0x03:
-                            result = result + "´ÓºìÂÌ³åÍ»¹ÊÕÏ»Ö¸´";
+                            result = result + "ï¿½Óºï¿½ï¿½Ì³ï¿½Í»ï¿½ï¿½ï¿½Ï»Ö¸ï¿½";
                             break;
                         case 0x01:
-                            result = result + "´ÓµÆÅÝ¹ÊÕÏ»Ö¸´";
+                            result = result + "ï¿½Óµï¿½ï¿½Ý¹ï¿½ï¿½Ï»Ö¸ï¿½";
                             break;
                         default:
                             result = result + "Î´Öª";
@@ -477,8 +477,8 @@ public class EventLogUtils {
         }
         else if (type == 0x10)
         {
-            byte[] bpara = ByteUtils.longToByte(i);
-            result = result + "×ÜÏßÍ¨ÐÅÒì³££¬×ÜÏßÖØÆð£¬²»Ó°ÏìÐÅºÅ»úÕý³£ÔËÐÐ¡£";
+           // byte[] bpara = ByteUtils.longToByte(i);
+            result = result + "ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½ï¿½ì³£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ð£¬²ï¿½Ó°ï¿½ï¿½ï¿½ÅºÅ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ð¡ï¿½";
         }
         return result;
     }

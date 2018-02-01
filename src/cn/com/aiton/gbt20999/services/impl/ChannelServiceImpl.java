@@ -15,14 +15,17 @@ import cn.com.aiton.gbt20999.utils.CheckGbt;
 import cn.com.aiton.gbt20999.utils.GbtDefine;
 import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 
-
+/**
+ * ä¿¡å·æœºçš„é€šé“æ•°æ®å¤„ç†ç±»
+ * @author Administrator
+ *
+ */
 public class ChannelServiceImpl implements ChannelService {
     
-    /**
-     * Í¨¹ıUdpÈ¡µÃĞÅºÅ»úµÄËùÓĞÄ³¸ö½ÚµãµÄÍ¨µÀÊı¾İ
-     *
-     * @param node
-     * @return
+	/**
+     * é€šè¿‡Udpå–å¾—ä¿¡å·æœºçš„æ‰€æœ‰æŸä¸ªèŠ‚ç‚¹çš„é€šé“æ•°æ®
+     * @param node ä¿¡å·èŠ‚ç‚¹ï¼Œä¸»è¦ä¸ºipåœ°å€å’Œç«¯å£
+     * @return ä¿¡å·æœºçš„é€šé“æ•°æ®é›†åˆ
      */
     @Override
     public List<GbtChannel> getChannel(TscNode node) {
@@ -32,7 +35,7 @@ public class ChannelServiceImpl implements ChannelService {
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_CHANNEL);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            //System.out.println("·şÎñ¶Ë»ØÓ¦Êı¾İ£º" + info);
+            //System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½İ£ï¿½" + info);
             if(!CheckGbt.check(bytes, "Channel")){
                 return null;
             }
@@ -55,11 +58,10 @@ public class ChannelServiceImpl implements ChannelService {
     }
 
     /**
-     * ±£´æÄ³¸ö½ÚµãµÄÍ¨µÀÊı¾İ
-     *
-     * @param node
-     * @param gbtChannels
-     * @return
+     * ä¿å­˜æŸä¸ªèŠ‚ç‚¹çš„é€šé“æ•°æ®
+     * @param node ä¿¡å·èŠ‚ç‚¹ï¼Œä¸»è¦ä¸ºipåœ°å€å’Œç«¯å£
+     * @param gbtChannels ä¿¡å·æœºçš„é€šé“å‚æ•°
+     * @return Message è¿”å›è®¾ç½®æ˜¯å¦æˆåŠŸçš„ä¿¡æ€
      */
     @Override
     public Message setChannel(TscNode node, List<GbtChannel> gbtChannels) {
@@ -77,9 +79,9 @@ public class ChannelServiceImpl implements ChannelService {
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), hex);
             String info = client.receive(node.getIpAddress(), node.getPort());
-            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("·şÎñ¶Ë»ØÓ¦Êı¾İ£º" + info);
-//TODO   ËõĞ´ÊÇ·ñ³É¹¦²¿·Ö
+//            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
+            System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½İ£ï¿½" + info);
+//TODO   ï¿½ï¿½Ğ´ï¿½Ç·ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½
         }catch (Exception ex){
             ex.printStackTrace();
         }
