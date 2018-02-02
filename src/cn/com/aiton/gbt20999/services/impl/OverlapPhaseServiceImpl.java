@@ -24,8 +24,8 @@ public class OverlapPhaseServiceImpl implements OverlapPhaseService {
     /**
      * ���źŻ�ȡ�ø�����λ����
      *
-     * @param node
-     * @return
+     * @param node 节点 信息，主要是 IP地址和端口号
+     * @return 返回跟随相位集合
      */
     @Override
     public List<GbtOverlap> getOverlapPhase(TscNode node) {
@@ -65,9 +65,9 @@ public class OverlapPhaseServiceImpl implements OverlapPhaseService {
     /**
      * ��������λ�������õ��źŻ�
      *
-     * @param node
-     * @param gbtOverlaps
-     * @return
+     * @param node 节点信息，包括IP地址和端口号
+     * @param gbtOverlaps 返回跟随相位集合数据
+     * @return 返回是否成功
      */
     @Override
     public Message setOverlapPhase(TscNode node, List<GbtOverlap> gbtOverlaps) {

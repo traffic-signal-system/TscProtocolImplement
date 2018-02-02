@@ -13,30 +13,30 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 public interface CollisionService {
     /**
      * ȡ��16λ�źŻ����̳�ͻ����
-     * @param node
-     * @return
+     * @param node 信号机的节点参数，主要包括信号机IP地址和端口号
+     * @return 返回绿冲突数据
      */
     public List<GbtCollision> getCollisionBy16Phase(TscNode node);
 
     /**
      * ȡ��32��λ�źŻ����̳�ͻ����
-     * @param node
-     * @return
+     * @param node 信号机的节点参数，主要包括信号机IP地址和端口号
+     * @return 返回绿冲突数据
      */
     public List<GbtCollision> getCollisionBy32Phase(TscNode node);
 
     /**
      * �����õ����ݷ��͸�ĳ���źŻ�
-     * @param gbtCollisions
-     * @param node
-     * @return
+     * @param gbtCollisions 绿冲突集合
+     * @param node 信号机的节点参数，主要包括信号机IP地址和端口号
+     * @return 返回绿冲突数据
      */
     public Message setCollision(List<GbtCollision> gbtCollisions,TscNode node);
 
     /**
      * ���������̳�ͻ���ݵ����ݿ���
-     * @param gbtCollisions
-     * @return
+     * @param gbtCollisions 绿冲突集合
+     * @return 返回绿冲突数据
      */
     
 }

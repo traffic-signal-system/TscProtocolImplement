@@ -20,8 +20,8 @@ public class ModuleServiceImpl implements ModuleService{
     /**
      * �õ��źŻ���ģ���ź�
      *
-     * @param node
-     * @return
+     * @param node 信号机节点信息，主要是IP地址和端口号
+     * @return 返回信息
      */
     @Override
     public List<GbtModule> getModule(TscNode node) {
@@ -116,8 +116,8 @@ public class ModuleServiceImpl implements ModuleService{
     /**
      * ��ǰ�źŻ������忨��״̬
      *
-     * @param node
-     * @return
+     * @param node 信号机节点信息，主要是IP地址和端口号
+     * @return 返回信息
      */
     @Override
     public byte[] getModuleState(TscNode node) {

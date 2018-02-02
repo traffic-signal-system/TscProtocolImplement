@@ -16,8 +16,8 @@ public class ExtReportUtils {
 
     /**
      * 将字节数组转换成主动上报对象
-     * @param bytes
-     * @return
+     * @param bytes 字节数据
+     * @return 返回的数据
      */
     public static ExtReportState byte2ReportState(byte[] bytes){
         ExtReportState ers = new ExtReportState();
@@ -41,8 +41,8 @@ public class ExtReportUtils {
     }
     /**
      * 主动上报灯色,从字节数组转换成数字集合
-     * @param bytes
-     * @return
+     * @param bytes 字节数据
+     * @return 返回的数据
      */
     public static List<Integer> reportStatusLamp(byte[] bytes){
     	
@@ -58,8 +58,8 @@ public class ExtReportUtils {
     }
 /**
  * 主动上报,工作模式,字节转换成文字 
- * @param by
- * @return
+ * @param by 字节数据
+ * @return 返回的数据
  */
     public static String reportStatusWorkModel(byte by){
 
@@ -85,8 +85,8 @@ public class ExtReportUtils {
     }
 /**
  * 主动上报,工作状态 ,字节转换成文字 
- * @param by
- * @return
+ * @param by 字节数据
+ * @return 返回的数据
  */
     public static String reportStatusWorkStatus(byte by){
         String result = "";
@@ -111,8 +111,8 @@ public class ExtReportUtils {
     }
 /**
  * 主动上报 控制模式,字节转换成文字 
- * @param by
- * @return
+ * @param by 字节数据 
+ * @return 返回的数据
  */
     public static String reportStatusControlMode(byte by){
         String result = "";

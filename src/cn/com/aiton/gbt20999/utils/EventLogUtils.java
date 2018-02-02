@@ -8,8 +8,8 @@ package cn.com.aiton.gbt20999.utils;
 public class EventLogUtils {
 	/**
 	 * 日志类型转换成文字 
-	 * @param type
-	 * @return
+	 * @param type 日志事件类型
+	 * @return 返回字符串内容
 	 */
     public static String eventTypeToString(int type){
 
@@ -75,9 +75,9 @@ public class EventLogUtils {
     }
     /**
      * 日志值，转换成文字内容
-     * @param i
-     * @param type
-     * @return
+     * @param i 数据
+     * @param type 类型
+     * @return 返回中文字符串
      */
     public static String eventDescToString(long i, byte type){
         String result = "";

@@ -21,9 +21,9 @@ public class SnmpUtil {
 
     /**
      * ������ͬ�����communityTarget
-     * @param address 设备IP地址
-     * @param community 内容
-     * @return CommunityTarget 内容目标
+     * @param address 设备IP地址 设备IP地址
+      * @param community 内容 内容
+     * @return CommunityTarget 内容目标 内容目标
      */
     public static CommunityTarget createMyDefaultTarget(String address,
                                                         String community) {
@@ -40,9 +40,9 @@ public class SnmpUtil {
     /**
      * ������ͬ�����communityTarget
      * @param targetAddress  目标地址
-     * @param community 目标内容
-     * @param version 版本
-     * @return CommunityTarget 内容目标
+      * @param community 内容 目标内容
+     * @param version 版本 版本
+     * @return CommunityTarget 内容目标 内容目标
      */
     public static CommunityTarget createCommunityTarget(Address targetAddress,
                                                         String community, int version) {
@@ -55,12 +55,12 @@ public class SnmpUtil {
 
     /**
      * ������ͬ�����communityTarget
-     * @param targetAddress
-     * @param community
-     * @param version
-     * @param timeOut
-     * @param retry
-     * @return CommunityTarget
+     * @param targetAddress 目標地址
+      * @param community 内容
+     * @param version 版本
+     * @param timeOut 超时
+     * @param retry  返回
+     * @return CommunityTarget 内容目标
      */
     public static CommunityTarget createCommunityTarget(Address targetAddress,
                                                         String community, int version, long timeOut, int retry) {
@@ -75,12 +75,12 @@ public class SnmpUtil {
 
     /**
      * ������ͬ�����communityTarget
-     * @param address
-     * @param community
-     * @param version
-     * @param timeOut
-     * @param retry
-     * @return CommunityTarget
+     * @param address 设备IP地址
+      * @param community 内容
+     * @param version 版本
+     * @param timeOut 超时
+     * @param retry 返回
+     * @return CommunityTarget 内容目标
      */
     public static CommunityTarget createCommunityTarget(String address,
                                                         String community, int version, long timeOut, int retry) {
@@ -90,11 +90,11 @@ public class SnmpUtil {
     }
 
     /**
-     * ����snmp Address
-     * @param protocol
-     * @param ip
-     * @param port
-     * @return Address
+     * ����snmp Address  地址
+     * @param protocol  协议
+     * @param ip    ip地址
+     * @param port  端口号
+     * @return Address  地址
      */
     public static Address createAddress(String protocol, String ip, int port) {
         String address = protocol + ":" + ip + "/" + port;
@@ -103,9 +103,9 @@ public class SnmpUtil {
 
     /**
      * ����snmp udp Address
-     * @param ip
-     * @param port
-     * @return Address
+     * @param ip    IP地址
+     * @param port  端口号
+     * @return Address  地址
      */
     public static Address createUdpAddress(String ip, int port) {
         String address = ip + "/" + port;
@@ -113,10 +113,10 @@ public class SnmpUtil {
     }
 
     /**
-     * ����snmp tcp Address
-     * @param ip
-     * @param port
-     * @return Address
+     * ����snmp tcp Address   
+     * @param ip   IP地址
+     * @param port  端口号
+     * @return Address  地址
      */
     public static TcpAddress createTcpAddress(String ip, int port) {
         String address = ip + "/" + port;
@@ -125,12 +125,12 @@ public class SnmpUtil {
 
     /**
      * ���� UserTarget
-     * @param targetAddress
-     * @param version
-     * @param timeOut
-     * @param level
-     * @param securityName
-     * @return UserTarget
+     * @param targetAddress   目标地址
+     * @param version 版本
+     * @param timeOut 超时
+     * @param level 等级
+     * @param securityName 安全名称
+     * @return UserTarget 用户目标
      */
     public static UserTarget createUserTarget(Address targetAddress,
                                               int version, long timeOut, int level, String securityName) {
@@ -146,12 +146,12 @@ public class SnmpUtil {
 
     /**
      * ���� UserTarget
-     * @param address
-     * @param version
-     * @param timeOut
-     * @param level
-     * @param securityName
-     * @return UserTarget
+     * @param address 设备IP地址
+     * @param version 版本
+     * @param timeOut 超时
+     * @param level 等级
+     * @param securityName 安全名称
+     * @return UserTarget 用户目标
      */
     public static UserTarget createUserTarget(String address, int version,
                                               long timeOut, int level, String securityName) {

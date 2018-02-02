@@ -22,7 +22,7 @@ public class SnmpGet {
 
     /**
      * 测试使用，无意义
-     * @param args
+     * @param args 無
      */
     public static void main(String[] args) {
 

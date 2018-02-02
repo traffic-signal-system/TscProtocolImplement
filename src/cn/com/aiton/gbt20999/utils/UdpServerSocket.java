@@ -22,7 +22,7 @@ public class UdpServerSocket {
      * ���캯�����������Ͷ˿�.
      * @param host ����
      * @param port �˿�
-     * @throws Exception
+     * @throws Exception 异常处理 异常处理
      */
     public UdpServerSocket(String host, int port) throws Exception {
         socketAddress = new InetSocketAddress(host, port);
@@ -37,7 +37,7 @@ public class UdpServerSocket {
     /**
      * ���ó�ʱʱ�䣬�÷���������bind����֮��ʹ��.
      * @param timeout ��ʱʱ��
-     * @throws Exception
+     * @throws Exception 异常处理
      */
     public final void setSoTimeout(int timeout) throws Exception {
         ds.setSoTimeout(timeout);
@@ -46,7 +46,7 @@ public class UdpServerSocket {
     /**
      * ��ó�ʱʱ��.
      * @return ���س�ʱʱ��.
-     * @throws Exception
+     * @throws Exception 异常处理
      */
     public final int getSoTimeout() throws Exception {
         return ds.getSoTimeout();
@@ -56,7 +56,7 @@ public class UdpServerSocket {
      * �󶨼�����ַ�Ͷ˿�.
      * @param host ����IP
      * @param port �˿�
-     * @throws SocketException
+     * @throws SocketException 异常处理
      */
     public final void bind(String host, int port) throws SocketException {
         socketAddress = new InetSocketAddress(host, port);
@@ -67,7 +67,7 @@ public class UdpServerSocket {
     /**
      * �������ݰ����÷���������߳�����.
      * @return ���ؽ��յ����ݴ���Ϣ
-     * @throws IOException
+     * @throws IOException 异常处理
      */
     public final String receive() throws IOException {
         packet = new DatagramPacket(buffer, buffer.length);
@@ -80,7 +80,7 @@ public class UdpServerSocket {
     /**
      * �������ݰ����÷���������߳�����.
      * @return ���ؽ��յ����ݴ���Ϣ
-     * @throws IOException
+     * @throws IOException 异常处理
      */
     public final byte[] receiveByte() throws IOException {
         packet = new DatagramPacket(buffer, buffer.length);
@@ -93,7 +93,7 @@ public class UdpServerSocket {
     /**
      * ����Ӧ�����͸������.
      * @param info ��Ӧ����
-     * @throws IOException
+     * @throws IOException 异常处理
      */
     public final void response(String info) throws IOException {
         System.out.println("�ͻ��˵�ַ : " + packet.getAddress().getHostAddress()
@@ -106,7 +106,7 @@ public class UdpServerSocket {
     /**
      * ����Ӧ�����͸������.
      * @param info ��Ӧ����
-     * @throws IOException
+     * @throws IOException 异常处理
      */
     public final void responseByte(byte[] info) throws IOException {
         System.out.println("�ͻ��˵�ַ : " + packet.getAddress().getHostAddress()
@@ -153,8 +153,8 @@ public class UdpServerSocket {
 
     /**
      * ���Է���.
-     * @param args
-     * @throws Exception
+     * @param args 无
+     * @throws Exception 异常处理
      */
     public static void main(String[] args) throws Exception {
         String serverHost = "127.0.0.1";

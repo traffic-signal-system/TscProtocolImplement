@@ -22,8 +22,8 @@ public class StagePatternServiceImpl implements StagePatternService {
     /**
      * ���źŻ���ȡ32��λ�Ľ׶���������
      *
-     * @param node
-     * @return
+     * @param node 信号机节点 信息，主要是IP地址和端口号
+     * @return 返回的信息
      */
     @Override
     public List<GbtStagePattern> getStagePattern32Phase(TscNode node) {
@@ -60,8 +60,8 @@ public class StagePatternServiceImpl implements StagePatternService {
     }
 
     /**
-     * @param node
-     * @return
+     * @param node 信号机节点 信息，主要是IP地址和端口号
+     * @return 返回的信息
      */
     @Override
     public List<GbtStagePattern> getStagePattern16Phase(TscNode node) {
@@ -98,9 +98,9 @@ public class StagePatternServiceImpl implements StagePatternService {
     }
 
     /**
-     * @param node
-     * @param gbtStagePatterns
-     * @return
+     * @param node 信号机节点 信息，主要是IP地址和端口号
+     * @param gbtStagePatterns 配时方案集合
+     * @return 返回的信息
      */
     @Override
     public Message setStagePatternBy16Phase(TscNode node, List<GbtStagePattern> gbtStagePatterns) {
@@ -132,9 +132,9 @@ public class StagePatternServiceImpl implements StagePatternService {
     }
 
     /**
-     * @param node
-     * @param gbtStagePatterns
-     * @return
+     * @param node 信号机节点 信息，主要是IP地址和端口号
+     * @param gbtStagePatterns 配时方案集合
+     * @return 返回的信息
      */
     @Override
     public Message setStagePatternBy32Phase(TscNode node, List<GbtStagePattern> gbtStagePatterns) {

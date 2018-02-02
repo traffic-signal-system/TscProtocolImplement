@@ -25,7 +25,7 @@ public class SnmpGetList {
 
     /**
      * 测试使用，无意义
-     * @param args
+     * @param args  无用 
      */
     public static void main(String[] args) {
 

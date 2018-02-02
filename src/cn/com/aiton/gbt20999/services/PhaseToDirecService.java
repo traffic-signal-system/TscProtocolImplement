@@ -13,15 +13,16 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 public interface PhaseToDirecService {
     /**
      * ���ź���ȡ�÷�������
-     * @param node
-     * @return
+     * @param node 信号机节点，主要是IP地址 和端口号
+     * @return 返回数据
      */
     public List<GbtDirec> getPhaseToDirec(TscNode node);
 
     /**
      * ���÷������ݵ��źŻ���
-     * @param gbtDirecs
-     * @return
+     * @param gbtDirecs 方向集合
+     * @param node 节点 信息，主要是IP地址和端口号
+     * @return 返回成功是否数据
      */
     public Message setPhaseToDirec(List<GbtDirec> gbtDirecs,TscNode node);
 }

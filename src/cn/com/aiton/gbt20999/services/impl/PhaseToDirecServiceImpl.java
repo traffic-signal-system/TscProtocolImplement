@@ -23,8 +23,8 @@ public class PhaseToDirecServiceImpl implements PhaseToDirecService {
     /**
      * ���ź���ȡ�÷�������
      *
-     * @param node
-     * @return
+     * @param node 信号机的节点信息，主要是IP地址和端口号
+     * @return 返回的方向 集合数据
      */
     @Override
     public List<GbtDirec> getPhaseToDirec(TscNode node) {
@@ -59,8 +59,8 @@ public class PhaseToDirecServiceImpl implements PhaseToDirecService {
     /**
      * ���÷������ݵ��źŻ���
      *
-     * @param gbtDirecs
-     * @return
+     * @param gbtDirecs 方向 集合数据
+     * @return 返回是否成功信息
      */
     @Override
     public Message setPhaseToDirec(List<GbtDirec> gbtDirecs,TscNode node) {

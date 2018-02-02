@@ -12,9 +12,9 @@ public class CheckGbt {
 	 *  /// MessageBox.Show(fun + ":����ͨ��Э����������е���Ϣ���ö���ֵ�����涨�ķ�Χ��");
 	 *  //  MessageBox.Show(fun + ":����ͨ��Э����������е���Ϣ����̫�̣�");
 	 *  // MessageBox.Show(fun + ":δ֪ԭ��");
-	 * @param bytes
-	 * @param fun
-	 * @return
+	 * @param bytes 信号机返回的字节数组
+	 * @param fun 备用
+	 * @return 返回正常或异常
 	 */
     public static boolean check(byte[] bytes,String fun)
     {

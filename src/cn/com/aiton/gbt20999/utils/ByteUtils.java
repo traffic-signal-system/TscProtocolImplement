@@ -11,10 +11,10 @@ import java.nio.FloatBuffer;
 public class ByteUtils {
     /**
      * ��һά���飬ת���ɶ�ά���ݣ�Ҳ����ÿ����¼
-     * @param bytes
-     * @param row
-     * @param column
-     * @return
+     * @param bytes 字节数组 ，信号机返回的各个对象数据数组
+     * @param row 多少行
+     * @param column 多少例
+     * @return 返回转换后的内容
      */
     public static byte[][] oneArrayToTwoArray(byte[] bytes, int row, int column){
         byte[][] bta = new byte[row][column];
@@ -26,8 +26,8 @@ public class ByteUtils {
     
     /**
      * //long����ת��byte����
-     * @param number
-     * @return
+     * @param number  数字内容
+     * @return 返回转换后的内容
      */
     public static byte[] longToByte(long number) {
         long temp = number;
@@ -40,8 +40,8 @@ public class ByteUtils {
     }
     /**
      * //byte����ת��long
-     * @param b
-     * @return
+     * @param b 字节内容
+     * @return 返回转换后的内容
      */
     public static long byteToLong(byte[] b) {
         long s = 0;
@@ -68,8 +68,8 @@ public class ByteUtils {
     /**
      * ע�ͣ�int���ֽ������ת����
      *
-     * @param number
-     * @return
+     * @param number  数字内容
+     * @return 返回转换后的内容
      */
     public static byte[] intToByte(int number) {
         int temp = number;
@@ -83,8 +83,8 @@ public class ByteUtils {
     /**
      * ע�ͣ��ֽ����鵽int��ת����
      *
-     * @param b
-     * @return
+     * @param b 字节内容
+     * @return 返回转换后的内容
      */
     public static int byteToInt(byte[] b) {
         int s = 0;
@@ -102,8 +102,8 @@ public class ByteUtils {
     /**
      * ע�ͣ�short���ֽ������ת����
      *
-     * @param number
-     * @return
+     * @param number  数字内容
+     * @return 返回转换后的内容
      */
     public static byte[] shortToByte(short number) {
         int temp = number;
@@ -118,8 +118,8 @@ public class ByteUtils {
     /**
      * ע�ͣ��ֽ����鵽short��ת����
      *
-     * @param b
-     * @return
+     * @param b 字节内容
+     * @return 返回转换后的内容
      */
     public static short byteToShort(byte[] b) {
         short s = 0;
@@ -129,7 +129,11 @@ public class ByteUtils {
         s = (short) (s0 | s1);
         return s;
     }
-    /**   * floatת��byte   *   * @param bb   * @param x   * @param index   */
+    /**
+     * float 转换成byte数组
+     * @param v float 数据
+     * @return byte数组
+     */
     public static byte[] floatTobyteArray(float v) {
         ByteBuffer bb = ByteBuffer.allocate(4);
         byte[] ret = new byte[4];
@@ -138,14 +142,22 @@ public class ByteUtils {
         bb.get(ret);
         return ret;
     }
-    /**   * ͨ��byte����ȡ��float   *   * @param bb   * @param index   * @return   */
+    /**
+     *  byte数组 转换成 float 
+     * @param v byte数组
+     * @return float转换出
+     */
     public static float byteArrayToFloat(byte[] v) {
         ByteBuffer bb = ByteBuffer.wrap(v);
         FloatBuffer fb = bb.asFloatBuffer();
         return fb.get();
     }
 
-    /**   * doubleת��byte   *   * @param bb   * @param x   * @param index   */
+   /**
+    * double数据类型转换 成 字节数组
+    * @param x double数据类型转换
+    * @return 返回字节数组
+    */
     public static byte[] doubleToByteArray(double x) {
         ByteBuffer bb = ByteBuffer.allocate(8);
         byte[] ret = new byte[8];
@@ -155,7 +167,11 @@ public class ByteUtils {
         return ret;
     }
 
-    /**   * ͨ��byte����ȡ��float   *   * @param bb   * @param index   * @return   */
+    /**
+     * byte 数组 转换成double数据
+     * @param b byte数组
+     * @return  double数据
+     */
     public static double byteArrayToDouble(byte[] b) {
         ByteBuffer bb = ByteBuffer.wrap(b);
         DoubleBuffer fb = bb.asDoubleBuffer();
@@ -163,20 +179,20 @@ public class ByteUtils {
     }
 
     /**
-     *
-     * @param bytes
-     * @return
-     * @throws Exception
+     * byte数组转换出字符串
+     * @param bytes 字节数组
+     * @return 返回转换后的内容
+     * @throws Exception 导演抛出
      */
     public static String byteArrayToStringByUTF8(byte[] bytes) throws Exception{
         return new String(bytes,"UTF-8");
     }
 
     /**
-     *
-     * @param bytes
-     * @return
-     * @throws Exception
+     * 字节数组转换成字符串
+     * @param bytes 字节内容 字节数组
+     * @return 返回转换后的内容
+     * @throws Exception 异常处理
      */
     public static String byteArrayToStringByISO(byte[] bytes) throws Exception{
         return new String(bytes,"ISO-8859-1");
@@ -184,30 +200,36 @@ public class ByteUtils {
 
     /**
      *
-     * @param s
-     * @return
-     * @throws Exception
+     * @param s 字符串
+     * @return 返回转换后的内容
+     * @throws Exception 异常处理
      */
     public static byte[] stringToByteArrayByUTF8(String s) throws Exception{
         return s.getBytes("UTF-8");
     }
     /**
      * 将Byte数组转成无符号整型
-     * @param b
-     * @return
+     * @param b 字节内容
+     * @return 返回转换后的内容
      */
     public static int bytesUInt(byte b){
         return b&0xff;
     }
     /**
-     *
-     * @param s
-     * @return
-     * @throws Exception
+     * 字符串转换成字节数组 用ISO-8859-1
+     * @param s 字符串 字符串
+     * @return 返回转换后的内容 返回字节数组
+     * @throws Exception 处理异常
      */
     public static byte[] stringToByteArrayByISO(String s) throws  Exception{
         return s.getBytes("ISO-8859-1");
     }
+    /**
+     *  字符串转换成字节数组，用ASCII码
+     * @param s 字符串 字符串
+     * @return 返回转换后的内容 返回字节数组
+     * @throws Exception 处理异常
+     */
     public static byte[] stringToByteArrayByASCII(String s) throws Exception{
         return s.getBytes("US-ASCII");
     }

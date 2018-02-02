@@ -13,33 +13,33 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 public interface LogEventService {
     /**
      * ȡ��һ���ڵ��������־����
-     * @param node
-     * @return
+     * @param node  信号节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     public List<GbtEventLog> getEventLog(TscNode node);
 
     /**
      * ����ʱ��ȡ����־�����ʱ������һ�졣
-     * @param node
-     * @param date
-     * @return
+     * @param node  信号节点信息，主要是IP地址和端口号
+     * @param date  日期
+     * @return 返回数据
      */
     public List<GbtEventLog> getEventLogByTime(TscNode node ,Date date);
 
     /**
      * ������־���Ͷ�ȡ��־����
-     * @param node
-     * @param type
-     * @return
+     * @param node  信号节点信息，主要是IP地址和端口号
+     * @param type 類型
+     * @return 返回数据
      */
     public List<GbtEventLog> getEventLogByEventType(TscNode node,byte type);
 
     /**
      * ��������ʱ�䣬����ʼʱ��ͽ���ʱ���ڵ���־���ݶ�ȡ����
-     * @param node
-     * @param startTime
-     * @param endTime
-     * @return
+     * @param node  信号节点信息，主要是IP地址和端口号  信号节点信息，主要是IP地址和端口号
+     * @param startTime 開始時間
+     * @param endTime 結束時間
+     * @return 返回数据
      */
     public List<GbtEventLog> getEventLogByStartTimeAndEndTime(TscNode node,Date startTime,Date endTime);
 }

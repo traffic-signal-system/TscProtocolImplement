@@ -13,7 +13,7 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 public interface PhaseService {
 	/**
 	 * 取得信号机所有的相位信息
-	 * @param node信号机节点，主要为ip地址和端口
+	 * @param node 信号机节点，主要为ip地址和端口
 	 * @return 信号机数据集合
 	 */
     public List<GbtPhase> getPhase(TscNode node);
@@ -21,7 +21,7 @@ public interface PhaseService {
      * 设置信号机的相位信息
      * @param gbtPhases 相位实体类数据
      * @param node 信号机节点，主要为ip地址和端口
-     * @return
+     * @return 返回设置是否成功信息
      */
     public Message setPhase(List<GbtPhase> gbtPhases,TscNode node);
 }

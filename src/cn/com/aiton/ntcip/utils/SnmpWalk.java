@@ -24,7 +24,7 @@ public class SnmpWalk {
 
     /**
      *
-     * @param args
+     * @param args 無
      */
     public static void main(String[] args) {
         String ip = "192.168.8.254";

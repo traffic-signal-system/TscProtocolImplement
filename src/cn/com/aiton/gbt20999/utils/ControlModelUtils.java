@@ -7,8 +7,8 @@ package cn.com.aiton.gbt20999.utils;
 public class ControlModelUtils {
 	/**
 	 * 信号机控制模式，字节转换成文字
-	 * @param b
-	 * @return
+	 * @param b 字节内容
+	 * @return 返回字符串信息
 	 */
     public static String controlModelToString(byte b)
     {

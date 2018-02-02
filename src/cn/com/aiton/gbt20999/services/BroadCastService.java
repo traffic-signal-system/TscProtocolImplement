@@ -11,7 +11,7 @@ public interface BroadCastService {
 	 * 对在网的信号机进行广播，
 	 * 比如 192.168.1.136信号机在网，可以进行通信。
 	 * 那么它会返回数据给
-	 * @return
+	 * @return 返回在線信號機列表
 	 */
 	public List<String> getNodeNetwork();
 }

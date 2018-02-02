@@ -17,8 +17,8 @@ import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 public class CountDownServiceImpl implements CountDownService{
 	/**
 	 * 取得倒计时配置信息
-	 * @param node
-	 * @return
+	 * @param node 节点信息，主要是IP地址和端口号
+	 * @return 返回数据
 	 */
     @Override
     public List<CountDown> getCntDownDev(TscNode node) {
@@ -44,9 +44,9 @@ public class CountDownServiceImpl implements CountDownService{
     }
     /**
 	 * 设置倒计时配置信息
-	 * @param countDowns
-	 * @param node
-	 * @return
+	 * @param countDowns 倒计时对象内容
+	 * @param node 节点信息，主要是IP地址和端口号
+	 * @return 返回数据
 	 */
     @Override
     public Message setCntDownDev(List<CountDown> countDowns, TscNode node) {

@@ -20,8 +20,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �رյƿذ�1���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setLampCheckCloseOne(TscNode node) {
@@ -55,8 +55,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �رյƿذ�2���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setLampCheckCloseTwo(TscNode node) {
@@ -87,8 +87,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �رյƿذ�3���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setLampCheckCloseThree(TscNode node) {
@@ -119,8 +119,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �رյƿذ�1���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setLampCheckCloseFour(TscNode node) {
@@ -151,8 +151,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �رյƿذ�1���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setLampCheckCloseFive(TscNode node) {
@@ -183,8 +183,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �رյƿذ�1���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setLampCheckCloseSix(TscNode node) {
@@ -215,8 +215,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �رյƿذ�1���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setLampCheckCloseSeven(TscNode node) {
@@ -247,8 +247,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �رյƿذ�1���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setLampCheckCloseEight(TscNode node) {
@@ -279,8 +279,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �رյƿذ�1���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public List<Message> setLampCheckCloseALL(TscNode node) {
@@ -299,8 +299,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �򿪵ƿذ�1���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setLampCheckOpenOne(TscNode node) {
@@ -331,8 +331,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �򿪵ƿذ�1���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setLampCheckOpenTwo(TscNode node) {
@@ -363,8 +363,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �򿪵ƿذ�1���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setLampCheckOpenThree(TscNode node) {
@@ -395,8 +395,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �򿪵ƿذ�1���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setLampCheckOpenFour(TscNode node) {
@@ -427,8 +427,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �򿪵ƿذ�1���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setLampCheckOpenFive(TscNode node) {
@@ -459,8 +459,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �򿪵ƿذ�1���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setLampCheckOpenSix(TscNode node) {
@@ -491,8 +491,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �򿪵ƿذ�1���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setLampCheckOpenSeven(TscNode node) {
@@ -523,8 +523,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �򿪵ƿذ�1���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setLampCheckOpenEight(TscNode node) {
@@ -555,8 +555,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �򿪵ƿذ�1���̳�ͻ���
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public List<Message> setLampCheckOpenALL(TscNode node) {
@@ -575,8 +575,8 @@ public class LampCheckServiceImpl implements LampCheckService {
     /**
      * �õ��ƿذ�1���̳�ͻ�������
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是信号机的IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public List<GbtLampCheck> getLampCheck(TscNode node) {

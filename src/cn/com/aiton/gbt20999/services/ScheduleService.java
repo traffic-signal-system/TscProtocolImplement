@@ -13,16 +13,16 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 public interface ScheduleService {
     /**
      * �õ�ĳ���źŻ���ʱ�α�����
-     * @param node
-     * @return
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     public List<GbtSchedule> getSchedule(TscNode node);
 
     /**
      * ����ĳ���źŻ���ʱ������
-     * @param node
-     * @param gbtSchedules
-     * @return
+     * @param node 节点信息，主要是IP地址和端口号
+     * @param gbtSchedules 时段集合
+     * @return 返回数据
      */
     public Message setSchedule(TscNode node,List<GbtSchedule> gbtSchedules);
 

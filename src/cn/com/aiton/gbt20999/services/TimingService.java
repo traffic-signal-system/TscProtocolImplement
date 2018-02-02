@@ -10,8 +10,8 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 public interface TimingService {
     /**
      * Уʱ����
-     * @param node
-     * @return
+     * @param node 信号节点，主要为IP地址和端口号
+     * @return 返回是否正常
      */
     public Message setTiming(TscNode node);
 }

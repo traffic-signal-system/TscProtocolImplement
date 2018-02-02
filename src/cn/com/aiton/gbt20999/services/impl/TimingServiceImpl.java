@@ -18,8 +18,8 @@ public class TimingServiceImpl implements TimingService {
     /**
      * Уʱ����
      *
-     * @param node
-     * @return
+     * @param node 信号机的节点信息，主要是IP地址和端口号
+     * @return 返回是否成功信息
      */
     @Override
     public Message setTiming(TscNode node) {

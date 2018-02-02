@@ -25,8 +25,8 @@ public class ScheduleServiceImpl implements ScheduleService{
     /**
      * �õ�ĳ���źŻ���ʱ�α�����
      *
-     * @param node
-     * @return
+     * @param node 信号机节点 信息，主要是IP地址和端口号
+     * @return 返回信息
      */
     @Override
     public List<GbtSchedule> getSchedule(TscNode node) {
@@ -67,9 +67,9 @@ public class ScheduleServiceImpl implements ScheduleService{
     /**
      * ����ĳ���źŻ���ʱ������
      *
-     * @param node
-     * @param gbtSchedules
-     * @return
+     * @param node 信号机节点 信息，主要是IP地址和端口号
+     * @param gbtSchedules 时段集合
+     * @return 返回信息
      */
     @Override
     public Message setSchedule(TscNode node, List<GbtSchedule> gbtSchedules) {

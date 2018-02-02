@@ -36,8 +36,8 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * �õ��������1��9-16��������
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public int getDetectorSensitivityOneBorad9_16(TscNode node) {
@@ -59,8 +59,8 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * �õ��������1����Ƶ��
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public int getDetectorOscillatorFrequency1(TscNode node) {
@@ -81,8 +81,8 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * �õ��������2����Ƶ��
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public int getDetectorOscillatorFrequency2(TscNode node) {
@@ -103,8 +103,8 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * �õ��������2��1-8��������
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public int getDetectorSensitivityTwoBorad1_8(TscNode node) {
@@ -126,8 +126,8 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * �õ��������2��9-16��������
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public int getDetectorSensitivityTwoBorad9_16(TscNode node) {
@@ -149,9 +149,9 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * ���ü������Ƶ��
      *
-     * @param b
-     * @param node
-     * @return
+     * @param b 字节数组配置数据
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setOscillatorFrequency(byte[] b, TscNode node) {
@@ -173,9 +173,9 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * �������������ֵ��1���1-7ͨ��
      *
-     * @param bytes
-     * @param node
-     * @return
+     * @param bytes 字节数组，车检器灵敏度或级别
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setSensityvityDig1(byte[] bytes, TscNode node) {
@@ -195,9 +195,9 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * �������������ֵ��1���8-14ͨ��
      *
-     * @param bytes
-     * @param node
-     * @return
+     * @param bytes 字节数组，车检器灵敏度或级别
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setSensityvityDig2(byte[] bytes, TscNode node) {
@@ -217,9 +217,9 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * �������������ֵ��1���13-16ͨ��
      *
-     * @param bytes
-     * @param node
-     * @return
+     * @param bytes 字节数组，车检器灵敏度或级别
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setSensityvityDig3(byte[] bytes, TscNode node) {
@@ -239,9 +239,9 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * �������������ֵ��2���1-7ͨ��
      *
-     * @param bytes
-     * @param node
-     * @return
+     * @param bytes 字节数组，车检器灵敏度或级别
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setSensityvityDig4(byte[] bytes, TscNode node) {
@@ -261,9 +261,9 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * �������������ֵ��2���8-14ͨ��
      *
-     * @param bytes
-     * @param node
-     * @return
+     * @param bytes 字节数组，车检器灵敏度或级别
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setSensityvityDig5(byte[] bytes, TscNode node) {
@@ -283,9 +283,9 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * �������������ֵ��2���15-16ͨ��
      *
-     * @param bytes
-     * @param node
-     * @return
+     * @param bytes 字节数组，车检器灵敏度或级别
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setSensityvityDig6(byte[] bytes, TscNode node) {
@@ -305,10 +305,10 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * ���ݰ忨���ü�������� ��
      *
-     * @param boradNum
-     * @param se
-     * @param node
-     * @return
+     * @param boradNum 第几块板
+     * @param se 配置数据
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setSensitivity(int boradNum, byte se, TscNode node) {
@@ -331,9 +331,9 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * �������1��� 1- 8ͨ�����÷���
      *
-     * @param bytes
-     * @param node
-     * @return
+     * @param bytes 字节数组，车检器灵敏度或级别
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setSensitivityAdv11(byte[] bytes, TscNode node) {
@@ -354,9 +354,9 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * �������1��� 9- 16ͨ�����÷���
      *
-     * @param bytes
-     * @param node
-     * @return
+     * @param bytes 字节数组，车检器灵敏度或级别
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setSensitivityAdv12(byte[] bytes, TscNode node) {
@@ -377,9 +377,9 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * ������ڶ���� 1- 8ͨ�����÷���
      *
-     * @param bytes
-     * @param node
-     * @return
+     * @param bytes 字节数组，车检器灵敏度或级别
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setSensitivityAdv21(byte[] bytes, TscNode node) {
@@ -400,9 +400,9 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * ������ڶ���� 9- 16ͨ�����÷���
      *
-     * @param bytes
-     * @param node
-     * @return
+     * @param bytes 字节数组，车检器灵敏度或级别
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setSensitivityAdv22(byte[] bytes, TscNode node) {
@@ -423,9 +423,9 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * ���ü�������� ������ϵͳ����������
      *
-     * @param bytes
-     * @param node
-     * @return
+     * @param bytes 字节数组，车检器灵敏度或级别
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setSensitivityAdv(byte[] bytes, TscNode node) {
@@ -435,8 +435,8 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * ���ؼ���������ȵȼ���1 ��1-8ͨ��
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public List<Byte> setSensitivityAdv11(TscNode node) {
@@ -446,8 +446,8 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * ���ؼ���������ȵȼ���1 ��9-16ͨ��
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public List<Byte> setSensitivityAdv12(TscNode node) {
@@ -457,8 +457,8 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * ���ؼ���������ȵȼ���2 ��1-8ͨ��
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public List<Byte> setSensitivityAdv21(TscNode node) {
@@ -468,8 +468,8 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * ���ؼ���������ȵȼ���2 ��9-16ͨ��
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public List<Byte> setSensitivityAdv22(TscNode node) {
@@ -479,8 +479,8 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * ȡ�����м��������������
      *
-     * @param node
-     * @return
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public List<GbtDetector> getDetector(TscNode node) {
@@ -519,8 +519,8 @@ public class DetectorServiceImpl implements DetectorService {
     /**
      * �������м������������
      *
-     * @param gbtDetectors
-     * @return
+     * @param gbtDetectors 车检器集合数据
+     * @return 返回数据
      */
     @Override
     public Message setDetector(List<GbtDetector> gbtDetectors,TscNode node) {

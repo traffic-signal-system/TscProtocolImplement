@@ -9,16 +9,16 @@ import org.apache.commons.lang3.StringUtils;
 public class OverlapPhaseUtils {
 	/**
 	 * 字节数组,转换成字条串
-	 * @param bytes
-	 * @return
+	 * @param bytes 字节数组，用于处理信号机返回字节数组，转换成字符串
+	 * @return 转换成字符串数据
 	 */
     public static String byteArrayToString(byte[] bytes){
         return StringUtils.join(bytes,",");
     }
 	/**
 	 * 字条串转换成字节数组
-	 * @param str
-	 * @return
+	 * @param str 字符串数据，以‘，’隔开
+	 * @return 转换成字节数组
 	 */
     public static byte[] stringToByteArray(String str){
         String[] strings = StringUtils.split(str,",");

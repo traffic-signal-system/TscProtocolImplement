@@ -13,16 +13,16 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 public interface OverlapPhaseService {
     /**
      * ���źŻ�ȡ�ø�����λ����
-     * @param node
-     * @return
-     */
+     * @param node 信号机节点，主要是IP地址和端口号
+     * @return 返回数据
+     */ 
     public List<GbtOverlap> getOverlapPhase(TscNode node);
 
     /**
      * ��������λ�������õ��źŻ�
-     * @param node
-     * @param gbtOverlaps
-     * @return
+     * @param node 信号机节点，主要是IP地址和端口号
+     * @param gbtOverlaps 跟随相位集合
+     * @return 返回数据
      */
     public Message setOverlapPhase(TscNode node ,List<GbtOverlap> gbtOverlaps);
 

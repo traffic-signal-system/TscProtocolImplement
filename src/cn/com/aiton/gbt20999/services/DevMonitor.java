@@ -12,8 +12,8 @@ public interface DevMonitor {
 	/**
 	 * 取得信号机的信息
 	 * 状态信号有，信号机的双向门是否被打开；信号机的温度；信号机的湿度；信号机的电压；信号机的震动
-	 * @param node
-	 * @return
+	 * @param node 節點信息主要是IP地址和端口號
+	 * @return 返回數據
 	 */
     public DevState getTscMonitor(TscNode node);
 

@@ -18,7 +18,7 @@ public class UdpClientSocket {
 
     /**
      * ���캯��������UDP�ͻ���
-     * @throws Exception
+     * @throws Exception 异常处理
      */
     public UdpClientSocket() throws Exception {
         ds = new DatagramSocket();
@@ -27,7 +27,7 @@ public class UdpClientSocket {
     /**
      * ���ó�ʱʱ�䣬�÷���������bind����֮��ʹ��.
      * @param timeout ��ʱʱ��
-     * @throws Exception
+     * @throws Exception 异常处理
      */
     public final void setSoTimeout(final int timeout) throws Exception {
         ds.setSoTimeout(timeout);
@@ -36,7 +36,7 @@ public class UdpClientSocket {
     /**
      * ��ó�ʱʱ��.
      * @return ���س�ʱʱ��
-     * @throws Exception
+     * @throws Exception 异常处理
      */
     public final int getSoTimeout() throws Exception {
         return ds.getSoTimeout();
@@ -52,7 +52,7 @@ public class UdpClientSocket {
      * @param port ����˶˿�
      * @param bytes ���͵�������Ϣ
      * @return ���ع��������ݱ�
-     * @throws IOException
+     * @throws IOException 异常抛出
      */
     public final DatagramPacket send(final String host, final int port,
                                      final byte[] bytes) throws IOException {
@@ -67,7 +67,7 @@ public class UdpClientSocket {
      * @param lhost ���������
      * @param lport ����˶˿�
      * @return ���ش�ָ���ķ���˷��ص�����.
-     * @throws Exception
+     * @throws Exception 异常处理
      */
     public final String receive(final String lhost, final int lport)
             throws Exception {
@@ -81,7 +81,7 @@ public class UdpClientSocket {
      * @param lhost ���������
      * @param lport ����˶˿�
      * @return ���ش�ָ���ķ���˷��ص�����.
-     * @throws Exception
+     * @throws Exception 异常处理
      */
     public final byte[] receiveByte(final String lhost, final int lport)
             throws Exception {
@@ -103,8 +103,8 @@ public class UdpClientSocket {
 
     /**
      * ���Կͻ��˷����ͽ��ջ�Ӧ��Ϣ�ķ���.
-     * @param args
-     * @throws Exception
+     * @param args 无
+     * @throws Exception 异常处理
      */
     public static void main(String[] args) throws Exception {
         UdpClientSocket client = new UdpClientSocket();

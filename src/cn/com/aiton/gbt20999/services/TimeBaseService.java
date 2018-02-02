@@ -13,33 +13,33 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 public interface TimeBaseService {
     /**
      * ���źŻ��õ�ĳ���ڵ��ʱ������
-     * @param node
-     * @return
+     * @param node 信号机节点，主要是IP地址和端口号
+     * @return 返回数据
      */
     public List<GbtTimeBase> getTimeBase(TscNode node);
 
     /**
      * ����ʱ�����ݵ��źŻ�
      * ͨ������
-     * @param gbtTimeBaseList
-     * @param node
-     * @return
+     * @param gbtTimeBaseList  时基数据集合
+     * @param node 信号机节点，主要是IP地址和端口号
+     * @return 返回数据
      */
     public Message setTimeBaseByCalendar(List<GbtTimeBase> gbtTimeBaseList,TscNode node);
 
     /**
      * ����ʱ�����ݵ��źŻ�
      * ͨ����ģʽ
-     * @param gbtTimeBases
-     * @param node
-     * @return
+     * @param gbtTimeBases 时基数据
+     * @param node 信号机节点，主要是IP地址和端口号
+     * @return 返回数据
      */
     public Message setTimeBaseByWeekend(List<GbtTimeBase> gbtTimeBases,TscNode node);
     /**
      * 
-     * @param gbtTimeBases
-     * @param node
-     * @return
+     * @param gbtTimeBases 时基数据
+     * @param node 信号机节点，主要是IP地址和端口号
+     * @return 返回数据
      */
     public Message setTimeBaseByMonth(List<GbtTimeBase> gbtTimeBases,TscNode node);
 

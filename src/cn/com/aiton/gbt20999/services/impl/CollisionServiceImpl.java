@@ -23,8 +23,8 @@ public class CollisionServiceImpl implements CollisionService{
 
     /**
      * ȡ��16λ�źŻ����̳�ͻ����
-     * @param node
-     * @return
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public List<GbtCollision> getCollisionBy16Phase(TscNode node) {
@@ -56,8 +56,8 @@ public class CollisionServiceImpl implements CollisionService{
     }
     /**
      * ȡ��32��λ�źŻ����̳�ͻ����
-     * @param node
-     * @return
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public List<GbtCollision> getCollisionBy32Phase(TscNode node) {
@@ -89,9 +89,9 @@ public class CollisionServiceImpl implements CollisionService{
     }
     /**
      * �����õ����ݷ��͸�ĳ���źŻ�
-     * @param gbtCollisions
-     * @param node
-     * @return
+     * @param gbtCollisions 绿冲突数据集合
+     * @param node 节点信息，主要是IP地址和端口号
+     * @return 返回数据
      */
     @Override
     public Message setCollision(List<GbtCollision> gbtCollisions ,TscNode node) {

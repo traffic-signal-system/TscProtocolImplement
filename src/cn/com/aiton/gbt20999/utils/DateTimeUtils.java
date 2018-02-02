@@ -18,7 +18,7 @@ public class DateTimeUtils {
          
          /**
           * 取北京时间
-          * @return
+          * @return 返回数据
           */
          public static String getBeijingTime(){
              return getFormatedDateString(8);
@@ -26,7 +26,7 @@ public class DateTimeUtils {
          
          /**
           * 取班加罗尔时间
-          * @return
+          * @return 返回数据
           */
          public static String getBangaloreTime(){
              return getFormatedDateString(5.5f);
@@ -34,7 +34,7 @@ public class DateTimeUtils {
          
          /**
           * 取纽约时间
-          * @return
+          * @return 返回数据
           */
          public static String getNewyorkTime(){
              return getFormatedDateString(-5);
@@ -43,8 +43,8 @@ public class DateTimeUtils {
          /**
           * 此函数非原创，从网上搜索而来，timeZoneOffset原为int类型，为班加罗尔调整成float类型
           * timeZoneOffset表示时区，如中国一般使用东八区，因此timeZoneOffset就是8
-          * @param timeZoneOffset
-          * @return
+          * @param timeZoneOffset 时区偏移
+          * @return 返回数据
           */
          public static String getFormatedDateString(float timeZoneOffset){
              if (timeZoneOffset > 13 || timeZoneOffset < -12) {
@@ -67,8 +67,8 @@ public class DateTimeUtils {
     /**
      * �õ�UTCʱ�䣬����Ϊ�ַ�������ʽΪ"yyyy-MM-dd HH:mm"
      * �����ȡʧ�ܣ�����null
-     * @param time
-     * @return
+     * @param time 时间
+     * @return 返回数据
      */
     public static String utcToLocalTimeString(long time){
         StringBuffer UTCTimeBuffer = new StringBuffer();
@@ -99,8 +99,8 @@ public class DateTimeUtils {
     }
     /**
      * ��UTCʱ��ת��Ϊ������ʱ��
-     * @param UTCTime
-     * @return
+     * @param UTCTime UTC时间
+     * @return 返回数据
      */
     public static String getLocalTimeFromUTC(String UTCTime){
         java.util.Date UTCDate = null ;

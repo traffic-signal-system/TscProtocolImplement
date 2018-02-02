@@ -12,15 +12,15 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 public interface ModuleService {
     /**
      * �õ��źŻ���ģ���ź�
-     * @param node
-     * @return
+     * @param node 信号节点，主要是IP地址和端口号
+     * @return 返回Module内容
      */
     public List<GbtModule> getModule(TscNode node);
 
     /**
      * ��ǰ�źŻ������忨��״̬
-     * @param node
-     * @return
+     * @param node 信号节点，主要是IP地址和端口号
+     * @return  返回Module内容
      */
     public byte[] getModuleState(TscNode node);
 }

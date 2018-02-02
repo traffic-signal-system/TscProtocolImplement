@@ -23,9 +23,9 @@ public class PatternServiceImpl implements PatternService {
     /**
      * ���źŻ���ȡ��ʱ����
      *
-     * @param node
-     * @return
-     */
+     * @param node 信号机节点信息，主要是IP地址和端口号
+     * @return 返回配时方案数据集合
+     */ 
     @Override
     public List<GbtTimePattern> getTimePattern(TscNode node) {
         List<GbtTimePattern> gbtTimePatterns = new ArrayList<GbtTimePattern>();
@@ -60,9 +60,9 @@ public class PatternServiceImpl implements PatternService {
     /**
      * ������ʱ���ݵ��źŻ�
      *
-     * @param node
-     * @param gbtTimePatterns
-     * @return
+     * @param node 信号机节点信息，主要是IP地址和端口号
+     * @param gbtTimePatterns 配时方案集合
+     * @return 返回是否成功数据
      */
     @Override
     public Message setTimePattern(TscNode node, List<GbtTimePattern> gbtTimePatterns) {

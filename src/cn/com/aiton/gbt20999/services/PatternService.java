@@ -13,16 +13,16 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 public interface PatternService {
     /**
      * ���źŻ���ȡ��ʱ����
-     * @param node
-     * @return
+     * @param node   信号机节点，主要 是IP地址和端口号
+     * @return 返回数据
      */
     public List<GbtTimePattern> getTimePattern(TscNode node);
 
     /**
      * ������ʱ���ݵ��źŻ�
-     * @param node
-     * @param gbtTimePatterns
-     * @return
+     * @param node 信号机节点，主要 是IP地址和端口号
+     * @param gbtTimePatterns 配时方案集合数据
+     * @return 返回数据
      */
     public Message setTimePattern(TscNode node,List<GbtTimePattern> gbtTimePatterns);
 

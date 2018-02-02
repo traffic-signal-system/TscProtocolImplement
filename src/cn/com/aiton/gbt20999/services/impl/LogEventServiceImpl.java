@@ -22,8 +22,8 @@ public class LogEventServiceImpl implements LogEventService{
     /**
      * ȡ��һ���ڵ��������־����
      *
-     * @param node
-     * @return
+     * @param node 节点信息，
+     * @return 返回数据
      */
     @Override
     public List<GbtEventLog> getEventLog(TscNode node) {
@@ -66,9 +66,9 @@ public class LogEventServiceImpl implements LogEventService{
     /**
      * ����ʱ��ȡ����־�����ʱ������һ�졣
      *
-     * @param node
-     * @param date
-     * @return
+     * @param node 节点信息，
+     * @param date 日期时间
+     * @return 返回数据
      */
     @Override
     public List<GbtEventLog> getEventLogByTime(TscNode node, Date date) {
@@ -78,9 +78,9 @@ public class LogEventServiceImpl implements LogEventService{
     /**
      * ������־���Ͷ�ȡ��־����
      *
-     * @param node
-     * @param type
-     * @return
+     * @param node 节点信息，
+     * @param type 类型
+     * @return 返回数据
      */
     @Override
     public List<GbtEventLog> getEventLogByEventType(TscNode node, byte type) {
@@ -90,10 +90,10 @@ public class LogEventServiceImpl implements LogEventService{
     /**
      * ��������ʱ�䣬����ʼʱ��ͽ���ʱ���ڵ���־���ݶ�ȡ����
      *
-     * @param node
-     * @param startTime
-     * @param endTime
-     * @return
+     * @param node 节点信息，
+     * @param startTime 开始时间
+     * @param endTime 结束时间
+     * @return 返回数据
      */
     @Override
     public List<GbtEventLog> getEventLogByStartTimeAndEndTime(TscNode node, Date startTime, Date endTime) {

@@ -7,8 +7,8 @@ package cn.com.aiton.gbt20999.utils;
 public class DirectIdToDirectUtil {
 	/**
 	 * 方向转换类
-	 * @param i
-	 * @return
+	 * @param i 字节内容
+	 * @return 返回字符串信息
 	 */
     public static String getDirect(int i){
         switch(i){

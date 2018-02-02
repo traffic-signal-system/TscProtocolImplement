@@ -24,8 +24,8 @@ public class TimeBaseServiceImpl implements TimeBaseService {
     /**
      * ���źŻ��õ�ĳ���ڵ��ʱ������
      *
-     * @param node
-     * @return
+     * @param node 信号机节点信息，主要是IP地址和端口号
+     * @return 返回信息
      */
     @Override
     public List<GbtTimeBase> getTimeBase(TscNode node) {
@@ -65,9 +65,9 @@ public class TimeBaseServiceImpl implements TimeBaseService {
      * ����ʱ�����ݵ��źŻ�
      * ͨ������
      *
-     * @param gbtTimeBaseList
-     * @param node
-     * @return
+     * @param gbtTimeBaseList 时基数据集合
+     * @param node 信号机节点信息，主要是IP地址和端口号
+     * @return 返回信息
      */
     @Override
     public Message setTimeBaseByCalendar(List<GbtTimeBase> gbtTimeBaseList, TscNode node) {
@@ -107,9 +107,9 @@ public class TimeBaseServiceImpl implements TimeBaseService {
      * ����ʱ�����ݵ��źŻ�
      * ͨ����ģʽ
      *
-     * @param gbtTimeBases
-     * @param node
-     * @return
+     * @param gbtTimeBases 时基集合信息
+     * @param node 信号机节点信息，主要是IP地址和端口号
+     * @return 返回信息
      */
     @Override
     public Message setTimeBaseByWeekend(List<GbtTimeBase> gbtTimeBases, TscNode node) {

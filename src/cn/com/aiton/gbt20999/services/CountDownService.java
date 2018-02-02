@@ -13,15 +13,15 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 public interface CountDownService {
 	/**
 	 * 取得倒计时配置信息
-	 * @param node
-	 * @return
+	 * @param node 節點 信息，主要是IP地址和端口號
+	 * @return 返回數據
 	 */
     public List<CountDown> getCntDownDev(TscNode node);
 	/**
 	 * 设置倒计时配置信息
-	 * @param countDowns
-	 * @param node
-	 * @return
+	 * @param countDowns 倒計時數據對象
+	 * @param node 節點 信息，主要是IP地址和端口號
+	 * @return 返回數據
 	 */
     public Message setCntDownDev(List<CountDown> countDowns,TscNode node);
 }
