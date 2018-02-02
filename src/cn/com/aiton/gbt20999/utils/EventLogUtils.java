@@ -2,9 +2,17 @@ package cn.com.aiton.gbt20999.utils;
 
 /**
  * Created by Administrator on 14-2-14.
+ * 日志工具类
+ * 
  */
 public class EventLogUtils {
+	/**
+	 * 日志类型转换成文字 
+	 * @param type
+	 * @return
+	 */
     public static String eventTypeToString(int type){
+
         String result = "δ֪";
         switch (type)
         {
@@ -65,6 +73,12 @@ public class EventLogUtils {
 
         return result;
     }
+    /**
+     * 日志值，转换成文字内容
+     * @param i
+     * @param type
+     * @return
+     */
     public static String eventDescToString(long i, byte type){
         String result = "";
         if (type == 0x00)

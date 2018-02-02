@@ -8,17 +8,18 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 
 /**
  * Created by Administrator on 14-2-14.
+ * é…æ—¶æ–¹æ¡ˆæœåŠ¡ç±»
  */
 public interface PatternService {
     /**
-     * ´ÓĞÅºÅ»ú¶ÁÈ¡ÅäÊ±Êı¾İ
+     * ï¿½ï¿½ï¿½ÅºÅ»ï¿½ï¿½ï¿½È¡ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
      * @param node
      * @return
      */
     public List<GbtTimePattern> getTimePattern(TscNode node);
 
     /**
-     * ÉèÖÃÅäÊ±Êı¾İµ½ĞÅºÅ»ú
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½İµï¿½ï¿½ÅºÅ»ï¿½
      * @param node
      * @param gbtTimePatterns
      * @return

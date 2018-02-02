@@ -1,14 +1,25 @@
 package cn.com.aiton.gbt20999.domain;
 
-
+/**
+ * 检测器日志实体类
+ * @author Administrator
+ *
+ */
 public class GbtEventLog {
 
+	//设备ID
     private int deviceId;
+	//日志ID
     private byte logId;
+	//日志类型
     private byte eventType;
+	//时间，用格林威志表示时间1970 1 1 0 0 0 开始
     private int happenTime;
+	//日志内容
     private int eventValue;
+	//字条串表示时间
     private String eventTime;
+	//字符串表示内容
     private String eventLogDesc;
 
 	public int getDeviceId() {

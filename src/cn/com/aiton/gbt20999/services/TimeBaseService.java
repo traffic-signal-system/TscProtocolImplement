@@ -8,18 +8,19 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 
 /**
  * Created by Administrator on 14-2-14.
+ * æ—¶åŸºæœåŠ¡ç±»
  */
 public interface TimeBaseService {
     /**
-     * ´ÓĞÅºÅ»úµÃµ½Ä³¸ö½ÚµãµÄÊ±»ùÊı¾İ
+     * ï¿½ï¿½ï¿½ÅºÅ»ï¿½ï¿½Ãµï¿½Ä³ï¿½ï¿½ï¿½Úµï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @param node
      * @return
      */
     public List<GbtTimeBase> getTimeBase(TscNode node);
 
     /**
-     * ÉèÖÃÊ±»ùÊı¾İµ½ĞÅºÅ»ú
-     * Í¨¹ıÔÂÀú
+     * ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½İµï¿½ï¿½ÅºÅ»ï¿½
+     * Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @param gbtTimeBaseList
      * @param node
      * @return
@@ -27,8 +28,8 @@ public interface TimeBaseService {
     public Message setTimeBaseByCalendar(List<GbtTimeBase> gbtTimeBaseList,TscNode node);
 
     /**
-     * ÉèÖÃÊ±»ùÊı¾İµ½ĞÅºÅ»ú
-     * Í¨¹ıÖÜÄ£Ê½
+     * ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½İµï¿½ï¿½ÅºÅ»ï¿½
+     * Í¨ï¿½ï¿½ï¿½ï¿½Ä£Ê½
      * @param gbtTimeBases
      * @param node
      * @return

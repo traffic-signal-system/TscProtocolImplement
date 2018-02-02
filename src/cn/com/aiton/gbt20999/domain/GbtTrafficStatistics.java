@@ -1,10 +1,17 @@
 package cn.com.aiton.gbt20999.domain;
 
 import java.util.Date;
-
+/**
+ * 车流量 检测记录表
+ * @author Administrator
+ *
+ */
 public class GbtTrafficStatistics {
+	//设备ID
 	private long deviceId;
+	//检测器ID
 	private byte detectorId;
+	//记录时间
 	private Date recordTime;
 	@Override
 	public String toString() {

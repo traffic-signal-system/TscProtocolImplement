@@ -16,6 +16,10 @@ import cn.com.aiton.gbt20999.utils.GbtDefine;
 import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 
 
+/**
+ * Created by Administrator on 14-2-14.
+ * 时段表服务类
+ */
 public class ScheduleServiceImpl implements ScheduleService{
    
     /**

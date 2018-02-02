@@ -11,11 +11,12 @@ import cn.com.aiton.gbt20999.utils.GbtDefine;
 import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 
 /**
- * Created by Administrator on 14-2-23.
+ * Created by Administrator on 14-2-14.
+ * æ ¡æ—¶æœåŠ¡ç±»
  */
 public class TimingServiceImpl implements TimingService {
     /**
-     * Ğ£Ê±¹¦ÄÜ
+     * Ğ£Ê±ï¿½ï¿½ï¿½ï¿½
      *
      * @param node
      * @return
@@ -37,8 +38,8 @@ public class TimingServiceImpl implements TimingService {
             client.send(node.getIpAddress(), node.getPort(), hex);
             byte[] result = client.receiveByte(node.getIpAddress(), node.getPort());
 //            byte[] result = ByteUtils.stringToByteArrayByISO(info);
-//            System.out.println("·şÎñ¶Ë»ØÓ¦Êı¾İ£º" + info);
-//TODO   ËõĞ´ÊÇ·ñ³É¹¦²¿·Ö
+//            System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½İ£ï¿½" + info);
+//TODO   ï¿½ï¿½Ğ´ï¿½Ç·ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½
             if(result[0] != 0x86){
             	message.setBoo(true);
             	message.setMsg("setTiming");

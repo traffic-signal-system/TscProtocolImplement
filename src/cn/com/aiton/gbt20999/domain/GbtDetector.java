@@ -1,14 +1,25 @@
 package cn.com.aiton.gbt20999.domain;
-
+/**
+ * 车检器实体类
+ * @author Administrator
+ *
+ */
 public class GbtDetector {
-
+//车检器编号 
 	private byte detectorId;
+	//相位ID
 	private byte phaseId;
+	//车检测器类型
 	private byte detectorType;
+	//方向
 	private byte direc;
+	//时间
 	private byte requestEffectTime;
+	//检测器选项
 	private byte detectorOption;
+	//饱和度值
 	private short saturationVolume;
+	//饱和度占有率
 	private byte saturationOccupancy;
 
 

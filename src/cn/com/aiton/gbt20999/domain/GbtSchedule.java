@@ -1,14 +1,28 @@
 package cn.com.aiton.gbt20999.domain;
 
+/**
+ * 信号机时段表
+ * @author Administrator
+ *
+ */
 public class GbtSchedule {
+	//设备iD
 	private int deviceId;
+	//时段表ID
 	private byte scheduleId;
+	//事件ID
 	private byte eventId;
+	//开始小时
 	private byte beginHour;
+	//开始分钟
 	private byte beginMinute;
+	//控制模式
 	private byte controlMode;
+	//配时表ID
 	private byte timePatternId;
+	//基本
 	private byte auxOut;
+	//特殊
 	private byte specialOut;
 	@Override
 	public String toString() {

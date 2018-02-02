@@ -7,18 +7,19 @@ import cn.com.aiton.gbt20999.domain.GbtEventLog;
 import cn.com.aiton.gbt20999.domain.TscNode;
 
 /**
+ * ä¿¡å·æœºæ—¥å¿—æœåŠ¡ç±»
  * Created by Administrator on 14-2-14.
  */
 public interface LogEventService {
     /**
-     * È¡µÃÒ»¸ö½ÚµãµÄËùÓĞÈÕÖ¾Êı¾İ
+     * È¡ï¿½ï¿½Ò»ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½
      * @param node
      * @return
      */
     public List<GbtEventLog> getEventLog(TscNode node);
 
     /**
-     * ¸ù¾İÊ±¼äÈ¡µÃÈÕÖ¾£¬Õâ¸öÊ±¼äÊÇÄÄÒ»Ìì¡£
+     * ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½È¡ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ò»ï¿½ì¡£
      * @param node
      * @param date
      * @return
@@ -26,7 +27,7 @@ public interface LogEventService {
     public List<GbtEventLog> getEventLogByTime(TscNode node ,Date date);
 
     /**
-     * ¸ù¾İÈÕÖ¾ÀàĞÍ¶ÁÈ¡ÈÕÖ¾Êı¾İ
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½Í¶ï¿½È¡ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½ï¿½
      * @param node
      * @param type
      * @return
@@ -34,7 +35,7 @@ public interface LogEventService {
     public List<GbtEventLog> getEventLogByEventType(TscNode node,byte type);
 
     /**
-     * ¸ù¾İÁ½¸öÊ±¼ä£¬½«¿ªÊ¼Ê±¼äºÍ½áÊøÊ±¼äÄÚµÄÈÕÖ¾Êı¾İ¶ÁÈ¡³öÀ´
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ä£¬ï¿½ï¿½ï¿½ï¿½Ê¼Ê±ï¿½ï¿½Í½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½Úµï¿½ï¿½ï¿½Ö¾ï¿½ï¿½ï¿½İ¶ï¿½È¡ï¿½ï¿½ï¿½ï¿½
      * @param node
      * @param startTime
      * @param endTime

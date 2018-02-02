@@ -14,10 +14,13 @@ import cn.com.aiton.gbt20999.utils.ByteUtils;
 import cn.com.aiton.gbt20999.utils.CheckGbt;
 import cn.com.aiton.gbt20999.utils.GbtDefine;
 import cn.com.aiton.gbt20999.utils.UdpClientSocket;
-
+/**
+ * Created by Administrator on 14-2-14.
+ * é˜¶æ®µé…æ—¶æœåŠ¡ç±»
+ */
 public class StagePatternServiceImpl implements StagePatternService {
     /**
-     * ´ÓĞÅºÅ»ú¶ÁÈ¡32ÏàÎ»µÄ½×¶ÎÅäÖÃÊı¾İ
+     * ï¿½ï¿½ï¿½ÅºÅ»ï¿½ï¿½ï¿½È¡32ï¿½ï¿½Î»ï¿½Ä½×¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
      * @param node
      * @return
@@ -30,7 +33,7 @@ public class StagePatternServiceImpl implements StagePatternService {
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_STAGEPATTERN);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            //System.out.println("·şÎñ¶Ë»ØÓ¦Êı¾İ£º" + info);
+            //System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½İ£ï¿½" + info);
             if(!CheckGbt.check(bytes, "GbtStagePattern")){
                 return null;
             }
@@ -68,7 +71,7 @@ public class StagePatternServiceImpl implements StagePatternService {
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_STAGEPATTERN);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            //System.out.println("·şÎñ¶Ë»ØÓ¦Êı¾İ£º" + info);
+            //System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½İ£ï¿½" + info);
             if(!CheckGbt.check(bytes, "GbtStagePattern")){
                 return null;
             }
@@ -120,8 +123,8 @@ public class StagePatternServiceImpl implements StagePatternService {
             client.send(node.getIpAddress(), node.getPort(), hex);
             String info = client.receive(node.getIpAddress(), node.getPort());
             byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("·şÎñ¶Ë»ØÓ¦Êı¾İ£º" + info);
-//TODO   ËõĞ´ÊÇ·ñ³É¹¦²¿·Ö
+            System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½İ£ï¿½" + info);
+//TODO   ï¿½ï¿½Ğ´ï¿½Ç·ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -154,8 +157,8 @@ public class StagePatternServiceImpl implements StagePatternService {
             client.send(node.getIpAddress(), node.getPort(), hex);
             String info = client.receive(node.getIpAddress(), node.getPort());
             byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("·şÎñ¶Ë»ØÓ¦Êı¾İ£º" + info);
-//TODO   ËõĞ´ÊÇ·ñ³É¹¦²¿·Ö
+            System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½İ£ï¿½" + info);
+//TODO   ï¿½ï¿½Ğ´ï¿½Ç·ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½
         }catch (Exception ex){
             ex.printStackTrace();
         }

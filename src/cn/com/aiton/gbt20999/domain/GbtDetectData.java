@@ -1,12 +1,23 @@
 package cn.com.aiton.gbt20999.domain;
-
+/**
+ * 检测器数据，体现检测过车的数据。
+ * @author Administrator
+ *
+ */
 public class GbtDetectData {
+	//检测器编号 
 	private byte detectorId;
+	//所有车流量
 	private byte allFlow;
+	//大车流量 
 	private byte bigVehicleFlow;
+	//小车流量
 	private byte smallVehicleFlow;
+	//占有率
 	private byte occupancy;
+	//车速度
 	private byte speed;
+	//车头时距
 	private byte vehicleLength;
 	public byte getDetectorId() {
 		return detectorId;

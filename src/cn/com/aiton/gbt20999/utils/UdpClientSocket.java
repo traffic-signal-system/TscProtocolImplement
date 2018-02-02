@@ -9,6 +9,7 @@ import java.net.InetAddress;
 
 /**
  * Created by Administrator on 14-2-11.
+ * UDP å®¢æˆ·ç«¯æ“ä½œç±»
  */
 public class UdpClientSocket {
     private byte[] buffer = new byte[65535];
@@ -16,7 +17,7 @@ public class UdpClientSocket {
     private DatagramSocket ds = null;
 
     /**
-     * ¹¹Ôìº¯Êı£¬´´½¨UDP¿Í»§¶Ë
+     * ï¿½ï¿½ï¿½ìº¯ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½UDPï¿½Í»ï¿½ï¿½ï¿½
      * @throws Exception
      */
     public UdpClientSocket() throws Exception {
@@ -24,8 +25,8 @@ public class UdpClientSocket {
     }
 
     /**
-     * ÉèÖÃ³¬Ê±Ê±¼ä£¬¸Ã·½·¨±ØĞëÔÚbind·½·¨Ö®ºóÊ¹ÓÃ.
-     * @param timeout ³¬Ê±Ê±¼ä
+     * ï¿½ï¿½ï¿½Ã³ï¿½Ê±Ê±ï¿½ä£¬ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½bindï¿½ï¿½ï¿½ï¿½Ö®ï¿½ï¿½Ê¹ï¿½ï¿½.
+     * @param timeout ï¿½ï¿½Ê±Ê±ï¿½ï¿½
      * @throws Exception
      */
     public final void setSoTimeout(final int timeout) throws Exception {
@@ -33,8 +34,8 @@ public class UdpClientSocket {
     }
 
     /**
-     * »ñµÃ³¬Ê±Ê±¼ä.
-     * @return ·µ»Ø³¬Ê±Ê±¼ä
+     * ï¿½ï¿½Ã³ï¿½Ê±Ê±ï¿½ï¿½.
+     * @return ï¿½ï¿½ï¿½Ø³ï¿½Ê±Ê±ï¿½ï¿½
      * @throws Exception
      */
     public final int getSoTimeout() throws Exception {
@@ -46,11 +47,11 @@ public class UdpClientSocket {
     }
 
     /**
-     * ÏòÖ¸¶¨µÄ·şÎñ¶Ë·¢ËÍÊı¾İĞÅÏ¢.
-     * @param host ·şÎñÆ÷Ö÷»úµØÖ·
-     * @param port ·şÎñ¶Ë¶Ë¿Ú
-     * @param bytes ·¢ËÍµÄÊı¾İĞÅÏ¢
-     * @return ·µ»Ø¹¹Ôìºó¶íÊı¾İ±¨
+     * ï¿½ï¿½Ö¸ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½Ë·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢.
+     * @param host ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ö·
+     * @param port ï¿½ï¿½ï¿½ï¿½Ë¶Ë¿ï¿½
+     * @param bytes ï¿½ï¿½ï¿½Íµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ï¢
+     * @return ï¿½ï¿½ï¿½Ø¹ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ±ï¿½
      * @throws IOException
      */
     public final DatagramPacket send(final String host, final int port,
@@ -62,10 +63,10 @@ public class UdpClientSocket {
     }
 
     /**
-     * ½ÓÊÕ´ÓÖ¸¶¨µÄ·şÎñ¶Ë·¢»ØµÄÊı¾İ.
-     * @param lhost ·şÎñ¶ËÖ÷»ú
-     * @param lport ·şÎñ¶Ë¶Ë¿Ú
-     * @return ·µ»Ø´ÓÖ¸¶¨µÄ·şÎñ¶Ë·¢»ØµÄÊı¾İ.
+     * ï¿½ï¿½ï¿½Õ´ï¿½Ö¸ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½Ë·ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½.
+     * @param lhost ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     * @param lport ï¿½ï¿½ï¿½ï¿½Ë¶Ë¿ï¿½
+     * @return ï¿½ï¿½ï¿½Ø´ï¿½Ö¸ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½Ë·ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½.
      * @throws Exception
      */
     public final String receive(final String lhost, final int lport)
@@ -76,10 +77,10 @@ public class UdpClientSocket {
         return info;
     }
     /**
-     * ½ÓÊÕ´ÓÖ¸¶¨µÄ·şÎñ¶Ë·¢»ØµÄÊı¾İ.
-     * @param lhost ·şÎñ¶ËÖ÷»ú
-     * @param lport ·şÎñ¶Ë¶Ë¿Ú
-     * @return ·µ»Ø´ÓÖ¸¶¨µÄ·şÎñ¶Ë·¢»ØµÄÊı¾İ.
+     * ï¿½ï¿½ï¿½Õ´ï¿½Ö¸ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½Ë·ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½.
+     * @param lhost ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
+     * @param lport ï¿½ï¿½ï¿½ï¿½Ë¶Ë¿ï¿½
+     * @return ï¿½ï¿½ï¿½Ø´ï¿½Ö¸ï¿½ï¿½ï¿½Ä·ï¿½ï¿½ï¿½Ë·ï¿½ï¿½Øµï¿½ï¿½ï¿½ï¿½ï¿½.
      * @throws Exception
      */
     public final byte[] receiveByte(final String lhost, final int lport)
@@ -90,7 +91,7 @@ public class UdpClientSocket {
         return result;
     }
     /**
-     * ¹Ø±ÕudpÁ¬½Ó.
+     * ï¿½Ø±ï¿½udpï¿½ï¿½ï¿½ï¿½.
      */
     public final void close() {
         try {
@@ -101,7 +102,7 @@ public class UdpClientSocket {
     }
 
     /**
-     * ²âÊÔ¿Í»§¶Ë·¢°üºÍ½ÓÊÕ»ØÓ¦ĞÅÏ¢µÄ·½·¨.
+     * ï¿½ï¿½ï¿½Ô¿Í»ï¿½ï¿½Ë·ï¿½ï¿½ï¿½ï¿½Í½ï¿½ï¿½Õ»ï¿½Ó¦ï¿½ï¿½Ï¢ï¿½Ä·ï¿½ï¿½ï¿½.
      * @param args
      * @throws Exception
      */
@@ -109,8 +110,8 @@ public class UdpClientSocket {
         UdpClientSocket client = new UdpClientSocket();
         String serverHost = "127.0.0.1";
         int serverPort = 3344;
-        client.send(serverHost, serverPort, ("ÄãºÃ£¬°¢ÃÛ¹û!").getBytes());
+        client.send(serverHost, serverPort, ("ï¿½ï¿½Ã£ï¿½ï¿½ï¿½ï¿½Û¹ï¿½!").getBytes());
         String info = client.receive(serverHost, serverPort);
-        System.out.println("·şÎñ¶Ë»ØÓ¦Êı¾İ£º" + info);
+        System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½İ£ï¿½" + info);
     }
 }

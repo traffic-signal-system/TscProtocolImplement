@@ -1,11 +1,21 @@
 package cn.com.aiton.gbt20999.domain;
-
+/**
+ * 信号机群的阶段配时表的数据内容
+ * @author Administrator
+ *
+ */
 public class GbtGroupTimePattern {
+	//群ID
 	private int groupId;
+	//阶段配时表的主键ID
 	private byte timePatternId;
+	//周期时间
 	private byte cycleTime;
+	//协调时间
 	private String offset;
+	//协调相位
 	private String coordPhase;
+	//阶段表ID
 	private byte stagePatternId;
 	@Override
 	public String toString() {

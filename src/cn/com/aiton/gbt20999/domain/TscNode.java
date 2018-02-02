@@ -1,14 +1,28 @@
 package cn.com.aiton.gbt20999.domain;
-
+/**
+ * 信号节点对象
+ * @author Administrator
+ *
+ */
 public class TscNode {
+	//设备ID
 	private int deviceId;
+	//群ID
+	
 	private int groupId;
+	//一个群里节点序号，一个群组排名
 	private int groupSequence;
+	//设备名称
 	private String deviceName;
+	//IP地址
 	private String ipAddress;
+	//端口
 	private int port;
+	//版本
 	private String version;
+	//连接类型
 	private int linkType;
+	//通信协议
 	private int protocolType;
 	@Override
 	public String toString() {

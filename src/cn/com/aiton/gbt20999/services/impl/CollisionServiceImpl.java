@@ -15,10 +15,17 @@ import cn.com.aiton.gbt20999.utils.CheckGbt;
 import cn.com.aiton.gbt20999.utils.GbtDefine;
 import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 
-
+/**
+ * Created by Administrator on 14-2-14.
+ * 信号机绿冲突相关操作类，可以设置和取得某台信号机的冲突数据
+ */
 public class CollisionServiceImpl implements CollisionService{
 
-  
+    /**
+     * ȡ��16λ�źŻ����̳�ͻ����
+     * @param node
+     * @return
+     */
     @Override
     public List<GbtCollision> getCollisionBy16Phase(TscNode node) {
         List<GbtCollision> gbtCollisions = new ArrayList<GbtCollision>();
@@ -47,7 +54,11 @@ public class CollisionServiceImpl implements CollisionService{
         }
         return gbtCollisions;
     }
-
+    /**
+     * ȡ��32��λ�źŻ����̳�ͻ����
+     * @param node
+     * @return
+     */
     @Override
     public List<GbtCollision> getCollisionBy32Phase(TscNode node) {
         List<GbtCollision> gbtCollisions = new ArrayList<GbtCollision>();
@@ -76,7 +87,12 @@ public class CollisionServiceImpl implements CollisionService{
         }
         return gbtCollisions;
     }
-
+    /**
+     * �����õ����ݷ��͸�ĳ���źŻ�
+     * @param gbtCollisions
+     * @param node
+     * @return
+     */
     @Override
     public Message setCollision(List<GbtCollision> gbtCollisions ,TscNode node) {
         Message message = new Message();

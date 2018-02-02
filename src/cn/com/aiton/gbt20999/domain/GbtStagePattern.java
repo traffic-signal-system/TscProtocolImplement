@@ -1,13 +1,25 @@
 package cn.com.aiton.gbt20999.domain;
-
+/**
+ * 阶段配时表
+ * @author Administrator
+ *
+ */
 public class GbtStagePattern {
+	//设备ID
 	private int deviceId;
+	//阶段配时号
 	private byte stagePatternId;
+	//阶段号
 	private byte stageId;
+	//放行相位
 	private int allowPhase;
+	//阶段绿灯时间
 	private byte greenTime;
+	//阶段黄灯时间
 	private byte yellowTime;
+	//阶段红灯时间
 	private byte redTime;
+	//阶段选项参数 
 	private byte option;
 	@Override
 	public String toString() {

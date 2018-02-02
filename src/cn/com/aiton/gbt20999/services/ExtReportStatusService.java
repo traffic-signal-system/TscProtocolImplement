@@ -1,7 +1,11 @@
 package cn.com.aiton.gbt20999.services;
 
 import cn.com.aiton.gbt20999.domain.TscNode;
-
+/**
+ * 主动上报实现功能 类
+ * @author Administrator
+ *
+ */
 public interface ExtReportStatusService {
 	/**
 	 * 取得信号机的实时状态信息

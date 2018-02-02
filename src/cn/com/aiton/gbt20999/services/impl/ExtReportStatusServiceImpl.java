@@ -6,9 +6,17 @@ import cn.com.aiton.gbt20999.services.ExtReportStatusService;
 import cn.com.aiton.gbt20999.utils.ExtReportUtils;
 import cn.com.aiton.gbt20999.utils.GbtDefine;
 import cn.com.aiton.gbt20999.utils.UdpClientSocket;
-
+/**
+ * 主动上报实现功能 类
+ * @author Administrator
+ *
+ */
 public class ExtReportStatusServiceImpl  implements ExtReportStatusService{
 	public ExtReportState ers;
+	/**
+	 * 取得信号机的实时状态信息
+	 * @param node 信号机节点，主要是ip地址和端口参数最为重要
+	 */
 	@Override
 	public void getState(final TscNode node) {
 		 final UdpClientSocket u;

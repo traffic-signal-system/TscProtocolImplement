@@ -16,7 +16,10 @@ import cn.com.aiton.gbt20999.utils.GbtDefine;
 import cn.com.aiton.gbt20999.utils.OverlapPhaseUtils;
 import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 
-
+/**
+ * Created by Administrator on 14-2-14.
+ * 信号机的跟随相位操作服务类
+ */
 public class OverlapPhaseServiceImpl implements OverlapPhaseService {
     /**
      * ���źŻ�ȡ�ø�����λ����

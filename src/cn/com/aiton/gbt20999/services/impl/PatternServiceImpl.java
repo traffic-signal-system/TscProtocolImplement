@@ -15,10 +15,13 @@ import cn.com.aiton.gbt20999.utils.CheckGbt;
 import cn.com.aiton.gbt20999.utils.GbtDefine;
 import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 
-
+/**
+ * Created by Administrator on 14-2-14.
+ * é…æ—¶æ–¹æ¡ˆæœåŠ¡ç±»
+ */
 public class PatternServiceImpl implements PatternService {
     /**
-     * ´ÓĞÅºÅ»ú¶ÁÈ¡ÅäÊ±Êı¾İ
+     * ï¿½ï¿½ï¿½ÅºÅ»ï¿½ï¿½ï¿½È¡ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½
      *
      * @param node
      * @return
@@ -31,7 +34,7 @@ public class PatternServiceImpl implements PatternService {
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_PATTERN);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            //System.out.println("·şÎñ¶Ë»ØÓ¦Êı¾İ£º" + info);
+            //System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½İ£ï¿½" + info);
             if(!CheckGbt.check(bytes, "GbtTimePattern")){
                 return null;
             }
@@ -55,7 +58,7 @@ public class PatternServiceImpl implements PatternService {
     }
 
     /**
-     * ÉèÖÃÅäÊ±Êı¾İµ½ĞÅºÅ»ú
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½İµï¿½ï¿½ÅºÅ»ï¿½
      *
      * @param node
      * @param gbtTimePatterns
@@ -79,8 +82,8 @@ public class PatternServiceImpl implements PatternService {
             client.send(node.getIpAddress(), node.getPort(), hex);
             String info = client.receive(node.getIpAddress(), node.getPort());
             byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("·şÎñ¶Ë»ØÓ¦Êı¾İ£º" + info);
-//TODO   ËõĞ´ÊÇ·ñ³É¹¦²¿·Ö
+            System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½İ£ï¿½" + info);
+//TODO   ï¿½ï¿½Ğ´ï¿½Ç·ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½
         }catch (Exception ex){
             ex.printStackTrace();
         }

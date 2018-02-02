@@ -1,11 +1,23 @@
 package cn.com.aiton.gbt20999.domain;
-
+/**
+ * 群时基配置表实体类，两个功能
+ * 1、在组建无线缆绿波可以使用
+ * 2、对群控制方面可以使用
+ * @author Administrator
+ *
+ */
 public class GbtGroupTimeBase {
+	//群ID
 	private int groupId;
+	//时基ID
 	private byte timeBaseId;
+	//月
 	private int month;
+	//周
 	private short week;
+	//日
 	private long day;
+	//群时段ID
 	private byte scheduleId;
 	@Override
 	public String toString() {

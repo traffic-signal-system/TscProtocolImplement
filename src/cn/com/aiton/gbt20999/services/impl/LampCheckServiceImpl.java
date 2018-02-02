@@ -12,10 +12,13 @@ import cn.com.aiton.gbt20999.utils.CheckGbt;
 import cn.com.aiton.gbt20999.utils.GbtDefine;
 import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 
-
+/**
+ * Г│╞ФЁ║Фё─Ф╣▀Ф°█Е┼║Г╠╩
+ * Created by Administrator on 14-2-14.
+ */
 public class LampCheckServiceImpl implements LampCheckService {
     /**
-     * ╧ь╠у╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -32,25 +35,25 @@ public class LampCheckServiceImpl implements LampCheckService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             if (bytes[0] == 0x86){
             	msg.setBoo(false);
-            	msg.setMsg("п╜рИм╗перЛЁё");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("п╜О©╫О©╫м╗О©╫О©╫О©╫ЛЁё");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }else{
             	msg.setBoo(true);
-            	msg.setMsg("╧ь╠у╣зр╩©И╣фещ╪Л╡БЁи╧╕");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("О©╫ь╠у╣О©╫р╩О©╫О©╫О©╫О©╫щ╪О©╫О©╫и╧О©╫");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }
-           // System.out.println("╥ЧнЯ╤к╩ьс╕йЩ╬щё╨" + info);
+           // System.out.println("О©╫О©╫О©╫О©╫к╩О©╫с╕О©╫О©╫О©╫щёО©╫" + info);
         }catch (Exception ex){
         	msg.setBoo(false);
         	msg.setMsg(ex.toString());
-        	msg.setObj("╣фещ╪Л╡Б");
+        	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             
         }
         return msg;
     }
 
     /**
-     * ╧ь╠у╣ф©ь╟Е2╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫2О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -64,25 +67,25 @@ public class LampCheckServiceImpl implements LampCheckService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             if (bytes[0] == 0x86){
             	msg.setBoo(false);
-            	msg.setMsg("п╜рИм╗перЛЁё");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("п╜О©╫О©╫м╗О©╫О©╫О©╫ЛЁё");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }else{
             	msg.setBoo(true);
-            	msg.setMsg("╧ь╠у╣з╤Ч©И╣фещ╪Л╡БЁи╧╕");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("О©╫ь╠у╣з╤О©╫О©╫О©╫О©╫О©╫щ╪О©╫О©╫и╧О©╫");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }
-           // System.out.println("╥ЧнЯ╤к╩ьс╕йЩ╬щё╨" + info);
+           // System.out.println("О©╫О©╫О©╫О©╫к╩О©╫с╕О©╫О©╫О©╫щёО©╫" + info);
         }catch (Exception ex){
         	msg.setBoo(false);
         	msg.setMsg(ex.toString());
-        	msg.setObj("╣фещ╪Л╡Б");
+        	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             
         }
         return msg;
     }
 
     /**
-     * ╧ь╠у╣ф©ь╟Е3╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫3О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -96,25 +99,25 @@ public class LampCheckServiceImpl implements LampCheckService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             if (bytes[0] == 0x86){
             	msg.setBoo(false);
-            	msg.setMsg("п╜рИм╗перЛЁё");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("п╜О©╫О©╫м╗О©╫О©╫О©╫ЛЁё");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }else{
             	msg.setBoo(true);
-            	msg.setMsg("╧ь╠у╣зхЩ©И╣фещ╪Л╡БЁи╧╕");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("О©╫ь╠у╣О©╫О©╫О©╫О©╫О©╫О©╫О©╫щ╪О©╫О©╫и╧О©╫");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }
-           // System.out.println("╥ЧнЯ╤к╩ьс╕йЩ╬щё╨" + info);
+           // System.out.println("О©╫О©╫О©╫О©╫к╩О©╫с╕О©╫О©╫О©╫щёО©╫" + info);
         }catch (Exception ex){
         	msg.setBoo(false);
         	msg.setMsg(ex.toString());
-        	msg.setObj("╣фещ╪Л╡Б");
+        	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             
         }
         return msg;
     }
 
     /**
-     * ╧ь╠у╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -128,25 +131,25 @@ public class LampCheckServiceImpl implements LampCheckService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             if (bytes[0] == 0x86){
             	msg.setBoo(false);
-            	msg.setMsg("п╜рИм╗перЛЁё");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("п╜О©╫О©╫м╗О©╫О©╫О©╫ЛЁё");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }else{
             	msg.setBoo(true);
-            	msg.setMsg("╧ь╠у╣зкд©И╣фещ╪Л╡БЁи╧╕");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("О©╫ь╠у╣О©╫О©╫д©О©╫О©╫О©╫щ╪О©╫О©╫и╧О©╫");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }
-           // System.out.println("╥ЧнЯ╤к╩ьс╕йЩ╬щё╨" + info);
+           // System.out.println("О©╫О©╫О©╫О©╫к╩О©╫с╕О©╫О©╫О©╫щёО©╫" + info);
         }catch (Exception ex){
         	msg.setBoo(false);
         	msg.setMsg(ex.toString());
-        	msg.setObj("╣фещ╪Л╡Б");
+        	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             
         }
         return msg;
     }
 
     /**
-     * ╧ь╠у╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -160,25 +163,25 @@ public class LampCheckServiceImpl implements LampCheckService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             if (bytes[0] == 0x86){
             	msg.setBoo(false);
-            	msg.setMsg("п╜рИм╗перЛЁё");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("п╜О©╫О©╫м╗О©╫О©╫О©╫ЛЁё");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }else{
             	msg.setBoo(true);
-            	msg.setMsg("╧ь╠у╣знЕ©И╣фещ╪Л╡БЁи╧╕");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("О©╫ь╠у╣О©╫О©╫О©╫О©╫О©╫О©╫щ╪О©╫О©╫и╧О©╫");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }
-           // System.out.println("╥ЧнЯ╤к╩ьс╕йЩ╬щё╨" + info);
+           // System.out.println("О©╫О©╫О©╫О©╫к╩О©╫с╕О©╫О©╫О©╫щёО©╫" + info);
         }catch (Exception ex){
         	msg.setBoo(false);
         	msg.setMsg(ex.toString());
-        	msg.setObj("╣фещ╪Л╡Б");
+        	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             
         }
         return msg;
     }
 
     /**
-     * ╧ь╠у╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -192,25 +195,25 @@ public class LampCheckServiceImpl implements LampCheckService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             if (bytes[0] == 0x86){
             	msg.setBoo(false);
-            	msg.setMsg("п╜рИм╗перЛЁё");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("п╜О©╫О©╫м╗О©╫О©╫О©╫ЛЁё");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }else{
             	msg.setBoo(true);
-            	msg.setMsg("╧ь╠у╣заЫ©И╣фещ╪Л╡БЁи╧╕");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("О©╫ь╠у╣О©╫О©╫О©╫О©╫О©╫О©╫О©╫щ╪О©╫О©╫и╧О©╫");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }
-           // System.out.println("╥ЧнЯ╤к╩ьс╕йЩ╬щё╨" + info);
+           // System.out.println("О©╫О©╫О©╫О©╫к╩О©╫с╕О©╫О©╫О©╫щёО©╫" + info);
         }catch (Exception ex){
         	msg.setBoo(false);
         	msg.setMsg(ex.toString());
-        	msg.setObj("╣фещ╪Л╡Б");
+        	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             
         }
         return msg;
     }
 
     /**
-     * ╧ь╠у╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -224,25 +227,25 @@ public class LampCheckServiceImpl implements LampCheckService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             if (bytes[0] == 0x86){
             	msg.setBoo(false);
-            	msg.setMsg("п╜рИм╗перЛЁё");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("п╜О©╫О©╫м╗О©╫О©╫О©╫ЛЁё");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }else{
             	msg.setBoo(true);
-            	msg.setMsg("╧ь╠у╣зфъ©И╣фещ╪Л╡БЁи╧╕");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("О©╫ь╠у╣О©╫О©╫ъ©О©╫О©╫О©╫щ╪О©╫О©╫и╧О©╫");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }
-           // System.out.println("╥ЧнЯ╤к╩ьс╕йЩ╬щё╨" + info);
+           // System.out.println("О©╫О©╫О©╫О©╫к╩О©╫с╕О©╫О©╫О©╫щёО©╫" + info);
         }catch (Exception ex){
         	msg.setBoo(false);
         	msg.setMsg(ex.toString());
-        	msg.setObj("╣фещ╪Л╡Б");
+        	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             
         }
         return msg;
     }
 
     /**
-     * ╧ь╠у╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -256,25 +259,25 @@ public class LampCheckServiceImpl implements LampCheckService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             if (bytes[0] == 0x86){
             	msg.setBoo(false);
-            	msg.setMsg("п╜рИм╗перЛЁё");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("п╜О©╫О©╫м╗О©╫О©╫О©╫ЛЁё");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }else{
             	msg.setBoo(true);
-            	msg.setMsg("╧ь╠у╣з╟к©И╣фещ╪Л╡БЁи╧╕");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("О©╫ь╠у╣з╟к©О©╫О©╫О©╫щ╪О©╫О©╫и╧О©╫");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }
-           // System.out.println("╥ЧнЯ╤к╩ьс╕йЩ╬щё╨" + info);
+           // System.out.println("О©╫О©╫О©╫О©╫к╩О©╫с╕О©╫О©╫О©╫щёО©╫" + info);
         }catch (Exception ex){
         	msg.setBoo(false);
         	msg.setMsg(ex.toString());
-        	msg.setObj("╣фещ╪Л╡Б");
+        	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             
         }
         return msg;
     }
 
     /**
-     * ╧ь╠у╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -294,7 +297,7 @@ public class LampCheckServiceImpl implements LampCheckService {
     }
 
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -308,25 +311,25 @@ public class LampCheckServiceImpl implements LampCheckService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             if (bytes[0] == 0x86){
             	msg.setBoo(false);
-            	msg.setMsg("п╜рИм╗перЛЁё");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("п╜О©╫О©╫м╗О©╫О©╫О©╫ЛЁё");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }else{
             	msg.setBoo(true);
-            	msg.setMsg("╢Р©╙╣зр╩©И╣фещ╪Л╡БЁи╧╕");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("О©╫Р©╙╣О©╫р╩О©╫О©╫О©╫О©╫щ╪О©╫О©╫и╧О©╫");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }
-           // System.out.println("╥ЧнЯ╤к╩ьс╕йЩ╬щё╨" + info);
+           // System.out.println("О©╫О©╫О©╫О©╫к╩О©╫с╕О©╫О©╫О©╫щёО©╫" + info);
         }catch (Exception ex){
         	msg.setBoo(false);
         	msg.setMsg(ex.toString());
-        	msg.setObj("╣фещ╪Л╡Б");
+        	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             
         }
         return msg;
     }
 
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -340,25 +343,25 @@ public class LampCheckServiceImpl implements LampCheckService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             if (bytes[0] == 0x86){
             	msg.setBoo(false);
-            	msg.setMsg("п╜рИм╗перЛЁё");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("п╜О©╫О©╫м╗О©╫О©╫О©╫ЛЁё");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }else{
             	msg.setBoo(true);
-            	msg.setMsg("╢Р©╙╣з╤Ч©И╣фещ╪Л╡БЁи╧╕");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("О©╫Р©╙╣з╤О©╫О©╫О©╫О©╫О©╫щ╪О©╫О©╫и╧О©╫");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }
-           // System.out.println("╥ЧнЯ╤к╩ьс╕йЩ╬щё╨" + info);
+           // System.out.println("О©╫О©╫О©╫О©╫к╩О©╫с╕О©╫О©╫О©╫щёО©╫" + info);
         }catch (Exception ex){
         	msg.setBoo(false);
         	msg.setMsg(ex.toString());
-        	msg.setObj("╣фещ╪Л╡Б");
+        	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             
         }
         return msg;
     }
 
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -372,25 +375,25 @@ public class LampCheckServiceImpl implements LampCheckService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             if (bytes[0] == 0x86){
             	msg.setBoo(false);
-            	msg.setMsg("п╜рИм╗перЛЁё");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("п╜О©╫О©╫м╗О©╫О©╫О©╫ЛЁё");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }else{
             	msg.setBoo(true);
-            	msg.setMsg("╢Р©╙╣зхЩ©И╣фещ╪Л╡БЁи╧╕");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("О©╫Р©╙╣О©╫О©╫О©╫О©╫О©╫О©╫О©╫щ╪О©╫О©╫и╧О©╫");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }
-           // System.out.println("╥ЧнЯ╤к╩ьс╕йЩ╬щё╨" + info);
+           // System.out.println("О©╫О©╫О©╫О©╫к╩О©╫с╕О©╫О©╫О©╫щёО©╫" + info);
         }catch (Exception ex){
         	msg.setBoo(false);
         	msg.setMsg(ex.toString());
-        	msg.setObj("╣фещ╪Л╡Б");
+        	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             
         }
         return msg;
     }
 
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -404,25 +407,25 @@ public class LampCheckServiceImpl implements LampCheckService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             if (bytes[0] == 0x86){
             	msg.setBoo(false);
-            	msg.setMsg("п╜рИм╗перЛЁё");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("п╜О©╫О©╫м╗О©╫О©╫О©╫ЛЁё");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }else{
             	msg.setBoo(true);
-            	msg.setMsg("╢Р©╙╣зкд©И╣фещ╪Л╡БЁи╧╕");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("О©╫Р©╙╣О©╫О©╫д©О©╫О©╫О©╫щ╪О©╫О©╫и╧О©╫");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }
-           // System.out.println("╥ЧнЯ╤к╩ьс╕йЩ╬щё╨" + info);
+           // System.out.println("О©╫О©╫О©╫О©╫к╩О©╫с╕О©╫О©╫О©╫щёО©╫" + info);
         }catch (Exception ex){
         	msg.setBoo(false);
         	msg.setMsg(ex.toString());
-        	msg.setObj("╣фещ╪Л╡Б");
+        	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             
         }
         return msg;
     }
 
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -436,25 +439,25 @@ public class LampCheckServiceImpl implements LampCheckService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             if (bytes[0] == 0x86){
             	msg.setBoo(false);
-            	msg.setMsg("п╜рИм╗перЛЁё");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("п╜О©╫О©╫м╗О©╫О©╫О©╫ЛЁё");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }else{
             	msg.setBoo(true);
-            	msg.setMsg("╢Р©╙╣знЕ©И╣фещ╪Л╡БЁи╧╕");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("О©╫Р©╙╣О©╫О©╫О©╫О©╫О©╫О©╫щ╪О©╫О©╫и╧О©╫");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }
-           // System.out.println("╥ЧнЯ╤к╩ьс╕йЩ╬щё╨" + info);
+           // System.out.println("О©╫О©╫О©╫О©╫к╩О©╫с╕О©╫О©╫О©╫щёО©╫" + info);
         }catch (Exception ex){
         	msg.setBoo(false);
         	msg.setMsg(ex.toString());
-        	msg.setObj("╣фещ╪Л╡Б");
+        	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             
         }
         return msg;
     }
 
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -468,25 +471,25 @@ public class LampCheckServiceImpl implements LampCheckService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             if (bytes[0] == 0x86){
             	msg.setBoo(false);
-            	msg.setMsg("п╜рИм╗перЛЁё");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("п╜О©╫О©╫м╗О©╫О©╫О©╫ЛЁё");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }else{
             	msg.setBoo(true);
-            	msg.setMsg("╢Р©╙╣заЫ©И╣фещ╪Л╡БЁи╧╕");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("О©╫Р©╙╣О©╫О©╫О©╫О©╫О©╫О©╫О©╫щ╪О©╫О©╫и╧О©╫");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }
-           // System.out.println("╥ЧнЯ╤к╩ьс╕йЩ╬щё╨" + info);
+           // System.out.println("О©╫О©╫О©╫О©╫к╩О©╫с╕О©╫О©╫О©╫щёО©╫" + info);
         }catch (Exception ex){
         	msg.setBoo(false);
         	msg.setMsg(ex.toString());
-        	msg.setObj("╣фещ╪Л╡Б");
+        	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             
         }
         return msg;
     }
 
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -500,25 +503,25 @@ public class LampCheckServiceImpl implements LampCheckService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             if (bytes[0] == 0x86){
             	msg.setBoo(false);
-            	msg.setMsg("п╜рИм╗перЛЁё");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("п╜О©╫О©╫м╗О©╫О©╫О©╫ЛЁё");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }else{
             	msg.setBoo(true);
-            	msg.setMsg("╢Р©╙╣зфъ©И╣фещ╪Л╡БЁи╧╕");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("О©╫Р©╙╣О©╫О©╫ъ©О©╫О©╫О©╫щ╪О©╫О©╫и╧О©╫");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }
-           // System.out.println("╥ЧнЯ╤к╩ьс╕йЩ╬щё╨" + info);
+           // System.out.println("О©╫О©╫О©╫О©╫к╩О©╫с╕О©╫О©╫О©╫щёО©╫" + info);
         }catch (Exception ex){
         	msg.setBoo(false);
         	msg.setMsg(ex.toString());
-        	msg.setObj("╣фещ╪Л╡Б");
+        	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             
         }
         return msg;
     }
 
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -532,25 +535,25 @@ public class LampCheckServiceImpl implements LampCheckService {
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             if (bytes[0] == 0x86){
             	msg.setBoo(false);
-            	msg.setMsg("п╜рИм╗перЛЁё");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("п╜О©╫О©╫м╗О©╫О©╫О©╫ЛЁё");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }else{
             	msg.setBoo(true);
-            	msg.setMsg("╢Р©╙╣з╟к©И╣фещ╪Л╡БЁи╧╕");
-            	msg.setObj("╣фещ╪Л╡Б");
+            	msg.setMsg("О©╫Р©╙╣з╟к©О©╫О©╫О©╫щ╪О©╫О©╫и╧О©╫");
+            	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             }
-           // System.out.println("╥ЧнЯ╤к╩ьс╕йЩ╬щё╨" + info);
+           // System.out.println("О©╫О©╫О©╫О©╫к╩О©╫с╕О©╫О©╫О©╫щёО©╫" + info);
         }catch (Exception ex){
         	msg.setBoo(false);
         	msg.setMsg(ex.toString());
-        	msg.setObj("╣фещ╪Л╡Б");
+        	msg.setObj("О©╫О©╫О©╫щ╪О©╫О©╫");
             
         }
         return msg;
     }
 
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      *
      * @param node
      * @return
@@ -570,7 +573,7 @@ public class LampCheckServiceImpl implements LampCheckService {
     }
 
     /**
-     * ╣ц╣╫╣ф©ь╟Е1╣дблЁЕм╩╪Л╡БйЩ╬щ
+     * О©╫ц╣О©╫О©╫ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫О©╫О©╫О©╫О©╫
      *
      * @param node
      * @return

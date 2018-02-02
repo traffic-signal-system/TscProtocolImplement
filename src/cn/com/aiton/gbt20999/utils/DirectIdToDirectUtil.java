@@ -2,9 +2,14 @@ package cn.com.aiton.gbt20999.utils;
 
 /**
  * Created by Administrator on 2016/11/21.
+ * 方向转换类
  */
 public class DirectIdToDirectUtil {
-
+	/**
+	 * 方向转换类
+	 * @param i
+	 * @return
+	 */
     public static String getDirect(int i){
         switch(i){
             case 1:   return "北左";
@@ -40,7 +45,7 @@ public class DirectIdToDirectUtil {
             case 133: return "南其他";
             case 197: return "西其他";
         }
-        return null;
+		return null;
     }
 
 }

@@ -6,6 +6,7 @@ import java.nio.FloatBuffer;
 
 /**
  * Created by Administrator on 14-2-14.
+ * 工具类，对字节进行分隔成指定对象
  */
 public class ByteUtils {
     /**
@@ -23,7 +24,11 @@ public class ByteUtils {
         return bta;
     }
     
-    //long����ת��byte����
+    /**
+     * //long����ת��byte����
+     * @param number
+     * @return
+     */
     public static byte[] longToByte(long number) {
         long temp = number;
         byte[] b = new byte[8];
@@ -33,7 +38,11 @@ public class ByteUtils {
         }
         return b;
     }
-    //byte����ת��long
+    /**
+     * //byte����ת��long
+     * @param b
+     * @return
+     */
     public static long byteToLong(byte[] b) {
         long s = 0;
         long s0 = b[0] & 0xff;// ���λ

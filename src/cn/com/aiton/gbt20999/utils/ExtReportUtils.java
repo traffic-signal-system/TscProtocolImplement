@@ -10,6 +10,7 @@ import cn.com.aiton.gbt20999.domain.ExtReportState;
 
 /**
  * Created by Administrator on 2014/10/4.
+ * 主动上报相关数据转换工具类
  */
 public class ExtReportUtils {
 
@@ -38,7 +39,11 @@ public class ExtReportUtils {
         ers.setBasetime(bytes[28]);
         return ers;
     }
-
+    /**
+     * 主动上报灯色,从字节数组转换成数字集合
+     * @param bytes
+     * @return
+     */
     public static List<Integer> reportStatusLamp(byte[] bytes){
     	
         List<Integer> listLamp = new ArrayList<Integer>();
@@ -51,7 +56,11 @@ public class ExtReportUtils {
         Collections.reverse(listLamp);
         return listLamp;
     }
-
+/**
+ * 主动上报,工作模式,字节转换成文字 
+ * @param by
+ * @return
+ */
     public static String reportStatusWorkModel(byte by){
 
         String result = "";
@@ -74,7 +83,11 @@ public class ExtReportUtils {
         }
         return result;
     }
-
+/**
+ * 主动上报,工作状态 ,字节转换成文字 
+ * @param by
+ * @return
+ */
     public static String reportStatusWorkStatus(byte by){
         String result = "";
         int f = by & 0x0c;
@@ -96,7 +109,11 @@ public class ExtReportUtils {
         }
         return result;
     }
-
+/**
+ * 主动上报 控制模式,字节转换成文字 
+ * @param by
+ * @return
+ */
     public static String reportStatusControlMode(byte by){
         String result = "";
         int f = by & 0xf0;

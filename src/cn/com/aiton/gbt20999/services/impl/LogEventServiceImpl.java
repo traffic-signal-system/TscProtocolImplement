@@ -14,7 +14,10 @@ import cn.com.aiton.gbt20999.utils.EventLogUtils;
 import cn.com.aiton.gbt20999.utils.GbtDefine;
 import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 
-
+/**
+ * 信号机日志服务类
+ * Created by Administrator on 14-2-14.
+ */
 public class LogEventServiceImpl implements LogEventService{
     /**
      * ȡ��һ���ڵ��������־����

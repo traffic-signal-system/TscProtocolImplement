@@ -1,18 +1,35 @@
 package cn.com.aiton.gbt20999.domain;
-
+/**
+ * 相位表实体类
+ * @author Administrator
+ *
+ */
 public class GbtPhase {
+	//设备iD
 	private int deviceId;
+	//相位ID
 	private byte phaseId;
+	//行人绿灯时间
 	private byte pedestrainGreen;
+	//行人绿灯清空时间
 	private byte pedestrainClear;
+	//最小绿灯时间
 	private byte minGreen;
+	//绿灯延时时间
 	private byte greenDelayUnit;
+	//最大绿灯时间1
 	private byte maxGreen1;
+	//最大绿灯时间2
 	private byte maxGreen2;
+	//固定绿灯时间
 	private byte fixGreen;
+	//绿闪
 	private byte greenFlash;
+	//相位类型
 	private byte phaseType;
+	//相位选项
 	private byte phaseOption;
+	//扩展
 	private byte extend;
 	@Override
 	public String toString() {

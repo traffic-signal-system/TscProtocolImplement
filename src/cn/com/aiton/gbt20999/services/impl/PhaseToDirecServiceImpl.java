@@ -16,11 +16,12 @@ import cn.com.aiton.gbt20999.utils.GbtDefine;
 import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 
 /**
- * Created by Administrator on 14-2-23.
+ * Created by Administrator on 14-2-14.
+ * æ–¹å‘ä¸ç›¸ä½å¯¹åº”æœåŠ¡ç±»
  */
 public class PhaseToDirecServiceImpl implements PhaseToDirecService {
     /**
-     * ´ÓĞÅºÅÖĞÈ¡µÃ·½ÏòÊı¾İ
+     * ï¿½ï¿½ï¿½Åºï¿½ï¿½ï¿½È¡ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
      * @param node
      * @return
@@ -33,7 +34,7 @@ public class PhaseToDirecServiceImpl implements PhaseToDirecService {
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_PHASE_DIREC);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            //System.out.println("·şÎñ¶Ë»ØÓ¦Êı¾İ£º" + info);
+            //System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½İ£ï¿½" + info);
             if(!CheckGbt.check(bytes, "getPhaseToDirec")){
                 return null;
             }
@@ -56,7 +57,7 @@ public class PhaseToDirecServiceImpl implements PhaseToDirecService {
     }
 
     /**
-     * ÅäÖÃ·½ÏòÊı¾İµ½ĞÅºÅ»úÖĞ
+     * ï¿½ï¿½ï¿½Ã·ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İµï¿½ï¿½ÅºÅ»ï¿½ï¿½ï¿½
      *
      * @param gbtDirecs
      * @return
@@ -78,8 +79,8 @@ public class PhaseToDirecServiceImpl implements PhaseToDirecService {
             client.send(node.getIpAddress(), node.getPort(), hex);
             String info = client.receive(node.getIpAddress(), node.getPort());
             byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("·şÎñ¶Ë»ØÓ¦Êı¾İ£º" + info);
-//TODO   ËõĞ´ÊÇ·ñ³É¹¦²¿·Ö
+            System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½İ£ï¿½" + info);
+//TODO   ï¿½ï¿½Ğ´ï¿½Ç·ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½
         }catch (Exception ex){
             ex.printStackTrace();
         }

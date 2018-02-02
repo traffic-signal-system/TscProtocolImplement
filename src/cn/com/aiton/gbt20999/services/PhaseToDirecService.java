@@ -8,17 +8,18 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 
 /**
  * Created by Administrator on 14-2-14.
+ * 鏂瑰悜涓庣浉浣嶅搴旀湇鍔＄被
  */
 public interface PhaseToDirecService {
     /**
-     * 从信号中取得方向数据
+     * 锟斤拷锟脚猴拷锟斤拷取锟矫凤拷锟斤拷锟斤拷锟斤拷
      * @param node
      * @return
      */
     public List<GbtDirec> getPhaseToDirec(TscNode node);
 
     /**
-     * 配置方向数据到信号机中
+     * 锟斤拷锟矫凤拷锟斤拷锟斤拷锟捷碉拷锟脚号伙拷锟斤拷
      * @param gbtDirecs
      * @return
      */

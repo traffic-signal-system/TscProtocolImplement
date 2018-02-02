@@ -4,9 +4,17 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 import cn.com.aiton.gbt20999.utils.GbtDefine;
 import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 
+/**
+ * 信号机进入手控操作类
+ * @author Administrator
+ *
+ */
 public class ManalControlService implements cn.com.aiton.gbt20999.services.ManalControlService {
 
-
+	/**
+	 * 切换到手控，锁定信号机保持当前状态
+	 * @param node
+	 */
     @Override
     public void switchMunual(TscNode node) {
         try {
@@ -19,7 +27,10 @@ public class ManalControlService implements cn.com.aiton.gbt20999.services.Manal
             ex.printStackTrace();
         }
     }
-
+    /**
+     * 切换到自主控制，信号自动进行信号相位，解决锁定
+     * @param node
+     */
     @Override
     public void switchSelf(TscNode node) {
         try {
@@ -31,7 +42,12 @@ public class ManalControlService implements cn.com.aiton.gbt20999.services.Manal
             ex.printStackTrace();
         }
     }
-
+    /**
+     * 直接切换步伐，
+     * 前提是信号已经切换到手控锁定状态
+     * @param node
+     * @param num
+     */
     @Override
     public void switchStepByNumber(TscNode node, int num) {
         try {
@@ -44,7 +60,11 @@ public class ManalControlService implements cn.com.aiton.gbt20999.services.Manal
             ex.printStackTrace();
         }
     }
-
+    /**
+     * 信号机执行下一步，信号机的下一步是绿灯->绿闪->黄闪->红灯,每一步是一个灯态
+     * 前提是信号机已经切换到手控锁定状态
+     * @param node
+     */
     @Override
     public void switchNextStep(TscNode node) {
         try {
@@ -56,7 +76,11 @@ public class ManalControlService implements cn.com.aiton.gbt20999.services.Manal
             ex.printStackTrace();
         }
     }
-
+    /**
+     * 信号机执行一下相位，正常信号机的都在3-5个相位为一个周一，每执行一下进行入下一相位
+     * 前提是信号机已经切换到手控锁定状态
+     * @param node
+     */
     @Override
     public void switchNextPhase(TscNode node) {
         try {
@@ -69,12 +93,11 @@ public class ManalControlService implements cn.com.aiton.gbt20999.services.Manal
         }
     }
 
-    /**
-     * by me
-     * @param node
-     * @param num
-     * @return
-     */
+	  /**
+	   * 信号机执行到指定的相位
+	   * 前提是信号机已经切换到手控锁定状态
+	   * @param node
+	   */
     @Override
     public void switchPhaseByNumber(TscNode node, int num) {
         
@@ -89,7 +112,11 @@ public class ManalControlService implements cn.com.aiton.gbt20999.services.Manal
             ex.printStackTrace();
         }
     }
-
+    /**
+	   * 信号机执行下一方向， 方向是按北，东，南，西。顺序执行
+	   * 前提是信号机已经切换到手控锁定状态
+	   * @param node
+	   */
     @Override
     public void switchNextDirec(TscNode node) {
         try {
@@ -101,7 +128,11 @@ public class ManalControlService implements cn.com.aiton.gbt20999.services.Manal
             ex.printStackTrace();
         }
     }
-
+	  /**
+	   * 信号机执行北方向
+	   * 前提是信号机已经切换到手控锁定状态
+	   * @param node
+	   */
     @Override
     public void switchNorth(TscNode node) {
         try {
@@ -113,7 +144,11 @@ public class ManalControlService implements cn.com.aiton.gbt20999.services.Manal
             ex.printStackTrace();
         }
     }
-
+	  /**
+	   * 信号机执行东方向
+	   * 前提是信号机已经切换到手控锁定状态
+	   * @param node
+	   */
     @Override
     public void switchEast(TscNode node) {
        
@@ -126,7 +161,11 @@ public class ManalControlService implements cn.com.aiton.gbt20999.services.Manal
             ex.printStackTrace();
         }
     }
-
+    /**
+	   * 信号机执行南方向
+	   * 前提是信号机已经切换到手控锁定状态
+	   * @param node
+	   */
     @Override
     public void switchSouth(TscNode node) {
         try {
@@ -139,7 +178,11 @@ public class ManalControlService implements cn.com.aiton.gbt20999.services.Manal
             ex.printStackTrace();
         }
     }
-
+    /**
+	   * 信号机执行西方向
+	   * 前提是信号机已经切换到手控锁定状态
+	   * @param node
+	   */
     @Override
     public void switchWest(TscNode node) {
         try {
@@ -151,7 +194,11 @@ public class ManalControlService implements cn.com.aiton.gbt20999.services.Manal
             ex.printStackTrace();
         }
     }
-
+    /**
+	   * 信号机执行关灯
+	   * 前提是信号机已经切换到手控锁定状态
+	   * @param node
+	   */
     @Override
     public void switchOffLine(TscNode node) {
         try {
@@ -163,7 +210,11 @@ public class ManalControlService implements cn.com.aiton.gbt20999.services.Manal
             ex.printStackTrace();
         }
     }
-
+    /**
+	   * 信号机执行黄闪
+	   * 前提是信号机已经切换到手控锁定状态
+	   * @param node
+	   */
     @Override
     public void switchFlas(TscNode node) {
         
@@ -176,7 +227,11 @@ public class ManalControlService implements cn.com.aiton.gbt20999.services.Manal
             ex.printStackTrace();
         }
     }
-
+    /**
+	   * 信号机执行全红
+	   * 前提是信号机已经切换到手控锁定状态
+	   * @param node
+	   */
     @Override
     public void switchRed(TscNode node) {
         try {

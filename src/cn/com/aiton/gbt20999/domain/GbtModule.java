@@ -1,12 +1,23 @@
 package cn.com.aiton.gbt20999.domain;
-
+/**
+ * 信号机模块配置相关的数据，
+ * @author Administrator
+ *
+ */
 public class GbtModule {
+	//设备ID
 	private int deviceId;
+	//模块ID，主要包括电源板；控制板；车检板；接口板；灯驱板；机载显示板
 	private byte moduleId;
+	//设备节点
 	private String deviceNode;
+	//厂家
 	private String factory;
+	//模型
 	private String model;
+	//版本
 	private String version;
+	//类型
 	private byte type;
 	@Override
 	public String toString() {

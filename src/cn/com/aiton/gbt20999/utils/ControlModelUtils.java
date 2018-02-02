@@ -2,45 +2,51 @@ package cn.com.aiton.gbt20999.utils;
 
 /**
  * Created by Administrator on 14-2-15.
+ * ä¿¡å·æœºæ§åˆ¶æ¨¡å¼ï¼Œå­—èŠ‚è½¬æ¢æˆæ–‡å­—
  */
 public class ControlModelUtils {
+	/**
+	 * ä¿¡å·æœºæ§åˆ¶æ¨¡å¼ï¼Œå­—èŠ‚è½¬æ¢æˆæ–‡å­—
+	 * @param b
+	 * @return
+	 */
     public static String controlModelToString(byte b)
     {
         String result = "";
         switch (b)
         {
             case 0x01:
-                result = result + "¶àÊ±¶Î";
+                result = result + "ï¿½ï¿½Ê±ï¿½ï¿½";
                 break;
             case 0x02:
-                result = result + "ÏµÍ³ÓÅ»¯£¬¼´ÁªÍø";
+                result = result + "ÏµÍ³ï¿½Å»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                 break;
             case 0x03:
-                result = result + "ÎŞµçÏßÀÂĞ­µ÷";
+                result = result + "ï¿½Şµï¿½ï¿½ï¿½ï¿½ï¿½Ğ­ï¿½ï¿½";
                 break;
             case 0x04:
-                result = result + "ÓĞÏßµçÀÂĞ­µ÷";
+                result = result + "ï¿½ï¿½ï¿½ßµï¿½ï¿½ï¿½Ğ­ï¿½ï¿½";
                 break;
             case 0x05:
-                result = result + "Ö÷´ÓÏß¿Ø";
+                result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ß¿ï¿½";
                 break;
             case 0x06:
-                result = result + "ÊÖ¶¯¿ØÖÆ";
+                result = result + "ï¿½Ö¶ï¿½ï¿½ï¿½ï¿½ï¿½";
                 break;
             case 0x07:
-                result = result + "µ¥µãÈ«¸ĞÓ¦";
+                result = result + "ï¿½ï¿½ï¿½ï¿½È«ï¿½ï¿½Ó¦";
                 break;
             case 0x08:
-                result = result + "µ¥µãÖ÷ÏßÓÅÏÈ°ë¸ĞÓ¦";
+                result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È°ï¿½ï¿½Ó¦";
                 break;
             case 0x09:
-                result = result + "µ¥µã´ÎÏßÓÅÏÈ°ë¸ĞÓ¦";
+                result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½È°ï¿½ï¿½Ó¦";
                 break;
             case 0x0a:
-                result = result + "×ÔÊÊÓ¦";
+                result = result + "ï¿½ï¿½ï¿½ï¿½Ó¦";
                 break;
             case 0x0b:
-                result = result + "Ãæ°å¿ØÖÆ";
+                result = result + "ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½";
                 break;
             default:
                 result = result + "Î´Öª";

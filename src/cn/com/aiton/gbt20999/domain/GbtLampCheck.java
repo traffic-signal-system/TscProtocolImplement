@@ -1,10 +1,18 @@
 package cn.com.aiton.gbt20999.domain;
 
-
+/**
+ * 灯泡检测模型表
+ * @author Administrator
+ *
+ */
 public class GbtLampCheck {
+	//主键
     private Long id;
+	//设备ID
     private Long deviceId;
+	//灯炮ID
     private int lampId;
+	//灯炮标志信，0表示不进行检测，1表示检测
     private int lampFlag;
 
     @Override

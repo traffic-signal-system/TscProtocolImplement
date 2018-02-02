@@ -2,40 +2,52 @@ package cn.com.aiton.gbt20999.utils;
 
 /**
  * Created by Administrator on 14-2-14.
+ * å¯¹å›½æ ‡20999çš„ä¿¡å·æœºè¿”å›æ•°æ®è¿›è¡Œæ ¡éªŒ
  */
 public class CheckGbt {
+	/**
+	 * //  MessageBox.Show(fun+":ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½Ğ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô­ï¿½ï¿½");
+	 * // MessageBox.Show(fun + ":ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½Ğ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½Ì«ï¿½ï¿½ï¿½ï¿½");
+	 *  // MessageBox.Show(fun + ":ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½Ğ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½Í´ï¿½ï¿½ï¿½");
+	 *  /// MessageBox.Show(fun + ":ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½Ğ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½Ã¶ï¿½ï¿½ï¿½Öµï¿½ï¿½ï¿½ï¿½ï¿½æ¶¨ï¿½Ä·ï¿½Î§ï¿½ï¿½");
+	 *  //  MessageBox.Show(fun + ":ï¿½ï¿½ï¿½ï¿½Í¨ï¿½ï¿½Ğ­ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ğµï¿½ï¿½ï¿½Ï¢ï¿½ï¿½ï¿½ï¿½Ì«ï¿½Ì£ï¿½");
+	 *  // MessageBox.Show(fun + ":Î´ÖªÔ­ï¿½ï¿½");
+	 * @param bytes
+	 * @param fun
+	 * @return
+	 */
     public static boolean check(byte[] bytes,String fun)
     {
         if (bytes[0] == 0x86)
         {
             if (bytes[1] == 0x05)
             {
-              //  MessageBox.Show(fun+":¹ú±êÍ¨ĞÅĞ­Òé´íÎóÀàĞÍÖĞµÄÆäËü´íÎóÔ­Òò£¡");
+              
                 return false;
             }
             else if (bytes[1] == 0x01)
             {
-               // MessageBox.Show(fun + ":¹ú±êÍ¨ĞÅĞ­Òé´íÎóÀàĞÍÖĞµÄÏûÏ¢³¤¶ÈÌ«³¤£¡");
+               
                 return false;
             }
             else if (bytes[1] == 0x02)
             {
-               // MessageBox.Show(fun + ":¹ú±êÍ¨ĞÅĞ­Òé´íÎóÀàĞÍÖĞµÄÏûÏ¢ÀàĞÍ´íÎó£¡");
+              
                 return false;
             }
             else if (bytes[1] == 0x03)
             {
-               /// MessageBox.Show(fun + ":¹ú±êÍ¨ĞÅĞ­Òé´íÎóÀàĞÍÖĞµÄÏûÏ¢ÉèÖÃ¶ÔÏóÖµ³¬³ö¹æ¶¨µÄ·¶Î§£¡");
+               
                 return false;
             }
             else if (bytes[1] == 0x04)
             {
-              //  MessageBox.Show(fun + ":¹ú±êÍ¨ĞÅĞ­Òé´íÎóÀàĞÍÖĞµÄÏûÏ¢³¤¶ÈÌ«¶Ì£¡");
+              
                 return false;
             }
             else
             {
-               // MessageBox.Show(fun + ":Î´ÖªÔ­Òò£¡");
+               
                 return false;
             }
         }

@@ -1,13 +1,25 @@
 package cn.com.aiton.gbt20999.domain;
-
+/**
+ * 信号机阶段配置
+ * @author Administrator
+ *
+ */
 public class GbtStagePattern16Phase {
+	//设备ID
 	private int deviceId;
+	//阶段配置ID
 	private byte stagePatternId;
+	//阶段ID
 	private byte stageId;
+	//允许相位
 	private short allowPhase;
+	//绿灯时间
 	private byte greenTime;
+	//黄灯时间
 	private byte yellowTime;
+	//红灯时间
 	private byte redTime;
+	//配置选项
 	private byte option;
 	@Override
 	public String toString() {

@@ -7,10 +7,15 @@ package cn.com.aiton.gbt20999.domain;
  */
 
 public class CountDown {
+	//设备ID
     private Long deviceId;
+	//倒计时配置ID
     private byte countDownId;
+	//相位
     private int phase;
+	//跟随相位
     private short overlapPhase;
+	//模型
     private byte mode;
 
    

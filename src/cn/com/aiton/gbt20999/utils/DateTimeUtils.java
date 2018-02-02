@@ -10,6 +10,7 @@ import java.util.TimeZone;
 
 /**
  * Created by Administrator on 14-2-15.
+ * 日期时间工具类
  */
 public class DateTimeUtils {
     private static DateFormat format = new SimpleDateFormat("yyyy-MM-dd HH:mm:ss") ;

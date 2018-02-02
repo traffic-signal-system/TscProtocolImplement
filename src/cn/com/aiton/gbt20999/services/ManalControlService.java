@@ -2,6 +2,11 @@ package cn.com.aiton.gbt20999.services;
 
 import cn.com.aiton.gbt20999.domain.TscNode;
 
+/**
+ * 信号机进入手控操作类
+ * @author Administrator
+ *
+ */
 public interface ManalControlService {
 /**
  * 切换到手控，锁定信号机保持当前状态

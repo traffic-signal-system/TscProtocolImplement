@@ -15,11 +15,14 @@ import cn.com.aiton.gbt20999.utils.CheckGbt;
 import cn.com.aiton.gbt20999.utils.GbtDefine;
 import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 
-
+/**
+ * Created by Administrator on 14-2-14.
+ * æ—¶åŸºæœåŠ¡ç±»
+ */
 public class TimeBaseServiceImpl implements TimeBaseService {
     
     /**
-     * ´ÓĞÅºÅ»úµÃµ½Ä³¸ö½ÚµãµÄÊ±»ùÊı¾İ
+     * ï¿½ï¿½ï¿½ÅºÅ»ï¿½ï¿½Ãµï¿½Ä³ï¿½ï¿½ï¿½Úµï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
      * @param node
      * @return
@@ -32,7 +35,7 @@ public class TimeBaseServiceImpl implements TimeBaseService {
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_PLAN);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            //System.out.println("·şÎñ¶Ë»ØÓ¦Êı¾İ£º" + info);
+            //System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½İ£ï¿½" + info);
             if(!CheckGbt.check(bytes, "GbtTimeBase")){
                 return null;
             }
@@ -59,8 +62,8 @@ public class TimeBaseServiceImpl implements TimeBaseService {
     }
 
     /**
-     * ÉèÖÃÊ±»ùÊı¾İµ½ĞÅºÅ»ú
-     * Í¨¹ıÔÂÀú
+     * ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½İµï¿½ï¿½ÅºÅ»ï¿½
+     * Í¨ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      *
      * @param gbtTimeBaseList
      * @param node
@@ -91,8 +94,8 @@ public class TimeBaseServiceImpl implements TimeBaseService {
             client.send(node.getIpAddress(), node.getPort(), hex);
             String info = client.receive(node.getIpAddress(), node.getPort());
             byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("·şÎñ¶Ë»ØÓ¦Êı¾İ£º" + info);
-//TODO   ËõĞ´ÊÇ·ñ³É¹¦²¿·Ö
+            System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½İ£ï¿½" + info);
+//TODO   ï¿½ï¿½Ğ´ï¿½Ç·ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½
         }catch (Exception ex){
             ex.printStackTrace();
         }
@@ -101,8 +104,8 @@ public class TimeBaseServiceImpl implements TimeBaseService {
 
   
     /**
-     * ÉèÖÃÊ±»ùÊı¾İµ½ĞÅºÅ»ú
-     * Í¨¹ıÖÜÄ£Ê½
+     * ï¿½ï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½ï¿½İµï¿½ï¿½ÅºÅ»ï¿½
+     * Í¨ï¿½ï¿½ï¿½ï¿½Ä£Ê½
      *
      * @param gbtTimeBases
      * @param node
@@ -133,8 +136,8 @@ public class TimeBaseServiceImpl implements TimeBaseService {
             client.send(node.getIpAddress(), node.getPort(), hex);
             String info = client.receive(node.getIpAddress(), node.getPort());
             byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("·şÎñ¶Ë»ØÓ¦Êı¾İ£º" + info);
-//TODO   ËõĞ´ÊÇ·ñ³É¹¦²¿·Ö
+            System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½İ£ï¿½" + info);
+//TODO   ï¿½ï¿½Ğ´ï¿½Ç·ï¿½É¹ï¿½ï¿½ï¿½ï¿½ï¿½
         }catch (Exception ex){
             ex.printStackTrace();
         }

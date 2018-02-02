@@ -1,12 +1,24 @@
 package cn.com.aiton.gbt20999.domain;
 
+/**
+ * 群时段表实体类
+ * @author Administrator
+ *
+ */
 public class GbtGroupSchedule {
+	//群ID
 	private int groupId;
+	//时段配置表关联ID
 	private byte scheduleId;
+	//事件ID
 	private byte eventId;
+	//开始时间
 	private byte beginHour;
+	//开始分钟
 	private byte beginMinute;
+	//阶段配时ID
 	private byte timePatternId;
+	//控制模式
 	private byte controlMode;
 	@Override
 	public String toString() {

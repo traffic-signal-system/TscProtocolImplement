@@ -10,16 +10,25 @@ import cn.com.aiton.gbt20999.utils.GbtDefine;
 import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 
 
+/**
+ * å€’è®¡æ—¶ç›¸å…³æ“ä½œ
+ * Created by Administrator on 14-2-14.
+ */
 public class CountDownServiceImpl implements CountDownService{
+	/**
+	 * å–å¾—å€’è®¡æ—¶é…ç½®ä¿¡æ¯
+	 * @param node
+	 * @return
+	 */
     @Override
     public List<CountDown> getCntDownDev(TscNode node) {
-        // TODO Ôö¼Óµ¹¼ÆÊ±£¬»¹ÒªÉè¼Æ
+        // TODO ï¿½ï¿½ï¿½Óµï¿½ï¿½ï¿½Ê±ï¿½ï¿½ï¿½ï¿½Òªï¿½ï¿½ï¿½
         try{
             UdpClientSocket client = new UdpClientSocket();
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_CNTDOWNDEV);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("·şÎñ¶Ë»ØÓ¦Êı¾İ£º" + bytes.toString());
+            System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½İ£ï¿½" + bytes.toString());
             if(bytes == null || bytes.length ==0){
             	return null;
             }else{
@@ -33,7 +42,12 @@ public class CountDownServiceImpl implements CountDownService{
         }
         return null;
     }
-
+    /**
+	 * è®¾ç½®å€’è®¡æ—¶é…ç½®ä¿¡æ¯
+	 * @param countDowns
+	 * @param node
+	 * @return
+	 */
     @Override
     public Message setCntDownDev(List<CountDown> countDowns, TscNode node) {
         // TODO

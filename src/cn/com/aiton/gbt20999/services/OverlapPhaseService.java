@@ -8,17 +8,18 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 
 /**
  * Created by Administrator on 14-2-14.
+ * ä¿¡å·æœºçš„è·Ÿéšç›¸ä½æ“ä½œæœåŠ¡ç±»
  */
 public interface OverlapPhaseService {
     /**
-     * ´ÓĞÅºÅ»úÈ¡µÃ¸úËæÏàÎ»Êı¾İ
+     * ï¿½ï¿½ï¿½ÅºÅ»ï¿½È¡ï¿½Ã¸ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½
      * @param node
      * @return
      */
     public List<GbtOverlap> getOverlapPhase(TscNode node);
 
     /**
-     * ½«¸úËæÏàÎ»Êı¾İÉèÖÃµ½ĞÅºÅ»ú
+     * ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Î»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ãµï¿½ï¿½ÅºÅ»ï¿½
      * @param node
      * @param gbtOverlaps
      * @return

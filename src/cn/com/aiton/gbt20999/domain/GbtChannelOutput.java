@@ -1,9 +1,18 @@
 package cn.com.aiton.gbt20999.domain;
 
+/**
+ * 通道输出内容，其中包括通道ID，红灯，绿灯，黄灯
+ * @author Administrator
+ *
+ */
 public class GbtChannelOutput {
+	//通道 ID
 	private byte rowId;
+	//红灯数据
 	private byte red;
+	//黄灯数据
 	private byte yellow;
+	//绿灯数据
 	private byte green;
 	public byte getRowId() {
 		return rowId;

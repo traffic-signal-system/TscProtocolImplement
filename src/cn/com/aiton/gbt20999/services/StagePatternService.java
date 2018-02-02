@@ -8,23 +8,24 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 
 /**
  * Created by Administrator on 14-2-14.
+ * é˜¶æ®µé…æ—¶æœåŠ¡ç±»
  */
 public interface StagePatternService {
     /**
-     * ´ÓĞÅºÅ»ú¶ÁÈ¡½×¶ÎÅäÖÃÊı¾İ
+     * ï¿½ï¿½ï¿½ÅºÅ»ï¿½ï¿½ï¿½È¡ï¿½×¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @param node
      * @return
      */
     public List<GbtStagePattern> getStagePattern16Phase(TscNode node);
 
     /**
-     * ´ÓĞÅºÅ»ú¶ÁÈ¡32ÏàÎ»µÄ½×¶ÎÅäÖÃÊı¾İ
+     * ï¿½ï¿½ï¿½ÅºÅ»ï¿½ï¿½ï¿½È¡32ï¿½ï¿½Î»ï¿½Ä½×¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
      * @param node
      * @return
      */
     public List<GbtStagePattern> getStagePattern32Phase(TscNode node);
     /**
-     * ½«½×¶ÎÅäÖÃÊı¾İ±£´æµ½16ÏàÎ»µÄĞÅºÅ»úÖĞ
+     * ï¿½ï¿½ï¿½×¶ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½İ±ï¿½ï¿½æµ½16ï¿½ï¿½Î»ï¿½ï¿½ï¿½ÅºÅ»ï¿½ï¿½ï¿½
      * @param node
      * @param gbtStagePatterns
      * @return
@@ -32,7 +33,7 @@ public interface StagePatternService {
     public Message setStagePatternBy16Phase(TscNode node,List<GbtStagePattern> gbtStagePatterns);
 
     /**
-     * ½«½×¶ÎÊı¾İ±£´æµ½32Î»ĞÅºÅ»úÖĞ
+     * ï¿½ï¿½ï¿½×¶ï¿½ï¿½ï¿½ï¿½İ±ï¿½ï¿½æµ½32Î»ï¿½ÅºÅ»ï¿½ï¿½ï¿½
      * @param node
      * @param gbtStagePatterns
      * @return

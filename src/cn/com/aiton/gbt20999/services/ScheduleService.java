@@ -8,17 +8,18 @@ import cn.com.aiton.gbt20999.domain.TscNode;
 
 /**
  * Created by Administrator on 14-2-14.
+ * 鏃舵琛ㄦ湇鍔＄被
  */
 public interface ScheduleService {
     /**
-     * 得到某个信号机的时段表数据
+     * 锟矫碉拷某锟斤拷锟脚号伙拷锟斤拷时锟轿憋拷锟斤拷锟斤拷
      * @param node
      * @return
      */
     public List<GbtSchedule> getSchedule(TscNode node);
 
     /**
-     * 保存某个信号机的时段数据
+     * 锟斤拷锟斤拷某锟斤拷锟脚号伙拷锟斤拷时锟斤拷锟斤拷锟斤拷
      * @param node
      * @param gbtSchedules
      * @return

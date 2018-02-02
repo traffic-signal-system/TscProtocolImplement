@@ -1,8 +1,14 @@
 package cn.com.aiton.gbt20999.domain;
 
+/**
+ * 绿冲突实体类
+ * @author Administrator
+ *
+ */
 public class GbtCollision {
-	
+	//相位号
 	private byte phaseId;
+	//标志，0表示不冲突 1表示冲突
 	private int flag;
 
 	public byte getPhaseId() {

@@ -12,10 +12,13 @@ import cn.com.aiton.gbt20999.utils.CheckGbt;
 import cn.com.aiton.gbt20999.utils.GbtDefine;
 import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 
-
+/**
+ * Created by Administrator on 14-2-14.
+ * ä¿¡å·æœºæ¨¡å—è¯»å–åŠŸèƒ½,ç”±ä¿¡å·æœºæ’å…¥å¤šå°‘å—æ¿æœ‰å…³,æ˜¯æ— æ³•è¿›è¡Œè®¾ç½®.åªèƒ½è¿›è¡Œè¯»å–
+ */
 public class ModuleServiceImpl implements ModuleService{
     /**
-     * µÃµ½ĞÅºÅ»úµÄÄ£¿éĞÅºÅ
+     * ï¿½Ãµï¿½ï¿½ÅºÅ»ï¿½ï¿½ï¿½Ä£ï¿½ï¿½ï¿½Åºï¿½
      *
      * @param node
      * @return
@@ -29,28 +32,28 @@ public class ModuleServiceImpl implements ModuleService{
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_MODULE);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
             //byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            //System.out.println("·şÎñ¶Ë»ØÓ¦Êı¾İ£º" + info);
+            //System.out.println("ï¿½ï¿½ï¿½ï¿½Ë»ï¿½Ó¦ï¿½ï¿½ï¿½İ£ï¿½" + info);
             if(!CheckGbt.check(bytes,"Module")){
                 return null;
             }
-            //È¥³ıĞ­ÒéÍ·
+            //È¥ï¿½ï¿½Ğ­ï¿½ï¿½Í·
             byte[] objectArray = new byte[bytes.length - 4];
             System.arraycopy(bytes,4,objectArray,0,objectArray.length);
 
             int count = 0;
             int modules = bytes[3];
-            //Ò»Ìõ¼ÇÂ¼µÄ³¤¶È
+            //Ò»ï¿½ï¿½ï¿½ï¿½Â¼ï¿½Ä³ï¿½ï¿½ï¿½
             for (int i=0;i<modules;i++){
                 int idcount = 1;
                 int devNode = objectArray[idcount+count];
-                //ÕâÀï¼Ó1ÊÇÒòÎªÓĞÒ»¸ö×Ö½Ú µÄÉè±¸½Úµã³¤¶È¡£²¢²»ÊÇÊı¾İ
+                //ï¿½ï¿½ï¿½ï¿½ï¿½1ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½Ò»ï¿½ï¿½ï¿½Ö½ï¿½ ï¿½ï¿½ï¿½è±¸ï¿½Úµã³¤ï¿½È¡ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 int company = objectArray[devNode + 1 + count +idcount];
-                //ÕâÀï¼Ó2 = 1£¨devNode³¤¶È×Ö½Ú£©+ 1£¨company³¤¶È×Ö½Ú£©¡£²¢²»ÊÇÊı¾İ
+                //ï¿½ï¿½ï¿½ï¿½ï¿½2 = 1ï¿½ï¿½devNodeï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ú£ï¿½+ 1ï¿½ï¿½companyï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 int model = objectArray[devNode + 2 + company + count + idcount];
-                //ÕâÀï¼Ó3 = 1£¨devNode³¤¶È×Ö½Ú£©+ 1£¨company³¤¶È×Ö½Ú£©+ 1£¨model³¤¶È×Ö½Ú£©¡£²¢²»ÊÇÊı¾İ
+                //ï¿½ï¿½ï¿½ï¿½ï¿½3 = 1ï¿½ï¿½devNodeï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ú£ï¿½+ 1ï¿½ï¿½companyï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ú£ï¿½+ 1ï¿½ï¿½modelï¿½ï¿½ï¿½ï¿½ï¿½Ö½Ú£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 int version = objectArray[devNode + 3 + model + company + count + idcount];
                 int typeCount = 1;
-                //×îºó ¼ÓÉÏ4£¬ ÊÇÒòÎª£¬ÓĞËÄ¸ö×Ö¶ÎµÄ×Ö½Ú³¤¶ÈÊôĞÔ£¬²¢²»ÊÇÕæÕıµÄÊı¾İ
+                //ï¿½ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½4ï¿½ï¿½ ï¿½ï¿½ï¿½ï¿½Îªï¿½ï¿½ï¿½ï¿½ï¿½Ä¸ï¿½ï¿½Ö¶Îµï¿½ï¿½Ö½Ú³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½Ô£ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 int all = idcount + devNode + company + model + version + typeCount + 4;
                 byte[] oneSetByteArray = new byte[all];
                 System.arraycopy(objectArray,count,oneSetByteArray,0,all);
@@ -66,28 +69,28 @@ public class ModuleServiceImpl implements ModuleService{
                 int companyCount = bar[devNodeCount + 1 + idCount];
                 int modelCount = bar[devNodeCount + 2 + companyCount + idCount];
                 int versionCount = bar[devNodeCount + 3 + companyCount + modelCount + idCount];
-                //È¡µÃ½Úµã
+                //È¡ï¿½Ã½Úµï¿½
                 byte[] byteDevNode = new byte[devNodeCount];
                 idCount += 1;
                 for(int j = 0 ; j<devNodeCount ; j++){
                     byteDevNode[j] = bar[j + idCount];
                 }
                 String sDevNode = ByteUtils.byteArrayToStringByISO(byteDevNode);
-                //È¡µÃ³§¼ÒÊı¾İ
+                //È¡ï¿½Ã³ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½
                 byte[] byteCompany = new byte[companyCount];
                 devNodeCount+=1;
                 for (int k=0;k<companyCount;k++){
                     byteCompany[k] = bar[idCount + devNodeCount + k];
                 }
                 String sCompany = ByteUtils.byteArrayToStringByISO(byteCompany);
-                //È¡µÃÄ£Ê½
+                //È¡ï¿½ï¿½Ä£Ê½
                 byte[] byteModel = new byte[modelCount];
                 companyCount += 1;
                 for (int l=0;l<modelCount;l++){
                     byteModel[l] = bar[idCount + devNodeCount + companyCount + l];
                 }
                 String sModel = ByteUtils.byteArrayToStringByISO(byteModel);
-                //È¡µÃ °æ±¾ºÅ
+                //È¡ï¿½ï¿½ ï¿½æ±¾ï¿½ï¿½
                 byte[] byteVersion = new byte[versionCount];
                 modelCount += 1;
                 for (int u=0;u<versionCount;u++){
@@ -111,7 +114,7 @@ public class ModuleServiceImpl implements ModuleService{
     }
 
     /**
-     * µ±Ç°ĞÅºÅ»ú¸÷¸ö°å¿¨µÄ×´Ì¬
+     * ï¿½ï¿½Ç°ï¿½ÅºÅ»ï¿½ï¿½ï¿½ï¿½ï¿½ï¿½å¿¨ï¿½ï¿½×´Ì¬
      *
      * @param node
      * @return

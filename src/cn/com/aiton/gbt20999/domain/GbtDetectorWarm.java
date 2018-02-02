@@ -1,8 +1,15 @@
 package cn.com.aiton.gbt20999.domain;
-
+/**
+ * 检测器告警表
+ * @author Administrator
+ *
+ */
 public class GbtDetectorWarm {
+	//检测器ID
 	private byte detectorId;
+	//告警状态
 	private byte warmStatus;
+	//告警
 	private byte coilWarm;
 	public byte getDetectorId() {
 		return detectorId;

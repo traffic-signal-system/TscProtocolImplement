@@ -7,119 +7,120 @@ import cn.com.aiton.gbt20999.domain.Message;
 import cn.com.aiton.gbt20999.domain.TscNode;
 
 /**
+ * Г│╞ФЁ║Фё─Ф╣▀Ф°█Е┼║Г╠╩
  * Created by Administrator on 14-2-14.
  */
 public interface LampCheckService {
     /**
-     * ╧ь╠у╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public Message setLampCheckCloseOne(TscNode node);
     /**
-     * ╧ь╠у╣ф©ь╟Е2╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫2О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public Message setLampCheckCloseTwo(TscNode node);
     /**
-     * ╧ь╠у╣ф©ь╟Е3╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫3О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public Message setLampCheckCloseThree(TscNode node);
     /**
-     * ╧ь╠у╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public Message setLampCheckCloseFour(TscNode node);
     /**
-     * ╧ь╠у╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public Message setLampCheckCloseFive(TscNode node);
     /**
-     * ╧ь╠у╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public Message setLampCheckCloseSix(TscNode node);
     /**
-     * ╧ь╠у╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public Message setLampCheckCloseSeven(TscNode node);
     /**
-     * ╧ь╠у╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public Message setLampCheckCloseEight(TscNode node);
     /**
-     * ╧ь╠у╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫ь╠у╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public List<Message> setLampCheckCloseALL(TscNode node);
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public Message setLampCheckOpenOne(TscNode node);
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public Message setLampCheckOpenTwo(TscNode node);
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public Message setLampCheckOpenThree(TscNode node);
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public Message setLampCheckOpenFour(TscNode node);
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public Message setLampCheckOpenFive(TscNode node);
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public Message setLampCheckOpenSix(TscNode node);
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public Message setLampCheckOpenSeven(TscNode node);
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public Message setLampCheckOpenEight(TscNode node);
     /**
-     * ╢Р©╙╣ф©ь╟Е1╣дблЁЕм╩╪Л╡Б
+     * О©╫Р©╙╣ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫
      * @param node
      * @return
      */
     public List<Message> setLampCheckOpenALL(TscNode node);
     /**
-     * ╣ц╣╫╣ф©ь╟Е1╣дблЁЕм╩╪Л╡БйЩ╬щ
+     * О©╫ц╣О©╫О©╫ф©ь╟О©╫1О©╫О©╫О©╫лЁО©╫м╩О©╫О©╫О©╫О©╫О©╫О©╫О©╫
      * @param node
      * @return
      */

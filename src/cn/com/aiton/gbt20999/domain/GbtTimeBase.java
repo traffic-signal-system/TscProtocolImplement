@@ -1,11 +1,21 @@
 package cn.com.aiton.gbt20999.domain;
-
+/**
+ * 时基配置
+ * @author Administrator
+ *
+ */
 public class GbtTimeBase {
+	//设备ID
 	private int deviceId;
+	//时基ID
 	private byte timeBaseId;
+	//月
 	private short month;
+	//周
 	private byte week;
+	//日
 	private int day;
+	//时段表ID
 	private byte scheduleId;
 	
 	public int getDeviceId() {

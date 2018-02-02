@@ -1,10 +1,20 @@
 package cn.com.aiton.gbt20999.domain;
 
+/**
+ * 路口方向实体类
+ * @author Administrator
+ *
+ */
 public class GbtDirec {
+	//设备编号，这个统一是平台中取得的数据。单机使用并要不可用
 	private int deviceId;
+	//方向ID，结合方向定义表使用
 	private byte direcId;
+	//相位ID
 	private byte phaseId;
+	//跟随相位ID
 	private byte overlapId;
+	//车道数量
 	private byte roadCount;
 	@Override
 	public String toString() {

@@ -15,8 +15,16 @@ import cn.com.aiton.gbt20999.utils.CheckGbt;
 import cn.com.aiton.gbt20999.utils.GbtDefine;
 import cn.com.aiton.gbt20999.utils.UdpClientSocket;
 
-
+/**
+ * Created by Administrator on 14-2-14.
+ * 相位服务类
+ */
 public class PhaseServiceImpl implements PhaseService{
+	/**
+	 * 取得信号机所有的相位信息
+	 * @param node信号机节点，主要为ip地址和端口
+	 * @return 信号机数据集合
+	 */
     @Override
     public List<GbtPhase> getPhase(TscNode node) {
         List<GbtPhase> gbtPhases = new ArrayList<GbtPhase>();
@@ -25,7 +33,7 @@ public class PhaseServiceImpl implements PhaseService{
             client.send(node.getIpAddress(), node.getPort(), GbtDefine.GET_PHASE);
             byte[] bytes = client.receiveByte(node.getIpAddress(), node.getPort());
 //            byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-//            System.out.println("����˻�Ӧ���ݣ�" + info);
+//            System.out.println("����˻�Ӧ���ݣ�" + info);
 
             if(!CheckGbt.check(bytes,"Phase")){
                 return null;
@@ -56,7 +64,12 @@ public class PhaseServiceImpl implements PhaseService{
         }
         return gbtPhases;
     }
-
+    /**
+     * 设置信号机的相位信息
+     * @param gbtPhases 相位实体类数据
+     * @param node 信号机节点，主要为ip地址和端口
+     * @return
+     */
     @Override
     public Message setPhase(List<GbtPhase> gbtPhases,TscNode node) {
         Message message = new Message();
@@ -78,7 +91,7 @@ public class PhaseServiceImpl implements PhaseService{
             client.send(node.getIpAddress(), node.getPort(), hex);
             String info = client.receive(node.getIpAddress(), node.getPort());
             byte[] bytes = ByteUtils.stringToByteArrayByISO(info);
-            System.out.println("����˻�Ӧ���ݣ�" + info);
+            System.out.println("����˻�Ӧ���ݣ�" + info);
 
         }catch (Exception ex){
             ex.printStackTrace();

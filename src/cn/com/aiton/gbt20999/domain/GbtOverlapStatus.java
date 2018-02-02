@@ -1,9 +1,17 @@
 package cn.com.aiton.gbt20999.domain;
-
+/**
+ * 跟随相位的运行时的状态
+ * @author Administrator
+ *
+ */
 public class GbtOverlapStatus {
+	//跟随相位ID
 	private byte overlapId;
+	//红灯
 	private byte red;
+	//黄灯
 	private byte yellow;
+	//绿灯
 	private byte green;
 	public byte getOverlapId() {
 		return overlapId;
